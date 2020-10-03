@@ -144,7 +144,7 @@ img.polaroid {
 .bg-shape-1:before {
   position: absolute;
   content: '';
-  background: url("../img/bg/bg-01-l.svg") repeat 0 0;
+  background: url("../teddyimg/bg/bg-01-l.svg") repeat 0 0;
   height: 100%;
   width: 196px;
   top: 0;
@@ -155,7 +155,7 @@ img.polaroid {
 .bg-shape-1:after {
   position: absolute;
   content: '';
-  background: url("../img/bg/bg-01-r.svg") repeat 0 0;
+  background: url("../teddyimg/bg/bg-01-r.svg") repeat 0 0;
   height: 100%;
   width: 166px;
   top: 0;
@@ -172,7 +172,7 @@ img.polaroid {
 .bg-shape-2:before {
   position: absolute;
   content: '';
-  background: url("../img/bg/bg-02-l.svg") repeat 0 0;
+  background: url("../teddyimg/bg/bg-02-l.svg") repeat 0 0;
   height: 100%;
   width: 601px;
   top: 0;
@@ -183,7 +183,7 @@ img.polaroid {
 .bg-shape-2:after {
   position: absolute;
   content: '';
-  background: url("../img/bg/bg-02-r.svg") repeat 0 0;
+  background: url("../teddyimg/bg/bg-02-r.svg") repeat 0 0;
   height: 100%;
   width: 759px;
   top: 100px;
@@ -389,7 +389,7 @@ blockquote {
 
 blockquote:after {
   content: '';
-  background-image: url("../img/icons/testimonials-quote.svg");
+  background-image: url("../teddyimg/icons/testimonials-quote.svg");
   width: 44px;
   height: 40px;
   position: absolute;
@@ -692,8 +692,10 @@ ul.list-inline-check li:before {
           box-shadow: 0px 4px transparent;
   -webkit-transition: background-color 0.3s, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
   transition: background-color 0.3s, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
-  transition: background-color 0.3s, box-shadow 0.0s ease-in, padding 0.1s ease 0.0s;
-  transition: background-color 0.3s, box-shadow 0.0s ease-in, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
+  transition: background-color 0.3s, box-shadow 0.0s ease-in,
+ padding 0.1s ease 0.0s;
+  transition: background-color 0.3s, box-shadow 0.0s ease-in,
+ padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
   background-color: transparent;
 }
 
@@ -716,8 +718,10 @@ ul.list-inline-check li:before {
   padding-bottom: 40px;
   -webkit-transition: background-color 0.3s, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
   transition: background-color 0.3s, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
-  transition: background-color 0.3s, box-shadow 0.0s ease-in, padding 0.1s ease 0.0s;
-  transition: background-color 0.3s, box-shadow 0.0s ease-in, padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
+  transition: background-color 0.3s, box-shadow 0.0s ease-in,
+ padding 0.1s ease 0.0s;
+  transition: background-color 0.3s, box-shadow 0.0s ease-in,
+ padding 0.1s ease 0.0s, -webkit-box-shadow 0.0s ease-in;
 }
 
 .navbar ul li a {
@@ -1058,10 +1062,15 @@ ul.list-inline-check li:before {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.12);
-  -webkit-transition: padding 0.3s ease,  background-color 0.3s ease 0.2s, -webkit-box-shadow 0.15s ease-in 0.2s;
-  transition: padding 0.3s ease,  background-color 0.3s ease 0.2s, -webkit-box-shadow 0.15s ease-in 0.2s;
-  transition: padding 0.3s ease,  background-color 0.3s ease 0.2s, box-shadow 0.15s ease-in 0.2s;
-  transition: padding 0.3s ease,  background-color 0.3s ease 0.2s, box-shadow 0.15s ease-in 0.2s,  -webkit-box-shadow 0.15s ease-in 0.2s;
+  -webkit-transition: padding 0.3s ease, 
+ background-color 0.3s ease 0.2s, -webkit-box-shadow 0.15s ease-in 0.2s;
+  transition: padding 0.3s ease, 
+ background-color 0.3s ease 0.2s, -webkit-box-shadow 0.15s ease-in 0.2s;
+  transition: padding 0.3s ease, 
+ background-color 0.3s ease 0.2s, box-shadow 0.15s ease-in 0.2s;
+  transition: padding 0.3s ease, 
+ background-color 0.3s ease 0.2s, box-shadow 0.15s ease-in 0.2s, 
+ -webkit-box-shadow 0.15s ease-in 0.2s;
 }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
