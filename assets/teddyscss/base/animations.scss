@@ -1,0 +1,45 @@
+/* Animations */
+
+@keyframes scroll {
+    0%   { transform: translateY(0); }
+    25%  { transform: translateY(-0.6em); }
+    50%  { transform: translateY(0); }
+    75%  { transform: translateY(0.6em); }
+    100% { transform: translateY(0); }
+}
+@keyframes fadeIn  {
+    0% {
+        opacity : 0;
+    }  
+    100% {
+        opacity : 1;
+    }  
+}
+@keyframes fadeOut  {
+    0% {
+        opacity : 1;
+    }  
+    100% {
+        opacity : 0;
+    }  
+}
+
+// Owl Slider slide transitions
+.fadeIn {
+    animation-name : fadeIn;    
+}
+.fadeOut {
+    animation-name : fadeOut;
+}
+.animated  {
+    -webkit-animation-duration: 1000 ms;
+    animation-duration: 1000 ms;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}  
+.owl-animated-out {
+    z-index : 1;
+}
+.owl-animated-in {
+    z-index : 0 ;
+}

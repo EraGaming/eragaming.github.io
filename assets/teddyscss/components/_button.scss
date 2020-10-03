@@ -1,0 +1,124 @@
+/* Buttons */
+
+.btn {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: $font-semibold;
+    letter-spacing: 1px;
+    border-radius: 0;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    float: left;
+    i {
+        margin-right: 20px;
+    }
+    &.btn--shadow {
+        box-shadow: 16px 16px 0px $shadow-color !important;
+        &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle, &:focus {
+            box-shadow: 16px 16px 0px $shadow-color !important;
+        }
+    }
+    &.btn--wider {
+        padding: 12px 90px;
+    }
+    &:focus {
+        outline: none;
+    }
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle, &:focus, &:focus-within, &:visited {
+        text-decoration: none;
+    }
+    @include media-breakpoint-down(md) {
+        width: 100%;
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+        &.btn--shadow {
+            box-shadow: 6px 6px 0px $shadow-color !important;
+        }
+        &.btn--wider {
+            padding: 12px 20px;
+        }
+    }
+}
+button:focus {
+  outline: none;
+}
+
+.btn-primary, .btn-primary:focus, a.btn-primary:not([href]) {
+    color: $btn-primary-txt-color;
+    background-color: $btn-primary-bg-color;
+    border: $btn-primary-bg-color 2px solid;
+    box-shadow: none;
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle {
+        color: $btn-primary-txt-color-hover;
+        background-color: $btn-primary-bg-color-hover;
+        border: $btn-primary-bg-color-hover 2px solid;
+        box-shadow: none;
+    }
+}
+.btn-outline-primary, .btn-outline-primary:focus, a.btn-outline-primary:not([href]) {
+    background-color: transparent;
+    border: $btn-secondary-bg-color 2px solid;
+    color: $btn-secondary-txt-color;
+    box-shadow: none;
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle {
+        background-color: $btn-secondary-bg-color-hover;
+        border: $btn-secondary-bg-color-hover 2px solid;
+        color: $primary-white;
+        box-shadow: none;
+    }
+}
+.btn-light, .btn-light:focus, a.btn-light:not([href]) {
+    background-color: $primary-white;
+    color: $btn-secondary-txt-color;
+    border: $primary-white 2px solid;
+    box-shadow: none;
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle, &:focus {
+        background-color: lighten($primary-white, 25%);
+        border: lighten($primary-white, 25%) 2px solid;
+        box-shadow: none;
+    }
+}
+.btn-outline-light, .btn-outline-light:focus, a.btn-outline-light:not([href]) {
+    color: $primary-white;
+    border: $primary-white 2px solid;
+    box-shadow: none;
+    &:hover, &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active, &.show > .btn-primary.dropdown-toggle, &:focus {
+        border: lighten($primary-white, 25%) 2px solid;
+        box-shadow: none;
+    }
+}
+.video-btn {
+    position: relative;
+    cursor: pointer;
+    .video-btn__image {
+        &:hover {
+            ~ .video-btn__icon {
+                background-color: $main-hover-color;
+            }
+        }
+    }
+    .video-btn__icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: $brand-primary-color;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        text-align: center;
+        transition: 0.3s ease;
+        &:hover {
+            background-color: $main-hover-color;
+        }
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            color: $primary-white;
+        }
+    }
+}

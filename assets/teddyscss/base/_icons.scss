@@ -1,0 +1,15 @@
+/* CSS icons */
+
+.checkmark{
+    display:inline-block;
+    width: 16px;
+    &:after{
+        content: '';
+        display: block;
+        width: 6px;
+        height: 13px;
+        border: solid $brand-primary-color;
+        border-width: 0 2px 2px 0;
+        transform: rotate(45deg);
+    }
+}

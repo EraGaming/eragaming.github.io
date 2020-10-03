@@ -1,0 +1,25 @@
+.team {
+    .team-member {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        @include media-breakpoint-down(md) {
+            margin-bottom: 30px;
+        }
+        .team-member__image {
+            width: 100%;
+            padding: 10px;
+        }
+        .team-member__name {
+            padding: 15px 15px 0 15px;
+            h5 {
+                margin-bottom: 0;
+                text-align: center;
+            }
+        }
+        .team-member__org {
+            padding-bottom: 25px;
+        }
+    }
+}

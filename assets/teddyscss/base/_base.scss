@@ -1,0 +1,155 @@
+/* Basic style */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+body {
+    background-color: $background-primary-color;
+}
+section {
+    position: relative;
+}
+a {
+  color: $brand-primary-color;
+  text-decoration: none;
+    @include on-event {
+        color: $text-color;
+        text-decoration: underline;
+        transition: all .2s;
+    }
+}
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    border-style: none;
+    width: 100%;
+    &.polaroid {
+        background-color: $white;
+        padding: 13px;
+    }
+}
+.img-collage {
+    position: relative;
+    margin-bottom: 100px;
+    margin-left: 150px;
+    margin-right: -50px;
+    img {
+        &.img-bottom {
+            z-index: 0;
+        }
+        &.img-top {
+            z-index: 1;
+            position: absolute;
+            right: 100px;
+            top: 100px;
+        }
+    }
+    @include media-breakpoint-down(lg) {
+    margin-right: 0;
+    }
+    @include media-breakpoint-down(md) {
+        margin: 0;
+        img {
+            &.img-bottom {
+                display: none;
+            }
+            &.img-top {
+                position: relative;
+                right: 0;
+                top: 0;
+            }
+        }
+    }
+}
+.bg-f {
+    position: relative;
+    &.bg-f--skewbottom {
+        &:after {
+            content: '';
+            padding: 40px 0;
+            transform: skew(0deg, -2deg);
+            bottom: -31px;
+            width: 100%;
+            position: absolute;
+            z-index: 1;
+        }
+    }
+}
+.bg-f--primary {
+    background-color: $background-primary-color;
+}
+.bg-f--secondary {
+    background-color: $background-secondary-color;
+    &.bg-f--skewbottom {
+        &:after {
+            background-color: $background-secondary-color;
+        }
+    }
+}
+.bg-shape-1 {
+    &:before {
+        position: absolute;
+        content: '';
+        background: url('../img/bg/bg-01-l.svg') repeat 0 0;
+        height: 100%;
+        width: 196px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        background: url('../img/bg/bg-01-r.svg') repeat 0 0;
+        height: 100%;
+        width: 166px;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    @include media-breakpoint-down(lg) {
+        &:before, &:after { 
+            content: none;
+        }
+    }
+}
+.bg-shape-2 {
+    &:before {
+        position: absolute;
+        content: '';
+        background: url('../img/bg/bg-02-l.svg') repeat 0 0;
+        height: 100%;
+        width: 601px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    &:after {
+        position: absolute;
+        content: '';
+        background: url('../img/bg/bg-02-r.svg') repeat 0 0;
+        height: 100%;
+        width: 759px;
+        top: 100px;
+        right: 0;
+        z-index: -1;
+    }
+    @include media-breakpoint-down(lg) {
+        &:before, &:after { 
+            content: none;
+        }
+    }
+}
+.box-shadow {
+    box-shadow: 0 25px 45px rgba(210, 226, 237, 0.62);
+}
+@include media-breakpoint-down(md) {
+    .no-box-shadow-sm {
+        box-shadow: none;
+    }
+}
