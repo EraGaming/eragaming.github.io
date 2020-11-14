@@ -21,18 +21,12 @@ function tickermarquee(){
             };
 
             if (total > 0){
-                console.log(response[i].answers);
                 $("#donors").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(response[i].answers["5"].answer.first).replace(/(\r\n|\n|\r)/gm,"")+": $"+total);
                 j++
             };
             
         }
-
-        console.log(j)
-
         duration = j * 1000;
-
-        console.log(duration)
         
         $('.marquee').marquee({
             //speed in milliseconds of the marquee
