@@ -12,21 +12,32 @@ function tickermarquee(){
         */
         var j = 0
         for(var i=0; i<response.length; i++){
-
-            myObj = JSON.parse(response[i].answers["10"].answer.paymentArray);
-            total = myObj.total;
+            console.log(response[i].answers);
+            try {
+                myObj = JSON.parse(response[i].answers["10"].answer.paymentArray);
+                total = myObj.total;
+              }
+              catch(err) {
+                total = 0
+              }
 
             if (i == 0){
                 $("#donors").html("");
             };
 
             if (total > 0){
+                
                 $("#donors").append("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+(response[i].answers["5"].answer.first).replace(/(\r\n|\n|\r)/gm,"")+": $"+total);
                 j++
             };
             
         }
+
+        console.log(j)
+
         duration = j * 1000;
+
+        console.log(duration)
         
         $('.marquee').marquee({
             //speed in milliseconds of the marquee
