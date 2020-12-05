@@ -1,0 +1,596 @@
+@charset "utf-8";
+
+/* ---------------------------
+   Set Variables
+--------------------------- */
+
+:root {
+ 	--main-container-fade: 2s; 
+  	--zoom-in: 3s;
+	--breathe-speed: 7s;
+	--breathe-growth: 110%;
+	--window-fade: 1s;
+	--content-mask: calc(var(--zoom-in) + var(--window-fade));
+
+	/* Valorant specific timings */
+	--valorant-slider-wait: 1s;
+	--valorant-slider: 2s;
+
+	--sponsorzindex: 80;
+
+	--scrollbar-speed: 60s; /* How many seconds it takes to loop */
+	--status-bar-height: 70px;
+}
+
+/* ---------------------------
+   Main Elements
+--------------------------- */
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#container-main {
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	opacity: 0;
+	animation: mainfade var(--main-container-fade) linear 0s forwards;
+}
+
+.mainfade {
+	opacity: 0;
+	animation: mainfade var(--window-fade) linear var(--zoom-in) forwards;
+}
+
+@keyframes mainfade {
+  	from { opacity: 0; }
+  	to { opacity: 1; }
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+iframe {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+.OpacityFull {
+	opacity: 1 !important;
+}
+
+.onTop {
+	z-index: 99 !important;
+}
+
+#scenetitle {
+	position: absolute;
+	display: inline-block;
+	top: 400px;
+	width: 100%;
+	text-align: center;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 6em;
+	font-weight: 800;
+	color: white;
+	text-shadow: black 20px 20px 20px;
+	z-index: 60;
+	opacity: 0;
+	animation: mainfade var(--window-fade) linear var(--zoom-in) forwards;
+}
+
+#countdowntimer {
+	font-size: 0.75em;
+}
+
+.memex-green-bg {
+	background-color: #50B948 !important;
+}
+
+.memex-green-text {
+	color: #50B948 !important;
+}
+
+/* ---------------------------
+   Alerts
+--------------------------- */
+
+#alerts-large {
+	position: fixed;
+	display: inline-block;
+	z-index: 91;
+	width: 100%;
+	height: 100%;
+}
+
+#alerts-small {
+	position: fixed;
+	display: inline-block;
+	z-index: 90;
+	width: 430px;
+	height: 250px;
+}
+
+.alerts-near-top {
+	top: 75px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.alerts-centerscreen {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.alerts-valorant-game {
+	left: 15px;
+	top: 500px;
+}
+
+
+/* ---------------------------
+   Background Image 
+--------------------------- */
+
+#container-background {
+	position: fixed;
+	display: inline-block;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: zoombg var(--zoom-in) ease-out;
+}
+
+#container-breathe {
+	position: fixed;
+	display: inline-block;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: breathebg var(--breathe-speed) ease-in-out var(--zoom-in) infinite alternate;
+}
+
+@keyframes zoombg {
+  	from { width: 120%; }
+  	to { width: 100%; }
+}
+
+@keyframes breathebg {
+  	from { width: 100%; }
+  	to { width: var(--breathe-growth); }
+}
+
+/* ---------------------------
+   Main Screen Object
+--------------------------- */
+
+#container-character {
+	position: fixed;
+	display: inline-block;
+	z-index: 3;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: zoomch var(--zoom-in) ease-out;
+}
+
+@keyframes zoomch {
+ 	from { width: 160%; }
+  	to { width: 100%; }
+}
+
+/* ---------------------------
+   Status Bar 
+--------------------------- */
+
+#container-status-bar {
+	position: fixed;
+	display: inline-block;
+	background-color: #1E1E1E;
+	box-shadow: 0px -5px 50px 0 #000000;
+	z-index: 4;
+	width: 100%;
+	height: var(--status-bar-height);
+	bottom: 0px;
+	animation: zoomsb var(--zoom-in) ease-out;
+	padding-top: 10px;
+	vertical-align: middle;
+}
+
+@keyframes zoomsb {
+  	from { bottom: -450px; }
+  	to { bottom: 0px; }
+}
+
+.marquee {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+	transform: translateX(100%);
+	animation: scroll-left var(--scrollbar-speed) linear infinite;
+}
+
+.marquee2 {
+	animation-delay: calc(var(--scrollbar-speed) / 2);
+}
+
+@keyframes scroll-left {
+	from { transform: translateX(100%); }
+    to { transform: translateX(-100%); }
+}
+
+/* ---------------------------
+   Front Triangles 
+--------------------------- */
+
+#container-front-triangle {
+	position: fixed;
+	display: inline-block;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: zoomft var(--zoom-in) ease-out;
+}
+
+@keyframes zoomft {
+  	from { width: 160%; }
+  	to { width: 100%; }
+}
+
+/* ---------------------------
+   Rear Triangles 
+--------------------------- */
+
+#container-rear-triangle {
+	position: fixed;
+	display: inline-block;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	animation: zoomrt var(--zoom-in) ease-out;
+}
+
+@keyframes zoomrt {
+  	from { width: 140%; }
+  	to { width: 100%; }
+}
+
+/* ---------------------------
+   Window Boxes 
+--------------------------- */
+
+.container-windows {
+	position: fixed;
+	display: inline-block;
+	opacity: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.window-backpan {
+	z-index: 11;
+	animation: mainfade var(--window-fade) linear var(--zoom-in) forwards;
+}
+
+.window-hide {
+	z-index: 12;
+	animation: fadewh calc(var(--window-fade) * 2) linear var(--zoom-in) forwards;
+}
+
+.window-frame {
+	z-index: 13;
+	animation: mainfade var(--window-fade) linear var(--zoom-in) forwards;
+}
+
+@keyframes fadewh {
+  	0%,100% { opacity: 0 }
+  	50% { opacity: 1 }
+}
+
+/* ---------------------------
+   Caster Names
+--------------------------- */
+
+.caster {
+	position: fixed;
+	display: inline-block;
+	z-index: 20;
+	top: 68%;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 2em;
+	font-weight: 800;
+	width: 500px;
+	height: 50px;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+#caster-left {
+	left: 17.25%;
+	transform: translate(-50%, -50%) rotate(-3.2deg);
+}
+
+#caster-right {
+	left: 82.75%;
+	transform: translate(-50%, -50%) rotate(3.2deg);
+}
+
+/* ---------------------------
+   Content Mask
+--------------------------- */
+
+#content-mask {
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+	background-color: magenta;
+	animation: fademask 0s linear var(--content-mask) forwards;
+}
+
+@keyframes fademask {
+  	from { opacity: 1; }
+  	to { opacity: 0; }
+}
+
+#window-mask {
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	opacity: 1;
+}
+
+/* ---------------------------
+   Valorant Scene
+--------------------------- */
+
+.valorant-top-bar-mask {
+	width: auto !important;
+	position: fixed;
+	display: inline-block;
+	z-index: 99;
+}
+
+.valorant-top-bar-mask-left-show {
+	left: 0px;
+	animation: valtopbarls var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valtopbarls {
+  	from { left: 0px; }
+  	to { left: -420px; }
+}
+
+.valorant-top-bar-mask-left-hide {
+	left: -420px;
+	animation: valtopbarlh var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valtopbarlh {
+  	from { left: -420px; }
+  	to { left: 0px; }
+}
+
+.valorant-top-bar-mask-right-show {
+	right: 0px;
+	animation: valtopbarrs var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valtopbarrs {
+  	from { right: 0px; }
+  	to { right: -420px; }
+}
+
+.valorant-top-bar-mask-right-hide {
+	right: -420px;
+	animation: valtopbarrh var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valtopbarrh {
+  	from { right: -420px; }
+  	to { right: 0px; }
+}
+
+#valorant-top-bar {
+	z-index: 10;
+}
+
+.valorant-team {
+	position: fixed;
+	display: inline-block;
+	z-index: 11;
+	top: 35px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.5em;
+	font-weight: 600;
+	width: 345px;
+	height: 32px;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+}
+
+.valorant-team-left-show {
+	left: -49px;
+	animation: valteamls var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valteamls {
+  	from { left: -49px; }
+  	to { left: 49px; }
+}
+
+.valorant-team-left-hide {
+	left: 49px;
+	animation: valteamlh var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valteamlh {
+  	from { left: 49px; }
+  	to { left: -49px; }
+}
+
+.valorant-team-right-show {
+	right: -49px;
+	animation: valteamrs var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valteamrs {
+  	from { right: -49px; }
+  	to { right: 49px; }
+}
+
+.valorant-team-right-hide {
+	right: 49px;
+	animation: valteamrh var(--valorant-slider) linear var(--valorant-slider-wait) forwards;
+}
+
+@keyframes valteamrh {
+  	from { right: 49px; }
+  	to { right: -49px; }
+}
+
+/* ---------------------------
+   Game Scene Sponsor Banners
+--------------------------- */
+
+.valorant-sponsor-side-banner-container {
+	position: fixed;
+	display: inline-block;
+	left: 15px;
+	bottom: 15px;
+	background-color: rgba(255,255,255,0.25);
+	border: 1px #FFFFFF solid;
+	padding: 0px;
+	width: 430px;
+	height: 180px;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.5em;
+	font-weight: bold;
+	overflow: hidden;
+	z-index: var(--sponsorzindex);
+}
+
+.valorant-sponsor-banner-img-container {
+	background-color: rgba(255,255,255,0.25);
+	border: 1px #FFFFFF solid;
+}
+
+.valorant-sponsor-main-banner-container {
+	position: fixed;
+	display: inline-block;
+	left: 50%;
+	bottom: 130px;
+	padding: 0px;
+	width: 728px;
+	height: 210px;
+	transform: translate(-50%, 0%);
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.5em;
+	font-weight: bold;
+	overflow: hidden;
+	z-index: var(--sponsorzindex);
+}
+
+.valorant-sponsor-banner {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 1s linear;
+}
+
+/* ---------------------------
+   Non-Game Scene Sponsor Banners
+--------------------------- */
+
+#banner-overlay {
+	position: fixed;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	z-index: var(--sponsorzindex);
+	animation: mainfade var(--window-fade) linear var(--zoom-in) forwards;
+	opacity: 0;
+}
+
+/* ---------------------------
+   Tournament Tree
+--------------------------- */
+
+#tree-container {
+	display: inline-flex;
+	flex-flow: row nowrap;
+	justify-content: space-evenly;
+	position: fixed;
+	width: 1410px;
+	height: 950px;
+	top: 30px;
+	left: 20px;
+	z-index: 20;
+}
+
+#tree-container .tree-column {
+	display: inline-flex;
+	flex-flow: column nowrap;
+	justify-content: space-evenly;
+	width: 20%;
+	height: 100%;
+}
+
+#tree-container span {
+	display: inline-block;
+	color: white;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 1.75em;
+	font-weight: 600;
+	background-color: rgba(0,0,0,0.90);
+	text-align: center;
+	width: 100%;
+  	vertical-align: middle;
+  	line-height: 50px;
+	border: 1px #50B948 solid;
+	box-shadow: 15px 15px 20px #060606;
+}
+
+#tournament-tree-backdrop {
+	position: absolute;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	z-index: 19;
+}
