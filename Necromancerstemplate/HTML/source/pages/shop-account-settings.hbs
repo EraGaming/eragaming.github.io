@@ -1,0 +1,81 @@
+<!-- Content
+================================================== -->
+<main class="site-content account-page" id="wrapper">
+	<div class="account-navigation">
+		<div class="account-navigation__header">
+			<a class="account-navigation__logout" href="./">
+				<svg role="img" class="df-icon df-icon--logout-circle">
+					<use xlink:href="assets/img/necromancers.svg#logout-circle"/>
+				</svg>
+				<svg role="img" class="df-icon df-icon--logout-arrow">
+					<use xlink:href="assets/img/necromancers.svg#logout-arrow"/>
+				</svg>
+			</a>
+			<a class="account-navigation__avatar" href="#">
+				<img src="assets/img/samples/account-user-avatar-lg.jpg" alt="">
+				<span class="account-navigation__browse-icon">&nbsp;</span>
+			</a>
+			<div class="account-navigation__subtitle">Welcome back!</div>
+			<div class="account-navigation__name h5">James Spiegel</div>
+			<ul class="account-navigation__meta">
+				<li>27<span>comments</span></li>
+				<li>4<span>reviews</span></li>
+				<li>1<span>orders</span></li>
+			</ul>
+		</div>
+		<ul class="account-navigation__menu">
+			<li><a class="active" href="shop-account-settings.html">Account settings</a></li>
+			<li><a href="shop-account-shipping.html">Shipping details</a></li>
+			<li><a href="shop-account-billing.html">Billing details</a></li>
+			<li><a href="shop-account-orders.html">Orders history</a></li>
+		</ul>
+	</div>
+	<div class="account-content">
+		<h2 class="h4">01. Account settings</h2>
+		<form action="" class="form">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="text" class="form-control" id="input-name" placeholder="Your Name*">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="email" class="form-control" id="input-email" placeholder="Email*">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="text" class="form-control" id="input-username" placeholder="Username">
+						<span class="form-notice">People will see this username when you comment</span>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="email" class="form-control" id="input-website" placeholder="Website">
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="password" class="form-control" id="input-password" placeholder="Change Password">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="form-group">
+						<input type="password" class="form-control" id="input-password-2" placeholder="Repeat Password">
+					</div>
+				</div>
+			</div>
+			<div class="form-group d-sm-flex justify-content-sm-between align-items-sm-center">
+				<label class="checkbox checkbox-inline">
+					<input class="checkbox-input" type="checkbox" name="subscribe" id="subscribe" checked> Send me news and discounts to my email<span class="checkbox-label">&nbsp;</span>
+				</label>
+				<button class="btn btn-secondary">Save Changes</button>
+			</div>
+		</form>
+	</div>
+</main>

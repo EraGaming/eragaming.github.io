@@ -1,0 +1,35 @@
+{{> _head }}
+
+<body class="site-layout--horizontal preloader-is--active">
+
+	<div class="site-wrapper">
+
+		{{> _header }}
+
+		<!-- Content
+		================================================== -->
+		<main class="site-content" id="wrapper">
+			{{> body }}
+		</main>
+
+		<!-- Overlay -->
+		<div class="site-overlay"></div>
+		<!-- Overlay / End -->
+
+		{{> _cart-panel }}
+
+		{{> _search-panel }}
+
+		{{> _menu-panel }}
+
+	</div>
+
+	{{> _preloader }}
+
+	{{> _cursor }}
+
+	{{> _footer-scripts }}
+
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+<!-- Main Navigation -->
+<nav class="main-nav">
+	<ul class="main-nav__list">
+		<li class="{{#ifpage 'home'}}active{{/ifpage}}"><a href="home.html">Home</a></li>
+		<li class="{{#ifpage 'team-selection-1' 'team-selection-2' 'team-overview' 'team-player-1'}}active{{/ifpage}}">
+			<a href="#">Teams</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'team-selection-1' 'team-selection-2' 'team-selection-3' 'team-selection-4'}}active{{/ifpage}}">
+					<a href="#">Team Selections</a>
+					<ul class="main-nav__sub main-nav__sub--dropup">
+						<li class="{{#ifpage 'team-selection-1'}}active{{/ifpage}}"><a href="team-selection-1.html">Team Selection v1</a></li>
+						<li class="{{#ifpage 'team-selection-2'}}active{{/ifpage}}"><a href="team-selection-2.html">Team Selection v2</a></li>
+						<li class="{{#ifpage 'team-selection-3'}}active{{/ifpage}}"><a href="team-selection-3.html">Team Selection v3</a></li>
+						<li class="{{#ifpage 'team-selection-4'}}active{{/ifpage}}"><a href="team-selection-4.html">Team Selection v4</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'team-overview' 'team-overview-2'}}active{{/ifpage}}">
+					<a href="team-overview.html">Team Overview</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'team-overview'}}active{{/ifpage}}"><a href="team-overview.html">Team Overview v1</a></li>
+						<li class="{{#ifpage 'team-overview-2'}}active{{/ifpage}}"><a href="team-overview-2.html">Team Overview v2</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'team-player-1'}}active{{/ifpage}}"><a href="team-player-1.html">Player Page</a></li>
+			</ul>
+		</li>
+		<li class="{{#ifpage 'matches-scores' 'matches-upcoming' 'matches-standings' 'matches-stats-1' 'matches-stats-2' 'matches-stats-3' 'matches-lineups-1' 'matches-lineups-2' 'matches-lineups-3' 'matches-overview-1' 'matches-overview-2' 'matches-replay'}}active{{/ifpage}}"><a href="#">Matches</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'matches-scores'}}active{{/ifpage}}"><a href="matches-scores.html">Match Scores</a></li>
+				<li class="{{#ifpage 'matches-upcoming'}}active{{/ifpage}}"><a href="matches-upcoming.html">Upcoming Matches</a></li>
+				<li class="{{#ifpage 'matches-standings'}}active{{/ifpage}}"><a href="matches-standings.html">Standings</a></li>
+				<li class="{{#ifpage 'matches-stats-1' 'matches-stats-2' 'matches-stats-3'}}active{{/ifpage}}"><a href="#">Match Stats</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-stats-1'}}active{{/ifpage}}"><a href="matches-stats-1.html">Match Stats v1</a></li>
+						<li class="{{#ifpage 'matches-stats-2'}}active{{/ifpage}}"><a href="matches-stats-2.html">Match Stats v2</a></li>
+						<li class="{{#ifpage 'matches-stats-3'}}active{{/ifpage}}"><a href="matches-stats-3.html">Match Stats v3</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-lineups-1' 'matches-lineups-2' 'matches-lineups-3'}}active{{/ifpage}}">
+					<a href="#">Match Lineups</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-lineups-1'}}active{{/ifpage}}"><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+						<li class="{{#ifpage 'matches-lineups-2'}}active{{/ifpage}}"><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+						<li class="{{#ifpage 'matches-lineups-3'}}active{{/ifpage}}"><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-overview-1' 'matches-overview-2' }}active{{/ifpage}}"><a href="#">Match Overviews</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-overview-1'}}active{{/ifpage}}"><a href="matches-overview-1.html">Match Overview v1</a></li>
+						<li class="{{#ifpage 'matches-overview-2'}}active{{/ifpage}}"><a href="matches-overview-2.html">Match Overview v2</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-replay'}}active{{/ifpage}}"><a href="matches-replay.html">Match Replay</a></li>
+			</ul>
+		</li>
+		<li class="{{#ifpage 'blog-1' 'blog-2' 'blog-3' 'blog-4' 'blog-classic' 'blog-post'}}active{{/ifpage}}"><a href="#">News</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'blog-1'}}active{{/ifpage}}"><a href="blog-1.html">News v1</a></li>
+				<li class="{{#ifpage 'blog-2'}}active{{/ifpage}}"><a href="blog-2.html">News v2</a></li>
+				<li class="{{#ifpage 'blog-3'}}active{{/ifpage}}"><a href="blog-3.html">News v3</a></li>
+				<li class="{{#ifpage 'blog-4'}}active{{/ifpage}}"><a href="blog-4.html">News v4</a></li>
+				<li class="{{#ifpage 'blog-classic'}}active{{/ifpage}}"><a href="blog-classic.html">News Classic <span class="badge badge-danger">New</span></a></li>
+				<li class="{{#ifpage 'blog-post'}}active{{/ifpage}}"><a href="blog-post.html">Post Page</a></li>
+			</ul>
+		</li>
+		<li><a href="#">Features</a>
+			<div class="main-nav__megamenu">
+				<div class="row">
+					<div class="col-md-4">
+						<h6 class="main-nav__title">Main Pages</h6>
+						<div class="row">
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'index'}}active{{/ifpage}}"><a href="index.html">Landing Image</a></li>
+								<li class="{{#ifpage 'index-2'}}active{{/ifpage}}"><a href="index-2.html">Landing Video</a></li>
+								<li class="{{#ifpage 'blog-1'}}active{{/ifpage}}"><a href="blog-1.html">News v1</a></li>
+								<li class="{{#ifpage 'blog-2'}}active{{/ifpage}}"><a href="blog-2.html">News v2</a></li>
+								<li class="{{#ifpage 'blog-3'}}active{{/ifpage}}"><a href="blog-3.html">News v3</a></li>
+								<li class="{{#ifpage 'blog-4'}}active{{/ifpage}}"><a href="blog-4.html">News v4</a></li>
+								<li class="{{#ifpage 'blog-classic'}}active{{/ifpage}}"><a href="blog-classic.html">News Classic <span class="badge badge-danger">New</span></a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'shop-account-settings'}}active{{/ifpage}}"><a href="shop-account-settings.html">Account Settings</a></li>
+								<li class="{{#ifpage 'shop-account-orders'}}active{{/ifpage}}"><a href="shop-account-orders.html">Account Orders</a></li>
+								<li class="{{#ifpage 'login-register'}}active{{/ifpage}}"><a href="login-register.html">Login & Register</a></li>
+								<li class="{{#ifpage 'features-about-us'}}active{{/ifpage}}"><a href="features-about-us.html">About Us</a></li>
+								<li class="{{#ifpage 'features-contact-us'}}active{{/ifpage}}"><a href="features-contact-us.html">Contact Us</a></li>
+								<li class="{{#ifpage 'features-faqs'}}active{{/ifpage}}"><a href="features-faqs.html">FAQs</a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'management-and-staff'}}active{{/ifpage}}"><a href="management-and-staff.html">MGMT & Staff</a></li>
+								<li class="{{#ifpage 'streams-archive'}}active{{/ifpage}}"><a href="streams-archive.html">Streams Page</a></li>
+								<li class="{{#ifpage 'partners'}}active{{/ifpage}}"><a href="partners.html">Our Partners</a></li>
+								<li class="{{#ifpage 'features-shortcodes'}}active{{/ifpage}}"><a href="features-shortcodes.html">Shortcodes</a></li>
+								<li class="{{#ifpage 'features-typography'}}active{{/ifpage}}"><a href="features-typography.html">Typography</a></li>
+								<li class="{{#ifpage 'features-icons'}}active{{/ifpage}}"><a href="features-icons.html">Icons <span class="badge badge-danger">New</span></a></li>
+								<li class="{{#ifpage 'features-bg-1' 'features-bg-1' 'features-bg-2' 'features-bg-3' 'features-bg-5' 'features-bg-6' 'features-bg-7'}}active{{/ifpage}}"><a href="features-bg-1.html">Backgrounds</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<h6 class="col-md-8 main-nav__title">Team Pages</h6>
+							<h6 class="col-md-4 main-nav__title">Player Pages</h6>
+						</div>
+						<div class="row">
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'team-selection-1'}}active{{/ifpage}}"><a href="team-selection-1.html">Team Selection v1</a></li>
+								<li class="{{#ifpage 'team-selection-2'}}active{{/ifpage}}"><a href="team-selection-2.html">Team Selection v2</a></li>
+								<li class="{{#ifpage 'team-selection-3'}}active{{/ifpage}}"><a href="team-selection-3.html">Team Selection v3</a></li>
+								<li class="{{#ifpage 'team-selection-4'}}active{{/ifpage}}"><a href="team-selection-4.html">Team Selection v4</a></li>
+								<li class="{{#ifpage 'team-overview'}}active{{/ifpage}}"><a href="team-overview.html">Team Overview v1</a></li>
+								<li class="{{#ifpage 'team-overview-2'}}active{{/ifpage}}"><a href="team-overview-2.html">Team Overview v2</a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li><a href="team-overview.html?slide=1">Team Statistics</a></li>
+								<li><a href="team-overview.html?slide=2">Team Achv</a></li>
+								<li><a href="team-overview.html?slide=3">Team Matches</a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li><a href="team-player-1.html">Player Overview</a></li>
+								<li><a href="team-player-1.html?slide=1">Player Statistics</a></li>
+								<li><a href="team-player-1.html?slide=2">Player Achv</a></li>
+								<li><a href="team-player-1.html?slide=3">Player Hardware</a></li>
+								<li><a href="team-player-1.html?slide=4">Player Stream</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row">
+							<h6 class="col-md-8 main-nav__title">Match Pages</h6>
+							<h6 class="col-md-4 main-nav__title">Shop Pages</h6>
+						</div>
+						<div class="row">
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'matches-scores'}}active{{/ifpage}}"><a href="matches-scores.html">Match Scores</a></li>
+								<li class="{{#ifpage 'matches-upcoming'}}active{{/ifpage}}"><a href="matches-upcoming.html">Upcoming Matches</a></li>
+								<li class="{{#ifpage 'matches-standings'}}active{{/ifpage}}"><a href="matches-standings.html">Standings</a></li>
+								<li class="{{#ifpage 'matches-overview-1'}}active{{/ifpage}}"><a href="matches-overview-1.html">Overview v1</a></li>
+								<li class="{{#ifpage 'matches-overview-2'}}active{{/ifpage}}"><a href="matches-overview-2.html">Overview v2</a></li>
+								<li class="{{#ifpage 'matches-stats-1'}}active{{/ifpage}}"><a href="matches-stats-1.html">Match Stats v1</a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'matches-stats-2'}}active{{/ifpage}}"><a href="matches-stats-2.html">Match Stats v2</a></li>
+								<li class="{{#ifpage 'matches-stats-3'}}active{{/ifpage}}"><a href="matches-stats-3.html">Match Stats v3</a></li>
+								<li class="{{#ifpage 'matches-lineups-1'}}active{{/ifpage}}"><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+								<li class="{{#ifpage 'matches-lineups-2'}}active{{/ifpage}}"><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+								<li class="{{#ifpage 'matches-lineups-3'}}active{{/ifpage}}"><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+								<li class="{{#ifpage 'matches-replay'}}active{{/ifpage}}"><a href="matches-replay.html">Match Replay</a></li>
+							</ul>
+							<ul class="col-md-4">
+								<li class="{{#ifpage 'shop'}}active{{/ifpage}}"><a href="shop.html">Shop Page v1</a></li>
+								<li class="{{#ifpage 'shop-2'}}active{{/ifpage}}"><a href="shop-2.html">Shop Page v2</a></li>
+								<li class="{{#ifpage 'shop-product'}}active{{/ifpage}}"><a href="shop-product.html">Product Page</a></li>
+								<li class="{{#ifpage 'shop-checkout'}}active{{/ifpage}}"><a href="shop-checkout.html">Checkout Page</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+		<li class="{{#ifpage 'shop' 'shop-2' 'shop-product' 'shop-checkout'}}active{{/ifpage}}">
+			<a href="#">Shop</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'shop'}}active{{/ifpage}}"><a href="shop.html">Shop Page v1</a></li>
+				<li class="{{#ifpage 'shop-2'}}active{{/ifpage}}"><a href="shop-2.html">Shop Page v2</a></li>
+				<li class="{{#ifpage 'shop-product'}}active{{/ifpage}}"><a href="shop-product.html">Product Page</a></li>
+				<li class="{{#ifpage 'shop-checkout'}}active{{/ifpage}}"><a href="shop-checkout.html">Checkout Page</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- Main Navigation / End -->

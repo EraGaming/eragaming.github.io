@@ -1,0 +1,49 @@
+---
+layout: horizontal
+---
+
+<div class="widget-area widger-area--before-loop">
+	{{> _widget-posts-carousel }}
+</div>
+<div class="content blog-layout--style-1">
+
+	{{#each content.blog.blog-1}}
+	<article class="post has-post-thumbnail {{#ifequal format 'video'}} post--video{{/ifequal}}">
+		<div class="post__thumbnail">
+
+			{{#ifequal format 'default'}}
+			<a href="blog-post.html"><img src="{{img}}" alt=""></a>
+			{{/ifequal}}
+
+			{{#ifequal format 'video'}}
+			<a href="https://www.youtube.com/watch?v&#x3D;XE0fU9PCrWE" class="mp_iframe">
+				<img src="{{img}}" alt="">
+				<div class="post__thumbnail-icon">
+					<span class="lightbox__icon"><!----></span>
+				</div>
+			</a>
+			{{/ifequal}}
+
+		</div>
+		<div class="post__body">
+			<div class="post__header">
+				<ul class="post__cats list-unstyled">
+					<li class="post__cats-item {{category.class}}">
+						<a href="#">{{category.name}}</a>
+					</li>
+				</ul>
+				<h2 class="post__title h4"><a href="blog-post.html">{{title}}</a></h2>
+				<ul class="post__meta list-unstyled">
+					<li class="post__meta-item post__meta-item--date">
+						<a href="#">{{date}}</a>
+					</li>
+				</ul>
+			</div>
+			<div class="post__excerpt">
+				{{excerpt}}
+			</div>
+		</div>
+	</article>
+	{{/each}}
+
+</div>

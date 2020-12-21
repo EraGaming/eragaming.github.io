@@ -1,0 +1,2594 @@
+{
+	"blog": {
+		"home": [
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-02.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Magimons will have a new class: Pyromancer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-04.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 8th, 2018"
+			},
+			{
+				"format": "video",
+				"title": "Jack shows a sneak peak of the new loh expansion",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-04.jpg",
+				"category": {
+					"class": "color-danger",
+					"name": "Videos"
+				},
+				"date": "August 3rd, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The team tested the new vr pod at 2018 gamexcon",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-06.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 24th, 2018"
+			}
+		],
+		"blog-1": [
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-02.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Magimons will have a new class: Pyromancer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v1-post-img-04.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 8th, 2018"
+			},
+			{
+				"format": "video",
+				"title": "Jack shows a sneak peak of the new loh expansion",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-04.jpg",
+				"category": {
+					"class": "color-danger",
+					"name": "Videos"
+				},
+				"date": "August 3rd, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The team tested the new vr pod at 2018 gamexcon",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-06.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 24th, 2018"
+			}
+		],
+		"blog-2": [
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"img": "assets/img/samples/news-v2-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"img": "assets/img/samples/news-v2-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Xenowatch's new patch fixes all the faces bugs",
+				"img": "assets/img/samples/news-v2-post-img-02.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 12th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"img": "assets/img/samples/news-v2-post-img-04.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Take a look at the Necromancers new headquarters!",
+				"img": "assets/img/samples/news-v2-post-img-05.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 9th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Magimons will have a new class: Pyromancer",
+				"img": "assets/img/samples/news-v2-post-img-06.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 8th, 2018"
+			},
+			{
+				"format": "video",
+				"title": "Jack shows a sneak peak of the new loh expansion",
+				"img": "assets/img/samples/news-v2-post-img-07.jpg",
+				"category": {
+					"class": "color-danger",
+					"name": "Videos"
+				},
+				"date": "August 3rd, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Fuzzydeath broke a new kills per minute record",
+				"img": "assets/img/samples/news-v2-post-img-08.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 29th, 2018"
+			}
+		],
+		"blog-3": [
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"img": "assets/img/samples/news-v3-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"img": "assets/img/samples/news-v3-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Xenowatch's new patch fixes all the faces bugs",
+				"img": "assets/img/samples/news-v3-post-img-02.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 12th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"img": "assets/img/samples/news-v3-post-img-04.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Take a look at the Necromancers new headquarters!",
+				"img": "assets/img/samples/news-v3-post-img-05.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 9th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Magimons will have a new class: Pyromancer",
+				"img": "assets/img/samples/news-v3-post-img-06.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 8th, 2018",
+				"after": "facebook"
+			},
+			{
+				"format": "video",
+				"title": "Jack shows a sneak peak of the new loh expansion",
+				"img": "assets/img/samples/news-v3-post-img-07.jpg",
+				"category": {
+					"class": "color-danger",
+					"name": "Videos"
+				},
+				"date": "August 3rd, 2018",
+				"after": "twitter"
+			},
+			{
+				"format": "default",
+				"title": "Fuzzydeath broke a new kills per minute record",
+				"img": "assets/img/samples/news-v3-post-img-08.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 29th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "New stealth missions were added to fortdaite",
+				"img": "assets/img/samples/news-v3-post-img-09.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "July 26th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The team tested the new vr pod at 2018 gamexcon",
+				"img": "assets/img/samples/news-v3-post-img-10.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 24th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"img": "assets/img/samples/news-v3-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"img": "assets/img/samples/news-v3-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Xenowatch's new patch fixes all the faces bugs",
+				"img": "assets/img/samples/news-v3-post-img-02.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 12th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"img": "assets/img/samples/news-v3-post-img-04.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018"
+			}
+		],
+		"blog-4": [
+			{
+				"format": "default",
+				"title": "League of heroes presented a new character",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-01.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 15th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "The Necromancers emerge victorious once more!",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-02.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 14th, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Matt Rodgers talks about becoming a pro gamer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-03.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "August 10th, 2018",
+				"after": "twitter"
+			},
+			{
+				"format": "video",
+				"title": "Jack shows a sneak peak of the new loh expansion",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-04.jpg",
+				"category": {
+					"class": "color-danger",
+					"name": "Videos"
+				},
+				"date": "August 3rd, 2018"
+			},
+			{
+				"format": "default",
+				"title": "Magimons will have a new class: Pyromancer",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-05.jpg",
+				"category": {
+					"class": "color-warning",
+					"name": "Gaming"
+				},
+				"date": "August 8th, 2018",
+				"after": "twitch"
+			},
+			{
+				"format": "default",
+				"title": "The team tested the new vr pod at 2018 gamexcon",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium dolore cumque ab.",
+				"img": "assets/img/samples/news-v4-post-img-06.jpg",
+				"category": {
+					"class": "color-success",
+					"name": "eSports"
+				},
+				"date": "July 24th, 2018"
+			}
+		],
+		"blog-classic": {
+			"posts": [
+				{
+					"title": "League of heroes presented a new character",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+					"img": "assets/img/samples/news-v1-post-img-01.jpg",
+					"category": [
+						{
+							"class": "color-warning",
+							"name": "Gaming"
+						}
+					],
+					"date": "December 31st, 2020",
+					"format": "default"
+				},
+				{
+					"title": "The Necromancers emerge victorious once more!",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+					"img": "assets/img/samples/news-v1-post-img-02.jpg",
+					"category": [
+						{
+							"class": "color-success",
+							"name": "eSports"
+						}
+					],
+					"date": "December 31st, 2020",
+					"format": "default"
+				},
+				{
+					"title": "Matt Rodgers talks about becoming a pro gamer",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+					"img": "assets/img/samples/news-v1-post-img-03.jpg",
+					"category": [
+						{
+							"class": "color-success",
+							"name": "eSports"
+						}
+					],
+					"date": "December 31st, 2020",
+					"format": "default"
+				},
+				{
+					"title": "Magimons will have a new class: Pyromancer",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+					"img": "assets/img/samples/news-v1-post-img-04.jpg",
+					"category": [
+						{
+							"class": "color-warning",
+							"name": "Gaming"
+						}
+					],
+					"date": "December 31st, 2020",
+					"format": "default"
+				},
+				{
+					"title": "Jack shows a sneak peak of the new loh expansion",
+					"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+					"img": "assets/img/samples/news-v4-post-img-04.jpg",
+					"category": [
+						{
+							"class": "color-danger",
+							"name": "Videos"
+						}
+					],
+					"date": "December 31st, 2020",
+					"format": "default"
+				}
+			],
+			"widgets": {
+				"popular-posts": [
+					{
+						"title": "Matt Rodgers talks about becoming a pro gamer",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v1-post-img-03.jpg",
+						"category": [
+							{
+								"class": "color-success",
+								"name": "eSports"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					},
+					{
+						"title": "Magimons will have a new class: Pyromancer",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v1-post-img-04.jpg",
+						"category": [
+							{
+								"class": "color-warning",
+								"name": "Gaming"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					},
+					{
+						"title": "Jack shows a sneak peak of the new loh expansion",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v4-post-img-04.jpg",
+						"category": [
+							{
+								"class": "color-danger",
+								"name": "Videos"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					}
+				],
+				"latest-posts": [
+					{
+						"title": "League of heroes presented a new character",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v1-post-img-01.jpg",
+						"category": [
+							{
+								"class": "color-warning",
+								"name": "Gaming"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					},
+					{
+						"title": "The Necromancers emerge victorious once more!",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v1-post-img-02.jpg",
+						"category": [
+							{
+								"class": "color-success",
+								"name": "eSports"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					},
+					{
+						"title": "Jack shows a sneak peak of the new loh expansion",
+						"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum, commodi laudantium soluta sit reiciendis praesentium...",
+						"img": "assets/img/samples/news-v4-post-img-04.jpg",
+						"category": [
+							{
+								"class": "color-danger",
+								"name": "Videos"
+							}
+						],
+						"date": "December 31st, 2020",
+						"format": "default"
+					}
+				],
+				"comments": [
+					{
+						"author": {
+							"name": "Mark Stark",
+							"avatar": "assets/img/samples/account-user-avatar-lg.jpg"
+						},
+						"post": "League of heroes presented a new character",
+						"content": "Magni dolores eos qui ratione voluptatem sequi nesciunt der voluptate velit esse cillum dolore eu pariatur. Excepteur sint..."
+					},
+					{
+						"author": {
+							"name": "Jesse Stevens",
+							"avatar": "assets/img/samples/account-user-avatar-lg-3.jpg"
+						},
+						"post": "Jack shows a sneak peak of the new loh expansion",
+						"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit mollitia modi, tempore, pariatur, error quaerat dolorum laborum..."
+					},
+					{
+						"author": {
+							"name": "Jessica Hoops",
+							"avatar": "assets/img/samples/account-user-avatar-lg-2.jpg"
+						},
+						"post": "Magimons will have a new class: Pyromancer",
+						"content": "Magni dolores eos qui ratione voluptatem sequi nesciunt der voluptate velit esse cillum dolore eu pariatur. Excepteur sint..."
+					}
+				]
+			}
+		}
+	},
+	"team": {
+		"selection-1": [
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-01-xs.jpg",
+				"logo": "assets/img/team-selection-logo-01-100.png",
+				"logo2x": "assets/img/team-selection-logo-01-100@2x.png 2x",
+				"logo-sm": "assets/img/team-selection-logo-01-70.png",
+				"team": "Necromancers",
+				"game": "Xenowatch",
+				"category": "category-1",
+				"players": [
+					{
+						"img": "assets/img/samples/team-selection-player-01.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-04.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-02.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-03.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-05.png"
+					}
+				]
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-02-xs.jpg",
+				"logo": "assets/img/team-selection-logo-02-100.png",
+				"logo2x": "assets/img/team-selection-logo-02-100@2x.png 2x",
+				"logo-sm": "assets/img/team-selection-logo-02-70.png",
+				"team": "Necromancers",
+				"game": "League of <span class=\"highlight\">Heroes</span>",
+				"category": "category-2",
+				"players": [
+					{
+						"img": "assets/img/samples/team-selection-player-01.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-04.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-02.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-03.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-05.png"
+					}
+				]
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-03-xs.jpg",
+				"logo": "assets/img/team-selection-logo-03-100.png",
+				"logo2x": "assets/img/team-selection-logo-03-100@2x.png 2x",
+				"logo-sm": "assets/img/team-selection-logo-03-70.png",
+				"team": "Necromancers",
+				"game": "Striker GO",
+				"category": "category-3",
+				"players": [
+					{
+						"img": "assets/img/samples/team-selection-player-01.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-04.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-02.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-03.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-05.png"
+					}
+				]
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-04-xs.jpg",
+				"logo": "assets/img/team-selection-logo-04-100.png",
+				"logo2x": "assets/img/team-selection-logo-04-100@2x.png 2x",
+				"logo-sm": "assets/img/team-selection-logo-04-70.png",
+				"team": "Necromancers",
+				"game": "Fortdaite",
+				"category": "category-4",
+				"players": [
+					{
+						"img": "assets/img/samples/team-selection-player-01.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-04.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-02.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-03.png"
+					},
+					{
+						"img": "assets/img/samples/team-selection-player-05.png"
+					}
+				]
+			}
+		],
+		"selection-2": [
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-thumb-01.jpg",
+				"logo": "assets/img/team-selection-logo-01-70.png",
+				"logo2x": "assets/img/team-selection-logo-01-140.png",
+				"team": "Necromancers",
+				"game": "Xenowatch"
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-thumb-02.jpg",
+				"logo": "assets/img/team-selection-logo-02-70.png",
+				"logo2x": "assets/img/team-selection-logo-02-140.png",
+				"team": "Necromancers",
+				"game": "League of Heroes"
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-thumb-03.jpg",
+				"logo": "assets/img/team-selection-logo-03-70.png",
+				"logo2x": "assets/img/team-selection-logo-03-140.png",
+				"team": "Necromancers",
+				"game": "Striker Go"
+			},
+			{
+				"url": "team-overview.html",
+				"img": "assets/img/samples/team-selection-thumb-04.jpg",
+				"logo": "assets/img/team-selection-logo-04-70.png",
+				"logo2x": "assets/img/team-selection-logo-04-140.png",
+				"team": "Necromancers",
+				"game": "Fortdaite"
+			}
+		],
+		"selection-4": [
+			{
+				"url": "team-overview.html",
+				"bg": "assets/img/samples/team-selection-character-01-bg.jpg",
+				"character": "assets/img/samples/team-selection-character-01.png",
+				"team": "Necromancers",
+				"game": "Xenowatch",
+				"category": "team-3"
+			},
+			{
+				"url": "team-overview.html",
+				"bg": "assets/img/samples/team-selection-character-02-bg.jpg",
+				"character": "assets/img/samples/team-selection-character-02.png",
+				"team": "Necromancers",
+				"game": "League of Heroes",
+				"category": "team-1"
+			},
+			{
+				"url": "team-overview.html",
+				"bg": "assets/img/samples/team-selection-character-03-bg.jpg",
+				"character": "assets/img/samples/team-selection-character-03.png",
+				"team": "Necromancers",
+				"game": "Striker Go",
+				"category": "team-4"
+			},
+			{
+				"url": "team-overview.html",
+				"bg": "assets/img/samples/team-selection-character-04-bg.jpg",
+				"character": "assets/img/samples/team-selection-character-04.png",
+				"team": "Necromancers",
+				"game": "Fortdaite"
+			}
+		],
+		"list": [
+			{
+				"avatar": "assets/img/samples/streams-filter-avatar-02.png",
+				"name": "James Spiegel",
+				"nickname": "DaVikinger90",
+				"social": [
+					"https://www.facebook.com/danfisher.dev/",
+					"https://twitter.com/danfisher_dev",
+					"https://twitch.com",
+					"https://www.instagram.com/dan.fisher.dev/"
+				],
+				"photo": "assets/img/samples/team-info-page-player-photo-01.png",
+				"photo-lg": "assets/img/samples/player-info-page-player-photo-01.png",
+				"url": "team-player-1.html",
+				"category": "category-1"
+			},
+			{
+				"avatar": "assets/img/samples/streams-filter-avatar-03.png",
+				"name": "Julie Rodgers",
+				"nickname": "JULIE_NOIRE",
+				"social": [
+					"https://www.facebook.com/danfisher.dev/",
+					"https://twitter.com/danfisher_dev",
+					"https://www.instagram.com/dan.fisher.dev/"
+				],
+				"photo": "assets/img/samples/team-info-page-player-photo-02.png",
+				"photo-lg": "assets/img/samples/player-info-page-player-photo-02.png",
+				"url": "team-player-2.html",
+				"category": "category-2"
+			},
+			{
+				"avatar": "assets/img/samples/streams-filter-avatar-04.png",
+				"name": "April Summers",
+				"nickname": "G-Huntress",
+				"social": [
+					"https://twitter.com/danfisher_dev",
+					"https://twitch.com",
+					"https://www.instagram.com/dan.fisher.dev/"
+				],
+				"photo": "assets/img/samples/team-info-page-player-photo-03.png",
+				"photo-lg": "assets/img/samples/player-info-page-player-photo-03.png",
+				"url": "team-player-3.html",
+				"category": "category-3"
+			},
+			{
+				"avatar": "assets/img/samples/streams-filter-avatar-05.png",
+				"name": "Mark Johnson",
+				"nickname": "Crazzzy_80",
+				"social": [
+					"https://www.facebook.com/danfisher.dev/",
+					"https://twitter.com/danfisher_dev",
+					"https://twitch.com",
+					"https://www.instagram.com/dan.fisher.dev/"
+				],
+				"photo": "assets/img/samples/team-info-page-player-photo-04.png",
+				"photo-lg": "assets/img/samples/player-info-page-player-photo-04.png",
+				"url": "team-player-4.html",
+				"category": "category-4"
+			},
+			{
+				"avatar": "assets/img/samples/streams-filter-avatar-06.png",
+				"name": "Sarah Stacy",
+				"nickname": "FAYEDBEBOP",
+				"social": [
+					"https://www.facebook.com/danfisher.dev/",
+					"https://twitch.com",
+					"https://www.instagram.com/dan.fisher.dev/"
+				],
+				"photo": "assets/img/samples/team-info-page-player-photo-05.png",
+				"photo-lg": "assets/img/samples/player-info-page-player-photo-05.png",
+				"url": "team-player-5.html",
+				"category": "category-5"
+			}
+		]
+	},
+	"players": {
+		"player-1": {
+			"name": "James Spiegel",
+			"nickname": "DaVikinger90",
+			"photo": "assets/img/samples/player-info-page-player-photo-01.png",
+			"color": "color-1",
+			"sections": {
+				"lineups": {
+					"details": [
+						{
+							"key": "Age",
+							"value": "22 Years"
+						},
+						{
+							"key": "Since",
+							"value": "March 2015"
+						},
+						{
+							"key": "Born",
+							"value": "Los Angeles, USA"
+						},
+						{
+							"key": "Team",
+							"value": "Xenowatch"
+						},
+						{
+							"key": "Role",
+							"value": "Support"
+						}
+					],
+					"social": [
+						{
+							"link": "https://www.facebook.com/danfisher.dev/"
+						},
+						{
+							"link": "https://twitter.com/danfisher_dev"
+						},
+						{
+							"link": "https://twitch.com"
+						},
+						{
+							"link": "https://www.instagram.com/dan.fisher.dev/"
+						}
+					],
+					"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				"stats": {
+					"title": "Statistics",
+					"details": [
+						{
+							"label": "AVG Game",
+							"title": "Kills",
+							"value": "5.2"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Damage",
+							"value": "7.1"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Healing",
+							"value": "9.2"
+						},
+						{
+							"label": "Games",
+							"title": "Won",
+							"value": "98"
+						},{
+							"label": "Games",
+							"title": "Lost",
+							"value": "14"
+						}
+					],
+					"winratio": {
+						"label": "Win ratio",
+						"value": "87.5"
+					}
+				},
+				"achievements": {
+					"title": "Achievements",
+					"details-1": [
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-2": [
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-3": [
+						{
+							"icon": "kills",
+							"title": "29 Kills",
+							"label": "Record kills"
+						},
+						{
+							"icon": "damage",
+							"title": "38.456",
+							"label": "Record damage"
+						},
+						{
+							"icon": "healing",
+							"title": "58.607",
+							"label": "Record healing"
+						}
+					]
+				},
+				"hardware": {
+					"title": "Hardware",
+					"details": [
+						{
+							"icon": "gamer-mouse",
+							"title": "RAPTOR RM-2569",
+							"desc": "Raxor",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "headset",
+							"title": "SOUNDMASTER X5",
+							"desc": "Sorny",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "keyboard",
+							"title": "CARBON Z81 RGB",
+							"desc": "Buccaneer",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "screen",
+							"title": "GLX 0019 4K",
+							"desc": "Sangsteen",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "gaming-chair",
+							"title": "BOTTOMS DELUXE 5",
+							"desc": "Swordfish",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "mousepad-and-mouse",
+							"title": "IRON SERIES GQ+",
+							"desc": "GQ Solutions",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						}
+					]
+				},
+				"replay": {
+					"title": "Livestream",
+					"stream": {
+						"id": "playhearthstone",
+						"provider": "twitch",
+						"title": "Davikinger plays \"Clash of eternity\"",
+						"thumb": "assets/img/samples/stream-img-01.jpg",
+						"channel_url": "#",
+						"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+						"date": "August 3rd, 2018"
+					}
+				}
+			}
+		},
+		"player-2": {
+			"name": "Julie Rodgers",
+			"nickname": "JULIE_NOIRE",
+			"photo": "assets/img/samples/player-info-page-player-photo-02.png",
+			"color": "color-2",
+			"sections": {
+				"lineups": {
+					"details": [
+						{
+							"key": "Age",
+							"value": "22 Years"
+						},
+						{
+							"key": "Since",
+							"value": "March 2015"
+						},
+						{
+							"key": "Born",
+							"value": "Los Angeles, USA"
+						},
+						{
+							"key": "Team",
+							"value": "Xenowatch"
+						},
+						{
+							"key": "Role",
+							"value": "Support"
+						}
+					],
+					"social": [
+						{
+							"link": "https://www.facebook.com/danfisher.dev/"
+						},
+						{
+							"link": "https://twitter.com/danfisher_dev"
+						},
+						{
+							"link": "https://twitch.com"
+						},
+						{
+							"link": "https://www.instagram.com/dan.fisher.dev/"
+						}
+					],
+					"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				"stats": {
+					"title": "Statistics",
+					"details": [
+						{
+							"label": "AVG Game",
+							"title": "Kills",
+							"value": "5.2"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Damage",
+							"value": "7.1"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Healing",
+							"value": "9.2"
+						},
+						{
+							"label": "Games",
+							"title": "Won",
+							"value": "98"
+						},{
+							"label": "Games",
+							"title": "Lost",
+							"value": "14"
+						}
+					],
+					"winratio": {
+						"label": "Win ratio",
+						"value": "87.5"
+					}
+				},
+				"achievements": {
+					"title": "Achievements",
+					"details-1": [
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-2": [
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-3": [
+						{
+							"icon": "kills",
+							"title": "29 Kills",
+							"label": "Record kills"
+						},
+						{
+							"icon": "damage",
+							"title": "38.456",
+							"label": "Record damage"
+						},
+						{
+							"icon": "healing",
+							"title": "58.607",
+							"label": "Record healing"
+						}
+					]
+				},
+				"hardware": {
+					"title": "Hardware",
+					"details": [
+						{
+							"icon": "gamer-mouse",
+							"title": "RAPTOR RM-2569",
+							"desc": "Raxor",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "headset",
+							"title": "SOUNDMASTER X5",
+							"desc": "Sorny",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "keyboard",
+							"title": "CARBON Z81 RGB",
+							"desc": "Buccaneer",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "screen",
+							"title": "GLX 0019 4K",
+							"desc": "Sangsteen",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "gaming-chair",
+							"title": "BOTTOMS DELUXE 5",
+							"desc": "Swordfish",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "mousepad-and-mouse",
+							"title": "IRON SERIES GQ+",
+							"desc": "GQ Solutions",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						}
+					]
+				},
+				"replay": {
+					"title": "Livestream",
+					"stream": {
+						"id": "iH0wacpNuDQ",
+						"provider": "youtube",
+						"title": "Davikinger plays \"Clash of eternity\"",
+						"thumb": "assets/img/samples/stream-img-01.jpg",
+						"channel_url": "#",
+						"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+						"date": "August 3rd, 2018"
+					}
+				}
+			}
+		},
+		"player-3": {
+			"name": "April Summers",
+			"nickname": "G-Huntress",
+			"photo": "assets/img/samples/player-info-page-player-photo-03.png",
+			"color": "color-3",
+			"sections": {
+				"lineups": {
+					"details": [
+						{
+							"key": "Age",
+							"value": "22 Years"
+						},
+						{
+							"key": "Since",
+							"value": "March 2015"
+						},
+						{
+							"key": "Born",
+							"value": "Los Angeles, USA"
+						},
+						{
+							"key": "Team",
+							"value": "Xenowatch"
+						},
+						{
+							"key": "Role",
+							"value": "Support"
+						}
+					],
+					"social": [
+						{
+							"link": "https://www.facebook.com/danfisher.dev/"
+						},
+						{
+							"link": "https://twitter.com/danfisher_dev"
+						},
+						{
+							"link": "https://twitch.com"
+						},
+						{
+							"link": "https://www.instagram.com/dan.fisher.dev/"
+						}
+					],
+					"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				"stats": {
+					"title": "Statistics",
+					"details": [
+						{
+							"label": "AVG Game",
+							"title": "Kills",
+							"value": "5.2"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Damage",
+							"value": "7.1"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Healing",
+							"value": "9.2"
+						},
+						{
+							"label": "Games",
+							"title": "Won",
+							"value": "98"
+						},{
+							"label": "Games",
+							"title": "Lost",
+							"value": "14"
+						}
+					],
+					"winratio": {
+						"label": "Win ratio",
+						"value": "87.5"
+					}
+				},
+				"achievements": {
+					"title": "Achievements",
+					"details-1": [
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-2": [
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-3": [
+						{
+							"icon": "kills",
+							"title": "29 Kills",
+							"label": "Record kills"
+						},
+						{
+							"icon": "damage",
+							"title": "38.456",
+							"label": "Record damage"
+						},
+						{
+							"icon": "healing",
+							"title": "58.607",
+							"label": "Record healing"
+						}
+					]
+				},
+				"hardware": {
+					"title": "Hardware",
+					"details": [
+						{
+							"icon": "gamer-mouse",
+							"title": "RAPTOR RM-2569",
+							"desc": "Raxor",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "headset",
+							"title": "SOUNDMASTER X5",
+							"desc": "Sorny",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "keyboard",
+							"title": "CARBON Z81 RGB",
+							"desc": "Buccaneer",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "screen",
+							"title": "GLX 0019 4K",
+							"desc": "Sangsteen",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "gaming-chair",
+							"title": "BOTTOMS DELUXE 5",
+							"desc": "Swordfish",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "mousepad-and-mouse",
+							"title": "IRON SERIES GQ+",
+							"desc": "GQ Solutions",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						}
+					]
+				},
+				"replay": {
+					"title": "Livestream",
+					"stream": {
+						"id": "111371627",
+						"provider": "vimeo",
+						"title": "Davikinger plays \"Clash of eternity\"",
+						"thumb": "assets/img/samples/stream-img-01.jpg",
+						"channel_url": "#",
+						"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+						"date": "August 3rd, 2018"
+					}
+				}
+			}
+		},
+		"player-4": {
+			"name": "Mark Johnson",
+			"nickname": "Crazzzy_80",
+			"photo": "assets/img/samples/player-info-page-player-photo-04.png",
+			"color": "color-4",
+			"sections": {
+				"lineups": {
+					"details": [
+						{
+							"key": "Age",
+							"value": "22 Years"
+						},
+						{
+							"key": "Since",
+							"value": "March 2015"
+						},
+						{
+							"key": "Born",
+							"value": "Los Angeles, USA"
+						},
+						{
+							"key": "Team",
+							"value": "Xenowatch"
+						},
+						{
+							"key": "Role",
+							"value": "Support"
+						}
+					],
+					"social": [
+						{
+							"link": "https://www.facebook.com/danfisher.dev/"
+						},
+						{
+							"link": "https://twitter.com/danfisher_dev"
+						},
+						{
+							"link": "https://twitch.com"
+						},
+						{
+							"link": "https://www.instagram.com/dan.fisher.dev/"
+						}
+					],
+					"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				"stats": {
+					"title": "Statistics",
+					"details": [
+						{
+							"label": "AVG Game",
+							"title": "Kills",
+							"value": "5.2"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Damage",
+							"value": "7.1"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Healing",
+							"value": "9.2"
+						},
+						{
+							"label": "Games",
+							"title": "Won",
+							"value": "98"
+						},{
+							"label": "Games",
+							"title": "Lost",
+							"value": "14"
+						}
+					],
+					"winratio": {
+						"label": "Win ratio",
+						"value": "87.5"
+					}
+				},
+				"achievements": {
+					"title": "Achievements",
+					"details-1": [
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-2": [
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-3": [
+						{
+							"icon": "kills",
+							"title": "29 Kills",
+							"label": "Record kills"
+						},
+						{
+							"icon": "damage",
+							"title": "38.456",
+							"label": "Record damage"
+						},
+						{
+							"icon": "healing",
+							"title": "58.607",
+							"label": "Record healing"
+						}
+					]
+				},
+				"hardware": {
+					"title": "Hardware",
+					"details": [
+						{
+							"icon": "gamer-mouse",
+							"title": "RAPTOR RM-2569",
+							"desc": "Raxor",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "headset",
+							"title": "SOUNDMASTER X5",
+							"desc": "Sorny",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "keyboard",
+							"title": "CARBON Z81 RGB",
+							"desc": "Buccaneer",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "screen",
+							"title": "GLX 0019 4K",
+							"desc": "Sangsteen",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "gaming-chair",
+							"title": "BOTTOMS DELUXE 5",
+							"desc": "Swordfish",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "mousepad-and-mouse",
+							"title": "IRON SERIES GQ+",
+							"desc": "GQ Solutions",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						}
+					]
+				},
+				"replay": {
+					"title": "Livestream",
+					"stream": {
+						"id": "playhearthstone",
+						"provider": "twitch",
+						"title": "Davikinger plays \"Clash of eternity\"",
+						"thumb": "assets/img/samples/stream-img-01.jpg",
+						"channel_url": "#",
+						"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+						"date": "August 3rd, 2018"
+					}
+				}
+			}
+		},
+		"player-5": {
+			"name": "Sarah Stacy",
+			"nickname": "FAYEDBEBOP",
+			"photo": "assets/img/samples/player-info-page-player-photo-05.png",
+			"color": "color-5",
+			"sections": {
+				"lineups": {
+					"details": [
+						{
+							"key": "Age",
+							"value": "22 Years"
+						},
+						{
+							"key": "Since",
+							"value": "March 2015"
+						},
+						{
+							"key": "Born",
+							"value": "Los Angeles, USA"
+						},
+						{
+							"key": "Team",
+							"value": "Xenowatch"
+						},
+						{
+							"key": "Role",
+							"value": "Support"
+						}
+					],
+					"social": [
+						{
+							"link": "https://www.facebook.com/danfisher.dev/"
+						},
+						{
+							"link": "https://twitter.com/danfisher_dev"
+						},
+						{
+							"link": "https://twitch.com"
+						},
+						{
+							"link": "https://www.instagram.com/dan.fisher.dev/"
+						}
+					],
+					"content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+				},
+				"stats": {
+					"title": "Statistics",
+					"details": [
+						{
+							"label": "AVG Game",
+							"title": "Kills",
+							"value": "5.2"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Damage",
+							"value": "7.1"
+						},
+						{
+							"label": "Avg Game (k)",
+							"title": "Healing",
+							"value": "9.2"
+						},
+						{
+							"label": "Games",
+							"title": "Won",
+							"value": "98"
+						},{
+							"label": "Games",
+							"title": "Lost",
+							"value": "14"
+						}
+					],
+					"winratio": {
+						"label": "Win ratio",
+						"value": "87.5"
+					}
+				},
+				"achievements": {
+					"title": "Achievements",
+					"details-1": [
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-2": [
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						},
+						{
+							"icon": "achievements-trophy",
+							"title": "Xenowatch World League",
+							"desc": "1st place",
+							"date": "February 14th, 2017"
+						},
+						{
+							"icon": "award-medal",
+							"title": "Fastest kill in the league",
+							"desc": "Killed an opponent in 0.23sec",
+							"date": "August 28th, 2015"
+						}
+					],
+					"details-3": [
+						{
+							"icon": "kills",
+							"title": "29 Kills",
+							"label": "Record kills"
+						},
+						{
+							"icon": "damage",
+							"title": "38.456",
+							"label": "Record damage"
+						},
+						{
+							"icon": "healing",
+							"title": "58.607",
+							"label": "Record healing"
+						}
+					]
+				},
+				"hardware": {
+					"title": "Hardware",
+					"details": [
+						{
+							"icon": "gamer-mouse",
+							"title": "RAPTOR RM-2569",
+							"desc": "Raxor",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "headset",
+							"title": "SOUNDMASTER X5",
+							"desc": "Sorny",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "keyboard",
+							"title": "CARBON Z81 RGB",
+							"desc": "Buccaneer",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "screen",
+							"title": "GLX 0019 4K",
+							"desc": "Sangsteen",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "gaming-chair",
+							"title": "BOTTOMS DELUXE 5",
+							"desc": "Swordfish",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						},
+						{
+							"icon": "mousepad-and-mouse",
+							"title": "IRON SERIES GQ+",
+							"desc": "GQ Solutions",
+							"link_txt": "Get it now!",
+							"link_url": "#"
+						}
+					]
+				},
+				"replay": {
+					"title": "Livestream",
+					"stream": {
+						"id": "iH0wacpNuDQ",
+						"provider": "youtube",
+						"title": "Davikinger plays \"Clash of eternity\"",
+						"thumb": "assets/img/samples/stream-img-01.jpg",
+						"channel_url": "#",
+						"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+						"date": "August 3rd, 2018"
+					}
+				}
+			}
+		}
+	},
+	"shop": {
+		"shop-1": [
+			{
+				"title": "Magimons black framed print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-01.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Framed prints"
+				},
+				"price": "$38.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Necromancers ennamel mug",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-02.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Coffee mugs"
+				},
+				"price": "$16.00",
+				"rating": "60%"
+			},
+			{
+				"title": "Necromancers women's t-shirt",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-03.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Clothing"
+				},
+				"price": "$24.99",
+				"rating": "100%"
+			},
+			{
+				"title": "Guardians white frame print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-04.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Framed prints"
+				},
+				"price": "$32.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Magimons black framed print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-01.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Framed prints"
+				},
+				"price": "$38.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Necromancers ennamel mug",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-02.png",
+				"category": {
+					"class": "color-warning",
+					"name": "Coffee mugs"
+				},
+				"price": "$16.00",
+				"rating": "60%"
+			}
+		],
+		"shop-2": [
+			{
+				"title": "Magimons black framed print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-01.png",
+				"category": {
+					"name": "Framed prints"
+				},
+				"price": "$38.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Necromancers ennamel mug",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-02.png",
+				"category": {
+					"name": "Coffee mugs"
+				},
+				"price": "$16.00",
+				"rating": "60%"
+			},
+			{
+				"title": "Necromancers women's t-shirt",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-03.png",
+				"category": {
+					"name": "Clothing"
+				},
+				"price": "$24.99",
+				"rating": "100%"
+			},
+			{
+				"title": "Guardians white frame print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-04.png",
+				"category": {
+					"name": "Framed prints"
+				},
+				"price": "$32.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Magimons black framed print",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-01.png",
+				"category": {
+					"name": "Framed prints"
+				},
+				"price": "$38.00",
+				"rating": "80%"
+			},
+			{
+				"title": "Necromancers ennamel mug",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore...",
+				"img": "assets/img/samples/product-img-02.png",
+				"category": {
+					"name": "Coffee mugs"
+				},
+				"price": "$16.00",
+				"rating": "60%"
+			}
+		]
+	},
+	"partners": {
+		"small": [
+			{
+				"img": "assets/img/samples/partner-carousel-img-01.png"
+			},
+			{
+				"img": "assets/img/samples/partner-carousel-img-02.png"
+			},
+			{
+				"img": "assets/img/samples/partner-carousel-img-03.png"
+			},
+			{
+				"img": "assets/img/samples/partner-carousel-img-01.png"
+			},
+			{
+				"img": "assets/img/samples/partner-carousel-img-02.png"
+			},
+			{
+				"img": "assets/img/samples/partner-carousel-img-03.png"
+			}
+		],
+		"full": [
+			{
+				"title": "Honeycomb",
+				"info": "www.honeycombgs.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-01.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					}
+				]
+			},
+			{
+				"title": "Origami-San",
+				"info": "www.origami-san.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-02.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://www.instagram.com/dan.fisher.dev/"
+					}
+				]
+			},
+			{
+				"title": "Furry Burglar",
+				"info": "www.furryburglar.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-03.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					},
+					{
+						"link": "discordapp.com"
+					}
+				]
+			},
+			{
+				"title": "Veritas7",
+				"info": "www.veritas7esports.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-04.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					}
+				]
+			},
+			{
+				"title": "Origins Gaming",
+				"info": "www.originsgg.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-05.png",
+				"socials": [
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					},
+					{
+						"link": "twitch.com"
+					}
+				]
+			},
+			{
+				"title": "Triaxter",
+				"info": "www.triaxter.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-06.png",
+				"socials": [
+					{
+						"link": "https://www.instagram.com/dan.fisher.dev/"
+					},
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					}
+				]
+			},
+			{
+				"title": "Origami-San",
+				"info": "www.origami-san.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-02.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://www.instagram.com/dan.fisher.dev/"
+					},
+					{
+						"link": "discordapp.com"
+					}
+				]
+			},
+			{
+				"title": "Honeycomb",
+				"info": "www.honeycombgs.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-01.png",
+				"socials": [
+					{
+						"link": "twitch.com"
+					},
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					}
+				]
+			},
+			{
+				"title": "Veritas7",
+				"info": "www.veritas7esports.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-04.png",
+				"socials": [
+					{
+						"link": "https://www.facebook.com/danfisher.dev/"
+					},
+					{
+						"link": "https://twitter.com/danfisher_dev/"
+					}
+				]
+			},
+			{
+				"title": "Origins Gaming",
+				"info": "www.originsgg.com",
+				"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+				"img": "assets/img/samples/partner-img-05.png",
+				"socials": [
+					{
+						"link": "https://www.instagram.com/dan.fisher.dev/"
+					},
+					{
+						"link": "twitch.com"
+					}
+				]
+			}
+		]
+	},
+	"staff": [
+		{
+			"title": "Marina Gonzales",
+			"position": "Team Manager",
+			"age": 22,
+			"joined": "Jan 2016",
+			"country": "Costa Rica",
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"img": "assets/img/samples/staff-member-img-01.jpg",
+			"socials": [
+				{
+					"link": "https://twitter.com/danfisher_dev/"
+				},
+				{
+					"link": "twitch.com"
+				},
+				{
+					"link": "https://www.instagram.com/dan.fisher.dev/"
+				}
+			]
+		},
+		{
+			"title": "Stephen Jackson",
+			"position": "Senior Recruiter",
+			"age": 23,
+			"joined": "Aug 2015",
+			"country": "United States",
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"img": "assets/img/samples/staff-member-img-02.jpg",
+			"socials": [
+				{
+					"link": "https://twitter.com/danfisher_dev/"
+				},
+				{
+					"link": "twitch.com"
+				}
+			]
+		},
+		{
+			"title": "Jason Griffins",
+			"position": "Media Manager",
+			"age": 24,
+			"joined": "Dec 2017",
+			"country": "Canada",
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"img": "assets/img/samples/staff-member-img-03.jpg",
+			"socials": [
+				{
+					"link": "https://www.facebook.com/danfisher.dev/"
+				},
+				{
+					"link": "https://twitter.com/danfisher_dev/"
+				}
+			]
+		},
+		{
+			"title": "Gina May Stevens",
+			"position": "Public Relations",
+			"age": 20,
+			"joined": "Sep 2016",
+			"country": "United States",
+			"excerpt": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+			"img": "assets/img/samples/staff-member-img-04.jpg",
+			"socials": [
+				{
+					"link": "https://www.facebook.com/danfisher.dev/"
+				},
+				{
+					"link": "https://twitter.com/danfisher_dev/"
+				},
+				{
+					"link": "discordapp.com"
+				}
+			]
+		}
+	],
+	"streams": {
+		"filter": [
+			{
+				"state": "active",
+				"data-filter": "*",
+				"img": "assets/img/samples/streams-filter-avatar-01.png"
+			},
+			{
+				"data-filter": ".stream-1",
+				"img": "assets/img/samples/streams-filter-avatar-02.png"
+			},
+			{
+				"data-filter": ".stream-2",
+				"img": "assets/img/samples/streams-filter-avatar-03.png"
+			},
+			{
+				"data-filter": ".stream-3",
+				"img": "assets/img/samples/streams-filter-avatar-04.png"
+			},
+			{
+				"data-filter": ".stream-4",
+				"img": "assets/img/samples/streams-filter-avatar-05.png"
+			},
+			{
+				"data-filter": ".stream-5",
+				"img": "assets/img/samples/streams-filter-avatar-06.png"
+			}
+		],
+		"items": [
+			{
+				"id": "playhearthstone",
+				"provider": "twitch",
+				"data-filter": "stream-1",
+				"img": "assets/img/samples/stream-img-01.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+				"title": "Davikinger plays \"Clash of eternity\"",
+				"date": "August 3rd, 2018",
+				"player": "Davikinger90",
+				"state": "live"
+			},
+			{
+				"id": "weplayesport_ru",
+				"provider": "twitch",
+				"data-filter": "stream-2",
+				"img": "assets/img/samples/stream-img-02.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-02.jpg",
+				"title": "The magimons adventure with G-Huntress",
+				"date": "August 3rd, 2018",
+				"player": "G-Huntress"
+			},
+			{
+				"id": "sc2showtime",
+				"provider": "twitch",
+				"data-filter": "stream-1 stream-3 stream-5",
+				"img": "assets/img/samples/stream-img-03.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-03.jpg",
+				"title": "Super plumber bros speedrun for charity!",
+				"date": "July 27th, 2018",
+				"player": "Julie_Noire"
+			},
+			{
+				"id": "hashinshin",
+				"provider": "twitch",
+				"data-filter": "stream-3 stream-4",
+				"img": "assets/img/samples/stream-img-04.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-04.jpg",
+				"title": "24 hours stream before the goddess of war launch",
+				"date": "July 14th, 2018",
+				"player": "Davikinger90"
+			},
+			{
+				"id": "ratirl",
+				"provider": "twitch",
+				"data-filter": "stream-2 stream-3",
+				"img": "assets/img/samples/stream-img-01.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-01.jpg",
+				"title": "Davikinger plays \"Clash of eternity\"",
+				"date": "August 3rd, 2018",
+				"player": "Davikinger90",
+				"state": "live"
+			},
+			{
+				"id": "dafran",
+				"provider": "twitch",
+				"data-filter": "stream-5 stream-4",
+				"img": "assets/img/samples/stream-img-02.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-02.jpg",
+				"title": "The magimons adventure with G-Huntress",
+				"date": "August 3rd, 2018",
+				"player": "G-Huntress"
+			},
+			{
+				"id": "mcconnellret",
+				"provider": "twitch",
+				"data-filter": "stream-4",
+				"img": "assets/img/samples/stream-img-03.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-03.jpg",
+				"title": "Super plumber bros speedrun for charity!",
+				"date": "July 27th, 2018",
+				"player": "Julie_Noire"
+			},
+			{
+				"id": "dakotaz",
+				"provider": "twitch",
+				"data-filter": "stream-1 stream-5",
+				"img": "assets/img/samples/stream-img-04.jpg",
+				"avatar": "assets/img/samples/streams-archive-avatar-04.jpg",
+				"title": "24 hours stream before the goddess of war launch",
+				"date": "July 14th, 2018",
+				"player": "Davikinger90"
+			}
+		]
+	},
+	"footer": {
+		"social": [
+			{
+				"title": "Necrogame",
+				"subtitle": "Facebook",
+				"icon": "fab fa-facebook-square",
+				"url": "https://www.facebook.com/danfisher.dev/"
+			},
+			{
+				"title": "Necrotwt",
+				"subtitle": "Twitter",
+				"icon": "fab fa-twitter",
+				"url": "https://twitter.com/danfisher_dev"
+			},
+			{
+				"title": "Necroplays",
+				"subtitle": "Twitch",
+				"icon": "fab fa-twitch",
+				"url": "https://twitch.com"
+			},
+			{
+				"title": "Necrochat",
+				"subtitle": "Discord",
+				"icon": "fab fa-discord",
+				"url": "https://discordapp.com/"
+			}
+		]
+	}
+}

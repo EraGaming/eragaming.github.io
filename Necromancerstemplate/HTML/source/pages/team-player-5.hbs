@@ -1,0 +1,263 @@
+---
+body-class: bg-image bg-fixed bg--texture-01 bg--dotted-3x3
+---
+
+<!-- Content
+================================================== -->
+<main class="site-content player-info-page" id="wrapper">
+	<div class="container container--large">
+		<div class="team-carousel">
+			<div class="team-carousel__content">
+
+				<!-- Section: Lineups -->
+				<div class="team-carousel__item" data-icon="lineups">
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="player-info-subtitle h4 text-uppercase">{{content.players.player-5.name}}</h3>
+							<h2 class="player-info-title h1">{{content.players.player-5.nickname}}</h2>
+							<div class="row">
+								{{#each content.players.player-5.sections.lineups.details}}
+								<div class="col-6 col-md-6 col-xl-4">
+									<div class="player-info-detail">
+										<div class="player-info-detail__label">{{key}}</div>
+										<div class="player-info-detail__title">{{value}}</div>
+									</div>
+								</div>
+								{{/each}}
+								<div class="col-6 col-md-6 col-xl-4">
+									<div class="player-info-detail">
+										<div class="player-info-detail__label">Social</div>
+										<ul class="social-menu social-menu--default">
+											{{#each content.players.player-5.sections.lineups.social}}
+											<li><a href="{{link}}" target="_blank"></a></li>
+											{{/each}}
+										</ul>
+									</div>
+								</div>
+							</div>
+							<p>{{content.players.player-5.sections.lineups.content}}</p>
+						</div>
+					</div>
+				</div>
+				<!-- Section: Lineups / End -->
+
+				<!-- Section: Stats -->
+				<div class="team-carousel__item" data-icon="stats">
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="player-info-subtitle h5">{{content.players.player-5.nickname}}</h3>
+							<h2 class="player-info-title text-uppercase">{{content.players.player-5.sections.stats.title}}</h2>
+							<div class="row">
+
+								{{#each content.players.player-5.sections.stats.details}}
+								<div class="col-6 col-md-4 col-lg-6 col-xl-4">
+									<div class="player-info-detail player-info-detail--value">
+										<div class="player-info-detail__value h3">{{value}}</div>
+										<div class="player-info-detail__body">
+											<div class="player-info-detail__label">{{label}}</div>
+											<div class="player-info-detail__title">{{title}}</div>
+										</div>
+									</div>
+								</div>
+								{{/each}}
+
+								<div class="col-6 col-md-4 col-lg-6 col-xl-4">
+									<div class="player-info-detail player-info-detail--bar">
+										<div class="player-info-detail__bar" data-value="{{content.players.player-5.sections.stats.winratio.value}}" data-id="progress-path-1">
+											<svg width="61" height="61" viewBox="0 0 61 61">
+												<path fill-opacity="0" stroke-width="6" d="M3.008,29.000 L29.009,3.009 L55.009,29.000 L29.009,54.991 L3.008,29.000 Z"/>
+												<path fill-opacity="0" id="progress-path-1" stroke-width="6" stroke-linecap="square" d="M3.008,29.000 L29.009,3.009 L55.009,29.000 L29.009,54.991 L3.008,29.000 Z"/>
+											</svg>
+											<i class="fa fa-star">&nbsp;</i>
+										</div>
+										<div class="player-info-detail__body">
+											<div class="player-info-detail__label">{{content.players.player-5.sections.stats.winratio.label}}</div>
+											<div class="player-info-detail__title">{{content.players.player-5.sections.stats.winratio.value}}%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="player-info-page__statistics-footer">
+								<div class="player-info-detail player-info-detail--hero">
+									<div class="player-info-detail__hero">
+										<img src="assets/img/samples/player-info-hero-photo.png" alt="">
+									</div>
+									<div class="player-info-detail__body">
+										<div class="player-info-detail__title">Simmelia</div>
+										<div class="player-info-detail__label">Most played hero</div>
+									</div>
+								</div>
+								<div class="player-info-detail ml-sm-auto text-sm-right clearfix">
+									<div class="player-info-detail__title">Support</div>
+									<div class="player-info-detail__label">Hero role</div>
+								</div>
+								<div class="player-info-detail text-right">
+									<div class="player-info-detail__title">
+										<span class="color-gold">12</span> /
+										<span class="color-silver">10</span> /
+										<span class="color-bronze">5</span>
+									</div>
+									<div class="player-info-detail__label">Medals won</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Section: Stats / End -->
+
+				<!-- Section: Achievements -->
+				<div class="team-carousel__item" data-icon="achievements">
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="player-info-subtitle h5">{{content.players.player-5.nickname}}</h3>
+							<h2 class="player-info-title text-uppercase">{{content.players.player-5.sections.achievements.title}}</h2>
+							<div class="row">
+								<div class="col-sm-12 col-md-8 col-xl-8">
+									<div class="player-info-carousel" id="player-info-carousel-1">
+
+										{{#each content.players.player-5.sections.achievements.details-1}}
+										<div class="player-info-detail player-info-detail--icon">
+											<div class="player-info-detail__icon player-info-detail__icon--lg">
+												<svg role="img" class="df-icon df-icon--{{icon}}">
+													<use xlink:href="assets/img/necromancers.svg#{{icon}}"/>
+												</svg>
+											</div>
+											<div class="player-info-detail__body">
+												<div class="player-info-detail__title">{{title}}</div>
+												<div class="player-info-detail__label color-primary">{{desc}}</div>
+												<div class="player-info-detail__label">{{date}}</div>
+											</div>
+										</div>
+										{{/each}}
+									</div>
+
+									<div class="player-info-carousel" id="player-info-carousel-2">
+										{{#each content.players.player-5.sections.achievements.details-2}}
+										<div class="player-info-detail player-info-detail--icon">
+											<div class="player-info-detail__icon player-info-detail__icon--lg">
+												<svg role="img" class="df-icon df-icon--{{icon}}">
+													<use xlink:href="assets/img/necromancers.svg#{{icon}}"/>
+												</svg>
+											</div>
+											<div class="player-info-detail__body">
+												<div class="player-info-detail__title">{{title}}</div>
+												<div class="player-info-detail__label color-primary">{{desc}}</div>
+												<div class="player-info-detail__label">{{date}}</div>
+											</div>
+										</div>
+										{{/each}}
+									</div>
+								</div>
+							</div>
+
+							<div class="row row-between-xl-2col">
+								{{#each content.players.player-5.sections.achievements.details-3}}
+								<div class="col-md-4 col-xl-4">
+									<div class="player-info-detail player-info-detail--icon">
+										<div class="player-info-detail__icon">
+											<svg role="img" class="df-icon df-icon--{{icon}}">
+												<use xlink:href="assets/img/necromancers.svg#{{icon}}"/>
+											</svg>
+										</div>
+										<div class="player-info-detail__body">
+											<div class="player-info-detail__title">{{title}}</div>
+											<div class="player-info-detail__label">{{label}}</div>
+										</div>
+									</div>
+								</div>
+								{{/each}}
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Section: Achievements / End -->
+
+				<!-- Section: Hardware -->
+				<div class="team-carousel__item" data-icon="hardware">
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="player-info-subtitle h5">{{content.players.player-5.nickname}}</h3>
+							<h2 class="player-info-title text-uppercase">{{content.players.player-5.sections.hardware.title}}</h2>
+							<div class="row">
+
+								{{#each content.players.player-5.sections.hardware.details}}
+								<div class="col-6 col-md-6">
+									<div class="player-info-detail player-info-detail--icon">
+										<div class="player-info-detail__icon player-info-detail__icon--lg">
+											<svg role="img" class="df-icon df-icon--{{icon}}">
+												<use xlink:href="assets/img/necromancers.svg#{{icon}}"/>
+											</svg>
+										</div>
+										<div class="player-info-detail__body">
+											<div class="player-info-detail__title">{{title}}</div>
+											<div class="player-info-detail__label color-primary">{{desc}}</div>
+											<a href="{{link_url}}" class="player-info-detail__link">{{link_txt}}</a>
+										</div>
+									</div>
+								</div>
+								{{/each}}
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Section: Hardware / End -->
+
+				<!-- Section: Replay -->
+				<div class="team-carousel__item" data-icon="replay">
+					<div class="row">
+						<div class="col-lg-6">
+							<h3 class="player-info-subtitle h5">{{content.players.player-5.nickname}}</h3>
+							<a href="{{content.players.player-5.sections.replay.channel_url}}" class="btn btn-twitch float-right">
+								<i class="fab fa-twitch">&nbsp;</i>Follow Me!
+							</a>
+							<h2 class="player-info-title text-uppercase">{{content.players.player-5.sections.replay.title}}</h2>
+
+							<!-- Video -->
+							<article class="stream has-post-thumbnail" data-id="{{content.players.player-5.sections.replay.stream.id}}" data-controls="true" data-provider="{{#if content.players.player-5.sections.replay.stream.provider}}{{content.players.player-5.sections.replay.stream.provider}}{{else}}youtube{{/if}}" {{#if content.players.player-5.sections.replay.stream.thumb}}data-thumbnail="{{content.players.player-5.sections.replay.stream.thumb}}"{{/if}} data-setsize="true" data-easy-embed>
+								<div class="stream__thumbnail">
+									<img src="{{content.players.player-5.sections.replay.stream.thumb}}" alt="">
+								</div>
+								<div class="stream__icon"></div>
+								<div class="stream__header">
+									<div class="stream__info">
+										<div class="stream__avatar">
+											<img src="{{content.players.player-5.sections.replay.stream.avatar}}" alt="">
+										</div>
+										<h6 class="stream__title">{{content.players.player-5.sections.replay.stream.title}} <span class="badge badge-danger badge-live">Live</span></h6>
+										<div class="stream__date">{{content.players.player-5.sections.replay.stream.date}}</div>
+									</div>
+								</div>
+							</article>
+							<!-- Video / End -->
+
+						</div>
+					</div>
+				</div>
+				<!-- Section: Replay / End -->
+
+			</div>
+		</div>
+		<div class="team-player">
+			<div class="team-player__photo">
+				<img src="{{content.players.player-5.photo}}" alt="">
+			</div>
+			<div class="team-player__base">
+				<!-- Decoration -->
+				<div class="ncr-page-decor ncr-page-decor--{{content.players.player-5.color}}">
+					<div class="ncr-page-decor__layer-1">
+						<div class="ncr-page-decor__layer-bg"></div>
+					</div>
+					<div class="ncr-page-decor__layer-2"></div>
+					<div class="ncr-page-decor__layer-3">
+						<div class="ncr-page-decor__layer-bg"></div>
+					</div>
+					<div class="ncr-page-decor__layer-4"></div>
+					<div class="ncr-page-decor__layer-5"></div>
+				</div>
+				<!-- Decoration / End -->
+			</div>
+		</div>
+	</div>
+</main>

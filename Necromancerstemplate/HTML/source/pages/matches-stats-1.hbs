@@ -1,0 +1,473 @@
+---
+body-class: bg-image bg-fixed bg--matches-01
+---
+
+<!-- Content
+================================================== -->
+<main class="site-content site-content--center page" id="wrapper">
+	<div class="container">
+		<div class="page-heading page-heading--default text-small text-center w-100">
+			<div class="page-heading__subtitle h5">
+				<span class="color-primary">Saturday Jan 5th, 2018 /</span> Necromancers <span class="color-primary">vs</span> Raging Rhinos
+			</div>
+			<h1 class="page-heading__title h2">Xenowatch West League</h1>
+		</div>
+
+		<ul class="match-stats-links match-stats-links--main">
+			<li>
+				<a href="./matches-overview-1.html">
+					<svg role="img" class="df-icon df-icon--match-overview">
+						<use xlink:href="assets/img/necromancers.svg#match-overview"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="active">
+					<svg role="img" class="df-icon df-icon--match-stats">
+						<use xlink:href="assets/img/necromancers.svg#match-stats"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="./matches-lineups-1.html">
+					<svg role="img" class="df-icon df-icon--match-lineups">
+						<use xlink:href="assets/img/necromancers.svg#match-lineups"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="./matches-replay.html">
+					<svg role="img" class="df-icon df-icon--match-replay">
+						<use xlink:href="assets/img/necromancers.svg#match-replay"/>
+					</svg>
+				</a>
+			</li>
+		</ul>
+
+		<div class="matches-tabs mt-sm-auto mb-sm-auto">
+			<ul class="matches-tabs__navigation nav" role="tablist">
+				<li class="nav-item">
+					<a href="#tab-1" role="tab" data-toggle="tab" class="active">Game 01</a>
+				</li>
+				<li class="nav-item">
+					<a href="#tab-2" role="tab" data-toggle="tab" class="">Game 02</a>
+				</li>
+				<li class="nav-item">
+					<a href="#tab-3" role="tab" data-toggle="tab" class="">Game 03</a>
+				</li>
+			</ul>
+			<div class="matches-tabs__content tab-content">
+				<div class="match-stats-container tab-pane fade show active" id="tab-1" role="tabpanel">
+					<div class="match-stats-widget match-stats-widget--general">
+						<div class="match-stats-widget__header">
+							General Stats
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								{{> _match-team
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "NCR"
+									result  = "won"
+									winner  = true
+								}}
+								<div class="match-result">
+									<span class="match-result__score">2 : 0</span>
+								</div>
+								{{> _match-team
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "RRH"
+									result  = "lost"
+								}}
+							</li>
+							<li><span>Map / Level</span><span>El Plateado</span></li>
+							<li><span>Mission</span><span>Escort</span></li>
+							<li><span>Duration</span><span>23:49</span></li>
+							<li><span>Status</span><span>Final Score</span></li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--matchup">
+						<div class="match-stats-widget__header">
+							Teams Matchup
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Total Kills</div>
+									<div class="match-stats-progress__score">29</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 24%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">44</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Damage Dealt (K)</div>
+									<div class="match-stats-progress__score">110.4</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 80%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">94.7</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Healing Done (K)</div>
+									<div class="match-stats-progress__score">67.8</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 60%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">61.3</div>
+								</div>
+							</li>
+							<li class="match-stats-widget__achievements">
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">0
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">1
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">1
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">0
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--leaders">
+						<div class="match-stats-widget__header">
+							Game Leaders
+						</div>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-1"
+									player   = "01-90x70"
+									name     = "James Spiegel"
+									nickname = "DaVikinger90"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "Necromancers"
+								}}
+							</li>
+							<li><span>Most damage dealt</span><span>48.365</span></li>
+						</ul>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-2"
+									player   = "unknow-left-90x70"
+									name     = "Mary Parker"
+									nickname = "The Destroy"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "Raging Rhinos"
+								}}
+							</li>
+							<li><span>Most healing done</span><span>29.088</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="match-stats-container tab-pane fade" id="tab-2" role="tabpanel">
+					<div class="match-stats-widget match-stats-widget--general">
+						<div class="match-stats-widget__header">
+							General Stats
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								{{> _match-team
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "NCR"
+									result  = "won"
+									winner  = true
+								}}
+								<div class="match-result">
+									<span class="match-result__score">3 : 1</span>
+								</div>
+								{{> _match-team
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "RRH"
+									result  = "lost"
+								}}
+							</li>
+							<li><span>Map / Level</span><span>El Plateado</span></li>
+							<li><span>Mission</span><span>Escort</span></li>
+							<li><span>Duration</span><span>34:57</span></li>
+							<li><span>Status</span><span>Final Score</span></li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--matchup">
+						<div class="match-stats-widget__header">
+							Teams Matchup
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Total Kills</div>
+									<div class="match-stats-progress__score">37</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 58%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">31</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Damage Dealt (K)</div>
+									<div class="match-stats-progress__score">115.2</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 83%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">81.8</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Healing Done (K)</div>
+									<div class="match-stats-progress__score">62.1</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 52%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">59.4</div>
+								</div>
+							</li>
+							<li class="match-stats-widget__achievements">
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">0
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">1
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">0
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">2
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--leaders">
+						<div class="match-stats-widget__header">
+							Game Leaders
+						</div>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-2"
+									player   = "unknow-left-90x70"
+									name     = "Marcus Jhonson"
+									nickname = "Lionel-Reese"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "Raging Rhinos"
+								}}
+							</li>
+							<li><span>Most damage dealt</span><span>48.365</span></li>
+						</ul>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-1"
+									player   = "01-90x70"
+									name     = "James Spiegel"
+									nickname = "DaVikinger90"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "Necromancers"
+								}}
+							</li>
+							<li><span>Most healing done</span><span>29.088</span></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="match-stats-container tab-pane fade" id="tab-3" role="tabpanel">
+					<div class="match-stats-widget match-stats-widget--general">
+						<div class="match-stats-widget__header">
+							General Stats
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								{{> _match-team
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "NCR"
+									result  = "lost"
+								}}
+								<div class="match-result">
+									<span class="match-result__score">1 : 3</span>
+								</div>
+								{{> _match-team
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "RRH"
+									result  = "won"
+									winner  = true
+								}}
+							</li>
+							<li><span>Map / Level</span><span>El Plateado</span></li>
+							<li><span>Mission</span><span>Escort</span></li>
+							<li><span>Duration</span><span>34:17</span></li>
+							<li><span>Status</span><span>Final Score</span></li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--matchup">
+						<div class="match-stats-widget__header">
+							Teams Matchup
+						</div>
+						<ul class="match-stats-widget__body">
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Total Kills</div>
+									<div class="match-stats-progress__score">27</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 34%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">38</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Damage Dealt (K)</div>
+									<div class="match-stats-progress__score">56.4</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 16%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">94.7</div>
+								</div>
+							</li>
+							<li>
+								<div class="match-stats-progress">
+									<div class="match-stats-progress__label">Healing Done (K)</div>
+									<div class="match-stats-progress__score">58.7</div>
+									<div class="match-stats-progress__bar">
+										<span class="team-1" style="width: 48%">&nbsp;</span>
+										<span class="team-2">&nbsp;</span>
+									</div>
+									<div class="match-stats-progress__score">61.3</div>
+								</div>
+							</li>
+							<li class="match-stats-widget__achievements">
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">0
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">1
+									</li>
+								</ul>
+								<ul>
+									<li>
+										<img src="assets/img/icon-medal-gold.png" alt="">2
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-silver.png" alt="">0
+									</li>
+									<li>
+										<img src="assets/img/icon-medal-bronze.png" alt="">1
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					<div class="match-stats-widget match-stats-widget--leaders">
+						<div class="match-stats-widget__header">
+							Game Leaders
+						</div>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-1"
+									player   = "01-90x70"
+									name     = "James Spiegel"
+									nickname = "DaVikinger90"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-1"
+									team    = "necromancers"
+									name    = "Necromancers"
+								}}
+							</li>
+							<li><span>Most damage dealt</span><span>48.365</span></li>
+						</ul>
+						<ul class="match-stats-widget__item">
+							<li>
+								{{> _match-player
+									color    = "team-2"
+									player   = "unknow-left-90x70"
+									name     = "Tess Griffin"
+									nickname = "Neko Krisser"
+								}}
+								{{> _match-team-logo
+									size    = 30
+									color   = "team-2"
+									team    = "rhinos"
+									name    = "Raging Rhinos"
+								}}
+							</li>
+							<li><span>Most healing done</span><span>29.088</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

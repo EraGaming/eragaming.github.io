@@ -1,0 +1,581 @@
+---
+body-class: bg-image bg-fixed bg--matches-03
+---
+
+<!-- Content
+================================================== -->
+<main class="site-content site-content--center page" id="wrapper">
+	<div class="container">
+		<div class="page-heading page-heading--default text-small text-center w-100">
+			<div class="page-heading__subtitle h5">
+				<span class="color-primary">Wednesday Feb 14th, 2018 /</span> Necromancers <span class="color-primary">vs</span> Fierce Eagles
+			</div>
+			<h1 class="page-heading__title h2">Striker Go Tournament</h1>
+		</div>
+
+		<ul class="match-stats-links match-stats-links--main">
+			<li>
+				<a href="./matches-overview-1.html">
+					<svg role="img" class="df-icon df-icon--match-overview">
+						<use xlink:href="assets/img/necromancers.svg#match-overview"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="./matches-stats-1.html">
+					<svg role="img" class="df-icon df-icon--match-stats">
+						<use xlink:href="assets/img/necromancers.svg#match-stats"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="active">
+					<svg role="img" class="df-icon df-icon--match-lineups">
+						<use xlink:href="assets/img/necromancers.svg#match-lineups"/>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="./matches-replay.html">
+					<svg role="img" class="df-icon df-icon--match-replay">
+						<use xlink:href="assets/img/necromancers.svg#match-replay"/>
+					</svg>
+				</a>
+			</li>
+		</ul>
+
+		<div class="matches-tabs mt-sm-auto mb-sm-auto">
+			<ul class="matches-tabs__navigation nav" role="tablist">
+				<li class="nav-item">
+					<a href="#tab-1" role="tab" data-toggle="tab" class="active">Game 01</a>
+				</li>
+				<li class="nav-item">
+					<a href="#tab-2" role="tab" data-toggle="tab">Game 02</a>
+				</li>
+				<li class="nav-item">
+					<a href="#tab-3" role="tab" data-toggle="tab">Game 03</a>
+				</li>
+			</ul>
+			<div class="matches-tabs__content tab-content">
+				<div class="match-lineups-container tab-pane fade show active" id="tab-1" role="tabpanel">
+					<div class="table-responsive">
+						<table class="matches-table lineups-table lineups-table--style-3">
+							<thead>
+								<tr>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-1"
+											team    = "necromancers"
+											name    = "Necromancers"
+											country = "United States"
+										}}
+									</th>
+									<th class="td-k">K</th>
+									<th class="td-d">D</th>
+									<th class="td-a">A</th>
+									<th class="td-kdar td-center-left">KDA.R</th>
+									<th class="td-kdar td-center-right">KDA.R</th>
+									<th class="td-a">A</th>
+									<th class="td-d">D</th>
+									<th class="td-k">K</th>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-5"
+											team    = "eagles"
+											name    = "Fierce Eagles"
+											country = "France"
+										}}
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "01-60x60"
+											name     = "James Spiegel"
+											nickname = "DaVikinger90"
+										}}
+									</td>
+									<td>45</td>
+									<td>31</td>
+									<td>77</td>
+									<td class="td-center-left">4.5</td>
+									<td class="td-center-right">4.9</td>
+									<td>67</td>
+									<td>34</td>
+									<td>52</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Markus Jhonson"
+											nickname = "Lionel-Reese"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "02-60x60"
+											name     = "Julie Rodgers"
+											nickname = "JULIE_NOIRE"
+										}}
+									</td>
+									<td>39</td>
+									<td>34</td>
+									<td>84</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.1</td>
+									<td>80</td>
+									<td>37</td>
+									<td>44</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Tess Griffin"
+											nickname = "NekoKrisser"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "03-60x60"
+											name     = "April Summers"
+											nickname = "G-Huntress"
+										}}
+									</td>
+									<td>42</td>
+									<td>45</td>
+									<td>75</td>
+									<td class="td-center-left">4.2</td>
+									<td class="td-center-right">5.2</td>
+									<td>72</td>
+									<td>30</td>
+									<td>58</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Wesley McCoy"
+											nickname = "Sam-X-99"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "04-60x60"
+											name     = "Marc Jhonson"
+											nickname = "Crazzzy_80"
+										}}
+									</td>
+									<td>40</td>
+									<td>37</td>
+									<td>60</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.8</td>
+									<td>75</td>
+									<td>41</td>
+									<td>29</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Todd Grynson"
+											nickname = "SHARK_BULLET"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "05-60x60"
+											name     = "Sarah Stacy"
+											nickname = "FAYEDBEBOP"
+										}}
+									</td>
+									<td>34</td>
+									<td>32</td>
+									<td>66</td>
+									<td class="td-center-left">4.4</td>
+									<td class="td-center-right">4.3</td>
+									<td>69</td>
+									<td>29</td>
+									<td>34</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Mary Parker"
+											nickname = "The Destroy"
+										}}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="match-lineups-container tab-pane fade" id="tab-2" role="tabpanel">
+					<div class="table-responsive">
+						<table class="matches-table lineups-table lineups-table--style-3">
+							<thead>
+								<tr>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-1"
+											team    = "necromancers"
+											name    = "Necromancers"
+											country = "United States"
+										}}
+									</th>
+									<th class="td-k">K</th>
+									<th class="td-d">D</th>
+									<th class="td-a">A</th>
+									<th class="td-kdar td-center-left">KDA.R</th>
+									<th class="td-kdar td-center-right">KDA.R</th>
+									<th class="td-a">A</th>
+									<th class="td-d">D</th>
+									<th class="td-k">K</th>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-5"
+											team    = "eagles"
+											name    = "Fierce Eagles"
+											country = "France"
+										}}
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "02-60x60"
+											name     = "Julie Rodgers"
+											nickname = "JULIE_NOIRE"
+										}}
+									</td>
+									<td>39</td>
+									<td>34</td>
+									<td>84</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.1</td>
+									<td>80</td>
+									<td>37</td>
+									<td>44</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Tess Griffin"
+											nickname = "NekoKrisser"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "01-60x60"
+											name     = "James Spiegel"
+											nickname = "DaVikinger90"
+										}}
+									</td>
+									<td>45</td>
+									<td>31</td>
+									<td>77</td>
+									<td class="td-center-left">4.5</td>
+									<td class="td-center-right">4.9</td>
+									<td>67</td>
+									<td>34</td>
+									<td>52</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Markus Jhonson"
+											nickname = "Lionel-Reese"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "04-60x60"
+											name     = "Marc Jhonson"
+											nickname = "Crazzzy_80"
+										}}
+									</td>
+									<td>40</td>
+									<td>37</td>
+									<td>60</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.8</td>
+									<td>75</td>
+									<td>41</td>
+									<td>29</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Todd Grynson"
+											nickname = "SHARK_BULLET"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "05-60x60"
+											name     = "Sarah Stacy"
+											nickname = "FAYEDBEBOP"
+										}}
+									</td>
+									<td>34</td>
+									<td>32</td>
+									<td>66</td>
+									<td class="td-center-left">4.4</td>
+									<td class="td-center-right">4.3</td>
+									<td>69</td>
+									<td>29</td>
+									<td>34</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Mary Parker"
+											nickname = "The Destroy"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "03-60x60"
+											name     = "April Summers"
+											nickname = "G-Huntress"
+										}}
+									</td>
+									<td>42</td>
+									<td>45</td>
+									<td>75</td>
+									<td class="td-center-left">4.2</td>
+									<td class="td-center-right">5.2</td>
+									<td>72</td>
+									<td>30</td>
+									<td>58</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Wesley McCoy"
+											nickname = "Sam-X-99"
+										}}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="match-lineups-container tab-pane fade" id="tab-3" role="tabpanel">
+					<div class="table-responsive">
+						<table class="matches-table lineups-table lineups-table--style-3">
+							<thead>
+								<tr>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-1"
+											team    = "necromancers"
+											name    = "Necromancers"
+											country = "United States"
+										}}
+									</th>
+									<th class="td-k">K</th>
+									<th class="td-d">D</th>
+									<th class="td-a">A</th>
+									<th class="td-kdar td-center-left">KDA.R</th>
+									<th class="td-kdar td-center-right">KDA.R</th>
+									<th class="td-a">A</th>
+									<th class="td-d">D</th>
+									<th class="td-k">K</th>
+									<th class="td-player">
+										{{> _match-team
+											size    = 30
+											color   = "team-5"
+											team    = "eagles"
+											name    = "Fierce Eagles"
+											country = "France"
+										}}
+									</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "03-60x60"
+											name     = "April Summers"
+											nickname = "G-Huntress"
+										}}
+									</td>
+									<td>42</td>
+									<td>45</td>
+									<td>75</td>
+									<td class="td-center-left">4.2</td>
+									<td class="td-center-right">5.2</td>
+									<td>72</td>
+									<td>30</td>
+									<td>58</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Wesley McCoy"
+											nickname = "Sam-X-99"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "04-60x60"
+											name     = "Marc Jhonson"
+											nickname = "Crazzzy_80"
+										}}
+									</td>
+									<td>40</td>
+									<td>37</td>
+									<td>60</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.8</td>
+									<td>75</td>
+									<td>41</td>
+									<td>29</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Todd Grynson"
+											nickname = "SHARK_BULLET"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "05-60x60"
+											name     = "Sarah Stacy"
+											nickname = "FAYEDBEBOP"
+										}}
+									</td>
+									<td>34</td>
+									<td>32</td>
+									<td>66</td>
+									<td class="td-center-left">4.4</td>
+									<td class="td-center-right">4.3</td>
+									<td>69</td>
+									<td>29</td>
+									<td>34</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Mary Parker"
+											nickname = "The Destroy"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "02-60x60"
+											name     = "Julie Rodgers"
+											nickname = "JULIE_NOIRE"
+										}}
+									</td>
+									<td>39</td>
+									<td>34</td>
+									<td>84</td>
+									<td class="td-center-left">4.0</td>
+									<td class="td-center-right">4.1</td>
+									<td>80</td>
+									<td>37</td>
+									<td>44</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Tess Griffin"
+											nickname = "NekoKrisser"
+										}}
+									</td>
+								</tr>
+
+								<tr>
+									<td>
+										{{> _match-player
+											color    = "team-1"
+											player   = "01-60x60"
+											name     = "James Spiegel"
+											nickname = "DaVikinger90"
+										}}
+									</td>
+									<td>45</td>
+									<td>31</td>
+									<td>77</td>
+									<td class="td-center-left">4.5</td>
+									<td class="td-center-right">4.9</td>
+									<td>67</td>
+									<td>34</td>
+									<td>52</td>
+									<td>
+										{{> _match-player
+											color    = "team-5"
+											player   = "unknow-right-60x60"
+											name     = "Markus Jhonson"
+											nickname = "Lionel-Reese"
+										}}
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

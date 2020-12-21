@@ -1,0 +1,212 @@
+{
+	"icons": [
+		{
+			"name":  "bag",
+			"title": "Bag"
+		},
+		{
+			"name":  "search",
+			"title": "Search"
+		},
+		{
+			"name":  "search-close",
+			"title": "Search Close"
+		},
+		{
+			"name":  "thumb-up",
+			"title": "Thumb Up"
+		},
+		{
+			"name":  "joystick",
+			"title": "Joystick"
+		},
+		{
+			"name":  "close",
+			"title": "Close"
+		},
+		{
+			"name":  "filter",
+			"title": "Filter"
+		},
+		{
+			"name":  "chart",
+			"title": "Chart"
+		},
+		{
+			"name":  "trophy",
+			"title": "Trophy"
+		},
+		{
+			"name":  "logout",
+			"title": "Logout"
+		},
+		{
+			"name":  "login-register",
+			"title": "Login Register"
+		},
+		{
+			"name":  "account",
+			"title": "Smile"
+		},
+		{
+			"name":  "comments-small",
+			"title": "Comments"
+		},
+		{
+			"name":  "match-stats",
+			"title": "Match Stats"
+		},
+		{
+			"name":  "match-overview",
+			"title": "Versus"
+		},
+		{
+			"name":  "teams-shield",
+			"title": "Shield"
+		},
+		{
+			"name":  "match-lineups",
+			"title": "User"
+		},
+		{
+			"name":  "match-achievements",
+			"title": "Trophy 2"
+		},
+		{
+			"name":  "match-team-overview",
+			"title": "Shield 2"
+		},
+		{
+			"name":  "match-hardware",
+			"title": "Monitor"
+		},
+		{
+			"name":  "match-replay",
+			"title": "Replay"
+		},
+		{
+			"name":  "medal",
+			"title": "Medal"
+		},
+		{
+			"name":  "deaths",
+			"title": "Skull"
+		},
+		{
+			"name":  "assists",
+			"title": "Hand"
+		},
+		{
+			"name":  "kills",
+			"title": "Crosshair"
+		},
+		{
+			"name":  "damage",
+			"title": "Fire"
+		},
+		{
+			"name":  "healing",
+			"title": "Healing"
+		},
+		{
+			"name":  "skull",
+			"title": "Skull Fill"
+		},
+		{
+			"name":  "explosion",
+			"title": "Explosion"
+		},
+		{
+			"name":  "pliers",
+			"title": "Pliers"
+		},
+		{
+			"name":  "stopwatch",
+			"title": "Stopwatch"
+		},
+		{
+			"name":  "towers-destroyed",
+			"title": "Towers"
+		},
+		{
+			"name":  "inhibitors-destroyed",
+			"title": "Inhibitors"
+		},
+		{
+			"name":  "baron-kills",
+			"title": "Baron Kills"
+		},
+		{
+			"name":  "dragon-kills",
+			"title": "Dragon Kills"
+		},
+		{
+			"name":  "rift-heralds-killed",
+			"title": "Rift Heralds"
+		},
+		{
+			"name":  "offense",
+			"title": "Offense"
+		},
+		{
+			"name":  "tank",
+			"title": "Tank"
+		},
+		{
+			"name":  "support",
+			"title": "Support"
+		},
+		{
+			"name":  "defense",
+			"title": "Defense"
+		},
+		{
+			"name":  "achievements-trophy",
+			"title": "Trophy 3"
+		},
+		{
+			"name":  "award-medal",
+			"title": "Medal 2"
+		},
+		{
+			"name":  "gamer-mouse",
+			"title": "Mouse"
+		},
+		{
+			"name":  "gaming-chair",
+			"title": "Chair"
+		},
+		{
+			"name":  "headset",
+			"title": "Headset"
+		},
+		{
+			"name":  "keyboard",
+			"title": "Keyboard"
+		},
+		{
+			"name":  "mousepad-and-mouse",
+			"title": "Mousepad and Mouse"
+		},
+		{
+			"name":  "screen",
+			"title": "Desktop"
+		},
+		{
+			"name":  "left-arrow",
+			"title": "Left Arrow"
+		},
+		{
+			"name":  "right-arrow",
+			"title": "Right Arrow"
+		},
+		{
+			"name":  "preloader-arcade",
+			"title": "Arcade"
+		},
+		{
+			"name":  "team-shield",
+			"title": "Arcade"
+		}
+	]
+}

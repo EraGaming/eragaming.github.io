@@ -1,0 +1,31 @@
+{{> _head }}
+
+<body class="preloader-is--active {{body-class}}">
+
+	<div class="site-wrapper {{#if site-layout}}{{site-layout}}{{else}}site-layout--default{{/if}}">
+
+		{{> _header }}
+
+		{{> body }}
+
+		<!-- Overlay -->
+		<div class="site-overlay"></div>
+		<!-- Overlay / End -->
+
+		{{> _cart-panel }}
+
+		{{> _search-panel }}
+
+		{{> _menu-panel }}
+
+	</div>
+
+	{{> _preloader }}
+
+	{{> _cursor }}
+
+	{{> _footer-scripts }}
+
+</body>
+
+</html>

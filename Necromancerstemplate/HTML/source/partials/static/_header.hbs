@@ -1,0 +1,239 @@
+<!-- Header
+================================================== -->
+<header id="header" class="site-header {{#if site-header}}{{site-header}}{{else}}site-header--bottom{{/if}}">
+
+	<!-- Logo - Image Based -->
+	<div class="header-logo header-logo--img">
+		<a href="index.html"><img src="{{../root}}assets/img/logo.png" srcset="{{../root}}assets/img/logo@2x.png 2x" alt="{{global.site-name}}"></a>
+	</div>
+	<!-- Logo - Image Based / End -->
+
+	{{!-- <!-- Logo - Text Based -->
+	<div class="header-logo header-logo--txt">
+		<a href="index.html" class="header-logo__inner">
+			<h1 class="header-logo__heading">{{{global.logo-txt}}}</h1>
+			<span class="header-logo__tagline">{{global.tagline}}</span>
+		</a>
+	</div>
+	<!-- Logo - Text Based / End --> --}}
+
+	{{> _main-navigation }}
+
+	<!-- Header Actions -->
+	<div class="header-actions">
+		{{#ifpage 'home' 'blog-1' 'blog-2' 'blog-3' 'blog-4' 'shop' 'shop-2' }}
+			<div class="header-pagination">
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--left">
+					<svg role="img" class="df-icon df-icon--left-arrow">
+						<use xlink:href="assets/img/necromancers.svg#left-arrow"/>
+					</svg>
+				</a>
+				<ol class="header-pagination--list">
+					<li><a href="#">01</a></li>
+					<li><a href="#">02</a></li>
+					<li><span>...</span></li>
+					<li><a href="#">08</a></li>
+				</ol>
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--right">
+					<svg role="img" class="df-icon df-icon--right-arrow">
+						<use xlink:href="assets/img/necromancers.svg#right-arrow"/>
+					</svg>
+				</a>
+			</div>
+			<div class="header-filter-toggle">
+				<svg role="img" class="df-icon df-icon--filter">
+					<use xlink:href="assets/img/necromancers.svg#filter"/>
+				</svg>
+				<div class="filter-menu">
+					<form action="#" class="filter-menu__form">
+						<div class="filter-menu__select">
+							<label class="filter-menu__label">Category</label>
+							<select class="cs-select">
+								<option value="" selected>All Categories</option>
+								<option value="">Esports</option>
+								<option value="">Gaming</option>
+								<option value="">Videos</option>
+							</select>
+						</div>
+						<div class="filter-menu__select">
+							<label class="filter-menu__label">Filter By</label>
+							<select class="cs-select">
+								<option value="" selected>Article Date</option>
+								<option value="">Comments</option>
+								<option value="">Popularity</option>
+							</select>
+						</div>
+						<div class="filter-menu__select">
+							<label class="filter-menu__label">Order</label>
+							<select class="cs-select">
+								<option value="" selected>Ascending</option>
+								<option value="">Descending</option>
+							</select>
+						</div>
+						<div class="filter-menu__submit">
+							<button type="submit" class="btn btn-primary btn-sm btn-block">Filter News</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		{{/ifpage}}
+		{{#ifpage 'team-overview-2' }}
+			<div class="header-pagination">
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--left js-team-player__nav-prev">
+					<svg role="img" class="df-icon df-icon--left-arrow">
+						<use xlink:href="assets/img/necromancers.svg#left-arrow"/>
+					</svg>
+				</a>
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--right js-team-player__nav-next">
+					<svg role="img" class="df-icon df-icon--right-arrow">
+						<use xlink:href="assets/img/necromancers.svg#right-arrow"/>
+					</svg>
+				</a>
+			</div>
+		{{/ifpage}}
+		{{#ifpage 'team-selection-1' }}
+			<div class="header-pagination mr-0">
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--left js-team-selection-slider__nav-prev">
+					<svg role="img" class="df-icon df-icon--left-arrow">
+						<use xlink:href="assets/img/necromancers.svg#left-arrow"/>
+					</svg>
+				</a>
+				<div class="header-team-toggle d-none d-md-block">
+					<svg role="img" class="df-icon df-icon--team-shield">
+						<use xlink:href="assets/img/necromancers.svg#team-shield"/>
+					</svg>
+					<span class="header-team-toggle__plus">&nbsp;</span>
+					<ul class="header-team-nav js-header-team-nav">
+
+						{{#each content.team.selection-1}}
+						<li class="header-team-nav__item header-team-nav__item--{{category}}">
+							<figure class="header-team-nav__thumb">
+								<img src="{{logo-sm}}" alt="">
+							</figure>
+							<div class="header-team-nav__holder">
+								<h5 class="header-team-nav__subtitle">{{team}}</h5>
+								<h4 class="header-team-nav__title">{{{game}}}</h4>
+							</div>
+						</li>
+						{{/each}}
+					</ul>
+				</div>
+				<a href="#" class="header-scroll-arrow header-scroll-arrow--right js-team-selection-slider__nav-next">
+					<svg role="img" class="df-icon df-icon--right-arrow">
+						<use xlink:href="assets/img/necromancers.svg#right-arrow"/>
+					</svg>
+				</a>
+			</div>
+		{{/ifpage}}
+		{{#ifpage 'team-player-1' 'team-player-2' 'team-player-3' 'team-player-4' 'team-player-5'}}
+			<div class="header-player-info-navigation">
+				<a href="#" class="disable">
+					<svg role="img" class="df-icon df-icon--left-arrow">
+						<use xlink:href="assets/img/necromancers.svg#left-arrow"/>
+					</svg>
+				</a>
+				<a href="team-player-2.html">
+					<svg role="img" class="df-icon df-icon--right-arrow">
+						<use xlink:href="assets/img/necromancers.svg#right-arrow"/>
+					</svg>
+					<div class="header-player-info-navigation__card">
+						<div class="header-player-info-navigation__avatar">
+							<img src="/assets/img/samples/header-player-info-navigation-photo.png" alt="">
+						</div>
+						<div class="header-player-info-navigation__body">
+							<div class="header-player-info-navigation__name color-primary">April Summers</div>
+							<div class="header-player-info-navigation__nickname">G-Huntress</div>
+						</div>
+					</div>
+				</a>
+			</div>
+		{{/ifpage}}
+		<div class="header-top-bar-toggle d-md-none hide">
+			<svg role="img" class="df-icon df-icon--joystick">
+				<use xlink:href="assets/img/necromancers.svg#joystick"/>
+			</svg>
+			<svg role="img" class="df-icon df-icon--close">
+				<use xlink:href="assets/img/necromancers.svg#close"/>
+			</svg>
+		</div>
+		<div class="header-social-toggle d-none d-md-block">
+			<svg role="img" class="df-icon df-icon--thumb-up">
+				<use xlink:href="assets/img/necromancers.svg#thumb-up"/>
+			</svg>
+			<span class="header-social-toggle__plus">&nbsp;</span>
+			<ul class="social-menu social-menu--header">
+				<li><a href="https://discord.gg/xxxx"><span class="link-subtitle">Discord</span>Necrochat</a></li>
+				<li><a href="https://twitch.com"><span class="link-subtitle">Twitch</span>Necroplay</a></li>
+				<li><a href="https://twitter.com/danfisher_dev"><span class="link-subtitle">Twitter</span>Necrotwt</a></li>
+				<li><a href="https://www.facebook.com/danfisher.dev/"><span class="link-subtitle">Facebook</span>Necrogame</a></li>
+			</ul>
+		</div>
+		<div class="header-cart-toggle">
+			<svg role="img" class="df-icon df-icon--bag">
+				<use xlink:href="assets/img/necromancers.svg#bag"/>
+			</svg>
+			<svg role="img" class="df-icon df-icon--close">
+				<use xlink:href="assets/img/necromancers.svg#close"/>
+			</svg>
+			<span class="header-cart-toggle__items-count">4</span>
+		</div>
+		<div class="header-search-toggle">
+			<svg role="img" class="df-icon df-icon--search">
+				<use xlink:href="assets/img/necromancers.svg#search"/>
+			</svg>
+			<svg role="img" class="df-icon df-icon--search-close">
+				<use xlink:href="assets/img/necromancers.svg#search-close"/>
+			</svg>
+		</div>
+		{{#ifpage 'login-register'}}
+		<div class="header-account header-account--guest hide">
+			<div class="header-account__avatar">
+				<img src="assets/img/account-guest-avatar.jpg" alt="">
+			</div>
+			<div class="header-account__body">
+				Welcome
+				<div class="header-account__name">Necro Guest</div>
+			</div>
+			<div class="header-account__icon">
+				<a href="login-register.html">
+					<svg role="img" class="df-icon df-icon--login-register">
+						<use xlink:href="assets/img/necromancers.svg#login-register"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		{{/ifpage}}
+		{{#unlesspage 'login-register'}}
+		<div class="header-account hide">
+			<div class="header-account__avatar">
+				<img src="assets/img/samples/account-user-avatar.jpg" srcset="assets/img/samples/account-user-avatar@2x.jpg 2x" alt="">
+			</div>
+			<div class="header-account__body">
+				Hello!
+				<div class="header-account__name">James Spiegel</div>
+			</div>
+			<div class="header-account__icon">
+				<a href="shop-account-settings.html">
+					<svg role="img" class="df-icon df-icon--account">
+						<use xlink:href="assets/img/necromancers.svg#account"/>
+					</svg>
+				</a>
+				<a href="login-register.html">
+					<svg role="img" class="df-icon df-icon--logout">
+						<use xlink:href="assets/img/necromancers.svg#logout"/>
+					</svg>
+				</a>
+			</div>
+		</div>
+		{{/unlesspage}}
+		<div class="header-menu-toggle">
+			<div class="header-menu-toggle__inner">
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+				<span>&nbsp;</span>
+			</div>
+		</div>
+	</div>
+	<!-- Header Actions / End -->
+</header>
+<!-- Header / End -->

@@ -1,0 +1,32 @@
+---
+body-class: bg-image bg-fixed bg--texture-01 bg--dotted-3x3
+---
+
+<!-- Content
+================================================== -->
+<main class="site-content site-content--center page" id="wrapper">
+	<div class="container container--large">
+		<div class="page-heading page-heading--default text-center w-100">
+			<div class="page-heading__subtitle h5">
+				<span class="color-primary">Please Select A</span>
+			</div>
+			<h1 class="page-heading__title h2">Game Squad</h1>
+		</div>
+		<div class="row mt-sm-auto mb-sm-auto">
+			{{#each content.team.selection-2}}
+			<div class="col-sm-6 col-lg-3">
+				<div class="team-selection-item team-selection-item--style-1 text-center">
+					<a href="{{url}}" class="team-selection-item__thumbnail">
+						<div class="team-selection-item__thumbnail-inner">
+							<img src="{{img}}" alt="">
+						</div>
+						<img class="team-selection-item__logo team-selection-item__logo--middle" src="{{logo}}" srcset="{{logo2x}} 2x" alt="">
+					</a>
+					<span class="team-selection-item__subtitle h6">{{team}}</span>
+					<h2 class="team-selection-item__title">{{game}}</h2>
+				</div>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+</main>

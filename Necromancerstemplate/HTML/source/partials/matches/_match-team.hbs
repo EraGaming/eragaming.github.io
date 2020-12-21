@@ -1,0 +1,14 @@
+<figure class="match-team{{#if winner}} match-team--winner{{/if}}" role="group">
+	<figure class="match-team-logo match-team-logo--{{color}}" role="group">
+		<img src="assets/img/samples/logo-{{team}}-{{size}}.png" srcset="assets/img/samples/logo-{{team}}-{{size}}@2x.png 2x" alt="{{name}} Logo">
+	</figure>
+	<figcaption>
+		<div class="match-team__name">{{name}}</div>
+		{{#if country}}
+			<div class="match-team__country {{color-2}}">{{country}}</div>
+		{{/if}}
+		{{#if result}}
+			<div class="match-team__result {{color-2}}">{{result}}</div>
+		{{/if}}
+	</figcaption>
+</figure>

@@ -1,0 +1,34 @@
+---
+layout: horizontal
+---
+
+<div class="page-heading page-heading--loop bg-image bg--ph-02">
+	<div class="page-heading__subtitle h5 color-primary">Necromancers</div>
+	<h1 class="page-heading__title h2">Management </br>& Staff</h1>
+</div>
+<div class="content staff-layout">
+
+	{{#each content.staff}}
+	<article class="staff-member has-post-thumbnail">
+		<div class="staff-member__thumbnail">
+			<img src="{{img}}" alt="">
+		</div>
+		<div class="staff-member__body">
+			<div class="staff-member__position">{{position}}</div>
+			<h2 class="staff-member__title h3">{{title}}</h2>
+			<ul class="staff-member__meta list-unstyled">
+				<li class="staff-member__meta-item"><span>Age</span>{{age}} years</li>
+				<li class="staff-member__meta-item"><span>Joined</span>{{joined}}</li>
+				<li class="staff-member__meta-item"><span>Country</span>{{country}}</li>
+			</ul>
+			<div class="staff-member__excerpt">{{excerpt}}</div>
+			<ul class="social-menu social-menu--links">
+				{{#each socials}}
+				<li><a href="{{link}}"></a></li>
+				{{/each}}
+			</ul>
+		</div>
+	</article>
+	{{/each}}
+
+</div>

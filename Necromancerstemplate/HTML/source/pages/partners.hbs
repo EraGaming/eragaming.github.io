@@ -1,0 +1,33 @@
+---
+layout: horizontal
+---
+
+<div class="page-heading page-heading--loop page-heading--partners bg-image bg--ph-01">
+	<div class="page-heading__subtitle h5 color-primary">Necromancers</div>
+	<h1 class="page-heading__title h2">Partners</h1>
+	<div class="page-heading__body">
+		<div class="h6 text-sm color-primary">Wanna be our partner?</div>
+		<div class="h6"><a href="mailto:#">partners<span class="color-primary">@</span>necromancers.com</a></div>
+	</div>
+</div>
+<div class="content partners-layout">
+
+	{{#each content.partners.full}}
+	<article class="partner">
+		<div class="partner__logo">
+			<img src="{{img}}" alt="{{title}}">
+		</div>
+		<div class="partner__header">
+			<h2 class="partner__title h4">{{title}}</h2>
+			<a href="#" class="partner__info">{{info}}</a>
+		</div>
+		<p class="partner__excerpt">{{excerpt}}</p>
+		<ul class="social-menu social-menu--links">
+			{{#each socials}}
+			<li><a href="{{link}}"></a></li>
+			{{/each}}
+		</ul>
+	</article>
+	{{/each}}
+
+</div>

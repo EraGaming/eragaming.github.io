@@ -1,0 +1,30 @@
+<figure class="match-player {{color}}{{#if avatar}} match-player--small{{/if}}{{#if svg}} match-player--small{{/if}}" role="group">
+	<figure class="match-player__avatar">
+		{{#if player}}
+			<img src="assets/img/samples/match-player-{{player}}.png" alt="">
+		{{/if}}
+		{{#if avatar}}
+			<img src="assets/img/samples/match-hero-avatar-{{avatar}}.jpg" alt="">
+		{{/if}}
+		{{#if level}}
+			<figcaption class="match-player__level">{{level}}</figcaption>
+		{{/if}}
+		{{#if svg}}
+			<svg role="img" class="df-icon df-icon--{{svg}}">
+				<use xlink:href="assets/img/necromancers.svg#{{svg}}"/>
+			</svg>
+		{{/if}}
+	</figure>
+	{{#if skill-1}}
+		<figure class="match-player__skills">
+			<img src="assets/img/samples/match-skill-{{skill-1}}.jpg" alt="">
+			{{#if skill-2}}
+				<img src="assets/img/samples/match-skill-{{skill-2}}.jpg" alt="">
+			{{/if}}
+		</figure>
+	{{/if}}
+	<figcaption>
+		<span class="match-player__nickname">{{nickname}}</span>
+		<span class="match-player__name{{#if svg}} color-primary{{/if}}">{{name}}</span>
+	</figcaption>
+</figure>

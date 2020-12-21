@@ -1,0 +1,38 @@
+---
+layout: horizontal
+---
+
+<div class="widget-area widger-area--before-loop">
+	{{> _widget-featured-product }}
+</div>
+<div class="content shop-layout--style-2">
+
+	{{#each content.shop.shop-2}}
+		<div class="product">
+			<a href="shop-product.html" class="product__thumbnail">
+				<img src="{{img}}" alt="">
+				<div class="btn btn-tertiary">Add to cart +</div>
+				{{!-- <div class="btn btn-primary">View Product</div> --}}
+			</a>
+			<div class="product__body">
+				<div class="product__header">
+					<ul class="product__cats list-unstyled">
+						<li class="product__cats-item">
+							<a href="#">{{category.name}}</a>
+						</li>
+					</ul>
+					<h2 class="product__title h4"><a href="shop-product.html">{{title}}</a></h2>
+					<ul class="product__meta list-unstyled">
+						<li class="product__meta-item product__price">{{price}}</li>
+						<li class="product__meta-item product__ratings">
+							<div class="fas star-rating">
+								<span style="width: {{rating}};">&nbsp;</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	{{/each}}
+
+</div>

@@ -1,0 +1,58 @@
+<!-- Content
+================================================== -->
+<main class="site-content" id="wrapper">
+	<div class="site-content__inner">
+		<div class="site-content__holder">
+			<figure class="page-thumbnail page-thumbnail--default">
+				<img class="page-bg-logo" src="assets/img/samples/page-bg-logo.png" alt="">
+				<!-- Decoration -->
+				<div class="ncr-page-decor">
+					<div class="ncr-page-decor__layer-1">
+						<div class="ncr-page-decor__layer-bg"></div>
+					</div>
+					<div class="ncr-page-decor__layer-2"></div>
+					<div class="ncr-page-decor__layer-3">
+						<div class="ncr-page-decor__layer-bg"></div>
+					</div>
+					<div class="ncr-page-decor__layer-4"></div>
+					<div class="ncr-page-decor__layer-5"></div>
+					<div class="ncr-page-decor__layer-6"></div>
+				</div>
+				<!-- Decoration / End -->
+			</figure>
+			<h1 class="page-title h3">Icons</h1>
+			<div class="page-content">
+				<!-- Icons List -->
+				<ul class="demo-icons-list row row-cols-3 row-cols-sm-4 row-cols-md-4 row-cols-lg-5 list-unstyled">
+					{{#each icons.icons}}
+					<li class="col mb-4">
+						<div class="p-3 py-4 mb-2 bg-light text-center rounded">
+							<svg role="img" class="df-icon df-icon--bag">
+								<use xlink:href="assets/img/necromancers.svg#{{name}}"/>
+							</svg>
+						</div>
+						<div class="name text-muted text-center pt-1">{{name}}</div>
+					</li>
+					{{/each}}
+				</ul>
+				<!-- Icons List / End -->
+
+				<h4>Usage</h4>
+				<p>Necromancers Icons are SVGs, so you can include them into your HTML in a following way.</p>
+				<div class="highlight">
+<pre>
+<code>&lt;svg role="img" class="df-icon df-icon--icon-class"&gt;
+	&lt;use xlink:href="assets/img/necromancers.svg#icon-class"/&gt;
+&lt;/svg&gt;</code></pre>
+					<p>
+						Replace <code>icon-class</code> in 2 instances (CSS class and icon ID for <code>use</code>) with actual class for the icon, e.g. <code>joystick</code>. So, as a result, it should be like this
+					</p>
+<pre>
+<code>&lt;svg role="img" class="df-icon df-icon--joystick"&gt;
+	&lt;use xlink:href="assets/img/necromancers.svg#joystick"/&gt;
+&lt;/svg&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+	</div>
+</main>

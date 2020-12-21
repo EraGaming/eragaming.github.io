@@ -1,0 +1,76 @@
+---
+body-class: bg-image bg-fixed bg--texture-01 bg--dotted-3x3
+---
+
+<!-- Content
+================================================== -->
+<main class="site-content" id="wrapper">
+
+	<div class="team-selection-slider js-team-selection-slider">
+
+		{{#each content.team.selection-1}}
+		<!-- Slide #{{@index}} -->
+		<div class="team-selection__slide team-selection__slide--{{category}}">
+			<div class="team-selection__slide-inner">
+
+				<!-- Slide Heading -->
+				<div class="team-selection__slide-heading">
+					<div class="team-selection__slide-logo">
+						<img src="{{logo}}" srcset="{{logo2x}}" alt="">
+					</div>
+					<h5 class="team-selection__slide-subtitle">{{team}}</h5>
+					<h2 class="team-selection__slide-title">
+						<a href="{{url}}" class="team-selection__slide-title-link team-selection__slide-title--has-link-plus">{{{game}}} <span class="link-plus"></span></a>
+					</h2>
+				</div>
+				<!-- Slide Heading / End -->
+
+				<!-- Slide Body -->
+				<div class="team-selection__slide-body">
+
+					<!-- Players -->
+					<div class="team-selection__slide-players">
+						{{#each players}}
+						<img src="{{img}}" alt="" class="team-selection__slide-player">
+						{{/each}}
+					</div>
+					<!-- Players / End -->
+
+					{{#ifequal @index 0}}
+					<div class="ncr-decor-wrapper">
+						<div class="ncr-decor d-none d-sm-block">
+							<div class="ncr-decor__layer-1">
+								<div class="ncr-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-decor__layer-2">
+								<div class="ncr-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-decor__layer-3">
+								<div class="ncr-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-decor__layer-4"></div>
+							<div class="ncr-decor__layer-5"></div>
+						</div>
+						<div class="ncr-decor ncr-decor--reverse d-none d-sm-block">
+							<div class="ncr-decor__layer-1">
+								<div class="ncr-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-decor__layer-2">
+								<div class="ncr-decor__layer-bg"></div>
+							</div>
+							<div class="ncr-decor__layer-3"></div>
+							<div class="ncr-decor__layer-4"></div>
+							<div class="ncr-decor__layer-5"></div>
+						</div>
+					</div>
+					{{/ifequal}}
+
+				</div>
+				<!-- Slide Body / End -->
+
+			</div>
+		</div>
+		<!-- Slide #{{@index}} -->
+		{{/each}}
+	</div>
+</main>

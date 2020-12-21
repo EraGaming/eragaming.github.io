@@ -1,0 +1,58 @@
+<!-- Main Navigation Left -->
+<nav class="main-nav">
+	<ul class="main-nav__list">
+		<li class="{{#ifpage 'home'}}active{{/ifpage}}"><a href="home.html">Home</a></li>
+		<li class="{{#ifpage 'page-about.hbs'}}active{{/ifpage}}">
+			<a href="#">Teams</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'team-selection-1' 'team-selection-2' 'team-selection-3' 'team-selection-4'}}active{{/ifpage}}">
+					<a href="#">Team Selections</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'team-selection-1'}}active{{/ifpage}}"><a href="team-selection-1.html">Team Selection v1</a></li>
+						<li class="{{#ifpage 'team-selection-2'}}active{{/ifpage}}"><a href="team-selection-2.html">Team Selection v2</a></li>
+						<li class="{{#ifpage 'team-selection-3'}}active{{/ifpage}}"><a href="team-selection-3.html">Team Selection v3</a></li>
+						<li class="{{#ifpage 'team-selection-4'}}active{{/ifpage}}"><a href="team-selection-4.html">Team Selection v4</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'team-overview' 'team-overview-2'}}active{{/ifpage}}">
+					<a href="team-overview.html">Team Overview</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'team-overview'}}active{{/ifpage}}"><a href="team-overview.html">Team Overview v1</a></li>
+						<li class="{{#ifpage 'team-overview-2'}}active{{/ifpage}}"><a href="team-overview-2.html">Team Overview v2</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'team-player-1'}}active{{/ifpage}}"><a href="team-player-1.html">Player Page</a></li>
+			</ul>
+		</li>
+		<li class="{{#ifpage 'matches-scores' 'matches-upcoming' 'matches-standings' 'matches-stats-1' 'matches-stats-2' 'matches-stats-3' 'matches-lineups-1' 'matches-lineups-2' 'matches-lineups-3' 'matches-overview-1' 'matches-overview-2' 'matches-replay'}}active{{/ifpage}}"><a href="#">Matches</a>
+			<ul class="main-nav__sub">
+				<li class="{{#ifpage 'matches-scores'}}active{{/ifpage}}"><a href="matches-scores.html">Match Scores</a></li>
+				<li class="{{#ifpage 'matches-upcoming'}}active{{/ifpage}}"><a href="matches-upcoming.html">Upcoming Matches</a></li>
+				<li class="{{#ifpage 'matches-standings'}}active{{/ifpage}}"><a href="matches-standings.html">Standings</a></li>
+				<li class="{{#ifpage 'matches-stats-1' 'matches-stats-2' 'matches-stats-3'}}active{{/ifpage}}"><a href="#">Match Stats</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-stats-1'}}active{{/ifpage}}"><a href="matches-stats-1.html">Match Stats v1</a></li>
+						<li class="{{#ifpage 'matches-stats-2'}}active{{/ifpage}}"><a href="matches-stats-2.html">Match Stats v2</a></li>
+						<li class="{{#ifpage 'matches-stats-3'}}active{{/ifpage}}"><a href="matches-stats-3.html">Match Stats v3</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-lineups-1' 'matches-lineups-2' 'matches-lineups-3'}}active{{/ifpage}}">
+					<a href="#">Match Lineups</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-lineups-1'}}active{{/ifpage}}"><a href="matches-lineups-1.html">Match Lineups v1</a></li>
+						<li class="{{#ifpage 'matches-lineups-2'}}active{{/ifpage}}"><a href="matches-lineups-2.html">Match Lineups v2</a></li>
+						<li class="{{#ifpage 'matches-lineups-3'}}active{{/ifpage}}"><a href="matches-lineups-3.html">Match Lineups v3</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-overview-1' 'matches-overview-2' }}active{{/ifpage}}"><a href="#">Match Overviews</a>
+					<ul class="main-nav__sub">
+						<li class="{{#ifpage 'matches-overview-1'}}active{{/ifpage}}"><a href="matches-overview-1.html">Match Overview v1</a></li>
+						<li class="{{#ifpage 'matches-overview-2'}}active{{/ifpage}}"><a href="matches-overview-2.html">Match Overview v2</a></li>
+					</ul>
+				</li>
+				<li class="{{#ifpage 'matches-replay'}}active{{/ifpage}}"><a href="matches-replay.html">Match Replay</a></li>
+			</ul>
+		</li>
+	</ul>
+</nav>
+<!-- Main Navigation Left / End -->

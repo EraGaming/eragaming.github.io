@@ -1,0 +1,39 @@
+{{> _head }}
+
+<body class="site-layout--landing preloader-is--active {{body-class}}">
+
+	<div class="site-wrapper">
+
+		{{> _header--landing }}
+
+		<!-- Content
+		================================================== -->
+		<main class="site-content text-center" id="wrapper">
+			{{> body }}
+		</main>
+
+		{{> _footer--landing }}
+
+		{{> _landing-details }}
+
+		<!-- Overlay -->
+		<div class="site-overlay"></div>
+		<!-- Overlay / End -->
+
+		{{> _cart-panel }}
+
+		{{> _search-panel }}
+
+		{{> _menu-panel }}
+
+	</div>
+
+	{{> _preloader }}
+
+	{{> _cursor }}
+
+	{{> _footer-scripts }}
+
+</body>
+
+</html>
