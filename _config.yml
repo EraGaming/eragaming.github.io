@@ -18,11 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Teddy For A Toonie League of Legends Tournament
+title: ERA Gaming
 email: todd@willsie.net
 description: >- # this means to ignore newlines until "baseurl:"
-  The 2020 ATB Teddy for a Toonie League of Legends Tournament presented 
-  by Memory Express and ERA Gaming. October 31 and November 1, 2020.
+  Endless ERA Gaming is a Canadian esports group that helps Canadian gamers build their own brand and 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://eragaming.ca" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

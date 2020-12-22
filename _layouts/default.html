@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{{ site.title}}</title>
-    </head>
-    <body>
-        {{ page.content }}
+    {% include era_header.html %}
+    <body class="preloader-is--active bg-image bg-fixed bg--texture-01 bg--dotted-3x3">
+        <div class="site-wrapper site-layout--default">
+            {% include era_navigation.html %}
+            {{ page.content }}
+            <!-- Overlay -->
+            <div class="site-overlay"></div>
+            <!-- Overlay / End -->
+            {% include era_cart.html %}
+            {% include era_search.html %}
+            {% include era_menu.html %}
+        </div>
+    {% include era_footer.html %}
     </body>
 </html>

@@ -1,0 +1,28 @@
+- firstname: Todd
+  lastname: Willsie
+  alias: twillsie
+  image: /assets/img/players/twillsie.png
+  age: 35
+  twitch: https://twitch.tv/twillsie
+  youtube:
+  twitter:
+  instagram:
+  country: Canada 
+  biography: >-
+    I am going to write a much better bio than this. But for now
+    this is my bio, and you are simply just going to have to deal
+    with it my guy.
+- firstname: Joshua
+  lastname: Parent
+  alias: valharl
+  image: /assets/img/players/valharl.png
+  age: 35
+  twitch: https://twitch.tv/valharl
+  youtube:
+  twitter:
+  instagram:
+  country: Canada 
+  biography: >-
+    I am going to write a much better bio than this. But for now
+    this is valharl's bio, and you are simply just going to have to deal
+    with it my guy.
