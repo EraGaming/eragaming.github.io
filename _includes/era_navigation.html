@@ -69,8 +69,8 @@
       </svg>
       <span class="header-social-toggle__plus">&nbsp;</span>
       <ul class="social-menu social-menu--header">
+        {% for entry in site.data.nav_data %}
         <li>
-          {% for entry in site.data.nav_data %}
           <a href="{{ entry.discordLink }}">
             <span class="link-subtitle">Discord</span>{{ entry.teamName }}</a
           >
@@ -94,7 +94,7 @@
         </li> -->
       </ul>
     </div>
-    {% for entry in site.data.cart_data %}
+    <!-- {% for entry in site.data.cart_data %}
     <div class="header-cart-toggle">
       <svg role="img" class="df-icon df-icon--bag">
         <use xlink:href="assets/img/necromancers.svg#bag" />
@@ -106,7 +106,7 @@
         >{{ entry.cartTotalItems }}</span
       >
     </div>
-    {% endfor %}
+    {% endfor %} -->
     <div class="header-search-toggle">
       <svg role="img" class="df-icon df-icon--search">
         <use xlink:href="assets/img/necromancers.svg#search" />
