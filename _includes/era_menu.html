@@ -23,17 +23,17 @@
                 <li class=""><a href="index.html">Landing Image</a></li>
                 <li class=""><a href="index-2.html">Landing Video</a></li>
                 <li class=""><a href="home.html">Home page</a></li>
-                <li class=""><a href="blog-post.html">Post Page</a></li>
+                <!-- <li class=""><a href="blog-post.html">Post Page</a></li>
                 <li class=""><a href="blog-1.html">News v1</a></li>
                 <li class=""><a href="blog-2.html">News v2</a></li>
                 <li class=""><a href="blog-3.html">News v3</a></li>
-                <li class=""><a href="blog-4.html">News v4</a></li>
+                <li class=""><a href="blog-4.html">News v4</a></li> -->
                 <li class="">
                   <a href="blog-classic.html"
                     >News Classic <span class="badge badge-danger">New</span></a
                   >
                 </li>
-                <li class="">
+                <!-- <li class="">
                   <a href="shop-account-settings.html">Account Settings</a>
                 </li>
                 <li class="">
@@ -68,7 +68,7 @@
                 <li class=""><a href="features-bg-1.html">Backgrounds</a></li>
               </ul>
             </li>
-            <li class="">
+             <li class="">
               <a href="#">Team Pages</a>
               <ul class="mobile-nav__sub">
                 <li class="">
@@ -97,7 +97,7 @@
                 </li>
                 <li><a href="team-overview.html?slide=3">Team Matches</a></li>
               </ul>
-            </li>
+            </li> 
             <li class="">
               <a href="#">Player Pages</a>
               <ul class="mobile-nav__sub">
@@ -157,7 +157,7 @@
                 <li class=""><a href="shop-product.html">Product Page</a></li>
                 <li class=""><a href="shop-checkout.html">Checkout Page</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         </nav>
         <!-- Mobile Navigation / End -->
@@ -177,24 +177,26 @@
       </a>
       <div id="mobile_collapse_2" class="collapse mobile-bar-item__body">
         <ul class="social-menu social-menu--mobile-bar">
-          <li>
+          <!-- <li>
             <a href="https://www.facebook.com/danfisher.dev/"
               ><span>Facebook</span></a
             >
           </li>
           <li>
             <a href="https://twitter.com/danfisher_dev"><span>Twitter</span></a>
+          </li> -->
+          {% for entry in site.data.nav_data %}
+          <li>
+            <a href="{{ entry.twitchLink }}"><span>Twitch</span></a>
           </li>
           <li>
-            <a href="twitch.com"><span>Twitch</span></a>
+            <a href="{{ entry.discordLink }}"><span>Discord</span></a>
           </li>
-          <li>
-            <a href="discordapp.com"><span>Discord</span></a>
-          </li>
+          {% endfor %}
         </ul>
       </div>
     </li>
-    <li class="mobile-bar-item mobile-bar-item--info">
+    <!-- <li class="mobile-bar-item mobile-bar-item--info">
       <a
         class="mobile-bar-item__header collapsed"
         data-toggle="collapse"
@@ -239,7 +241,7 @@
           </ul>
         </div>
       </div>
-    </li>
+    </li> -->
     <li class="mobile-bar-item mobile-bar-item--partners">
       <a
         id="mobile_collapse_4h"
@@ -256,36 +258,19 @@
       <div id="mobile_collapse_4" class="collapse mobile-bar-item__body">
         <div class="mobile-bar-item__inner">
           <ul class="widget-partners-mobile-carousel">
+            {% for partner in site.data.partners %}
             <li>
               <img
-                src="assets/img/samples/partner-carousel-img-01.png"
+                src="{{ partner.logo }}"
                 alt=""
               />
             </li>
-            <li>
-              <img
-                src="assets/img/samples/partner-carousel-img-02.png"
-                alt=""
-              />
-            </li>
-            <li>
-              <img
-                src="assets/img/samples/partner-carousel-img-03.png"
-                alt=""
-              />
-            </li>
+            {% endfor %}
           </ul>
         </div>
       </div>
     </li>
-    <li class="mobile-bar-item">
-      <a class="mobile-bar-item__header" href="shop-account-settings.html">
-        Account Settings
-      </a>
-    </li>
-    <li class="mobile-bar-item">
-      <a class="mobile-bar-item__header" href="login-register.html"> Logout </a>
-    </li>
+    <!-- -->
   </ul>
 
   <div class="menu-panel__content d-none d-md-flex">

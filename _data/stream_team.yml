@@ -1,5 +1,5 @@
-- firstname: Kyle 
-  lastname: 
+- firstname: Kyle
+  lastname:
   alias: growzy
   image: /assets/img/team/growzy.png
   membersince: Dawn of Time
@@ -8,7 +8,7 @@
   youtube:
   twitter:
   instagram:
-  country: Canada 
+  country: Canada
   biography: >-
     I am going to write a much better bio than this. But for now
     this is growzy's bio, and you are simply just going to have to deal
@@ -17,30 +17,30 @@
 - firstname: Joshua
   lastname: Parent
   alias: valharl
-  image: /assets/img/team/growzy.png
+  image: /assets/img/team/valharl.png
   membersince: Dawn of Time
   game: Apex Legends
   twitch: https://twitch.tv/valharl
   youtube:
   twitter:
   instagram:
-  country: Canada 
+  country: Canada
   biography: >-
     I am going to write a much better bio than this. But for now
     this is valharl's bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-2
-- firstname: Tyler 
+- firstname: Tyler
   lastname: Foger
   alias: foger
-  image: /assets/img/team/growzy.png
+  image: /assets/img/team/foger.png
   membersince: Dawn of Time
   game: WoW Classic
   twitch: https://twitch.tv/foger
   youtube:
   twitter:
   instagram:
-  country: Canada 
+  country: Canada
   biography: >-
     I am going to write a much better bio than this. But for now
     this is foger's bio, and you are simply just going to have to deal
@@ -56,7 +56,7 @@
   youtube:
   twitter:
   instagram:
-  country: Canada 
+  country: Canada
   biography: >-
     I am going to write a much better bio than this. But for now
     this is my bio, and you are simply just going to have to deal
