@@ -572,9 +572,7 @@
         slick_team_slider.slick({
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 5000,
-          arrows: true,
+          arrows: false,
           dots: false,
           fade: true,
           infinite: true,
@@ -585,7 +583,6 @@
         $('.js-header-team-nav').slick({
           slidesToShow: 4,
           slidesToScroll: 1,
-          asNavFor: slick_team_slider,
           dots: false,
           arrows: false,
           vertical: true,
@@ -602,11 +599,9 @@
         slick_player_slider.slick({
           slidesToShow: 2,
           slidesToScroll: 1,
-          autoplay: false,
-          autoplaySpeed: 5000,
           arrows: true,
           dots: false,
-          infinite: false,
+          asNavFor: slick_team_carousel,
           prevArrow: $('.js-team-player__nav-prev'),
           nextArrow: $('.js-team-player__nav-next'),
 
@@ -842,13 +837,14 @@
           initialSlide: slideNum,
           slidesToShow: 1,
           slidesToScroll: 1,
-          autoplay: false,
           vertical: true,
           verticalSwiping: true,
           centerPadding: 0,
           arrows: false,
           dots: true,
           adaptiveHeight: true,
+          asNavFor: slick_player_slider,
+
           customPaging: function (slick, index) {
             var icon = slick.$slides.get(index).dataset.icon;
             return (
