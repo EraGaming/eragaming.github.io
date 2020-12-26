@@ -18,21 +18,23 @@
         <nav class="mobile-nav">
           <ul class="mobile-nav__list">
             <li class="">
-              <a href="#">Main Pages</a>
+              <a href="#">Streamers</a>
               <ul class="mobile-nav__sub">
-                <li class=""><a href="index.html">Landing Image</a></li>
-                <li class=""><a href="index-2.html">Landing Video</a></li>
-                <li class=""><a href="home.html">Home page</a></li>
+                  {% for streamer in site.data.stream_team %}
+                <li class=""><a href="{{ streamer.alias }}.html">{{ streamer.alias}}</a></li>
+                {% endfor %}
+                </ul>
+            <li class=""><a href="index-2.html">Landing Video</a></li>
+            <li class=""><a href="home.html">Home page</a></li>
                 <!-- <li class=""><a href="blog-post.html">Post Page</a></li>
                 <li class=""><a href="blog-1.html">News v1</a></li>
                 <li class=""><a href="blog-2.html">News v2</a></li>
                 <li class=""><a href="blog-3.html">News v3</a></li>
                 <li class=""><a href="blog-4.html">News v4</a></li> -->
-                <li class="">
-                  <a href="blog-classic.html"
+            <li class=""><a href="blog-classic.html"
                     >News Classic <span class="badge badge-danger">New</span></a
                   >
-                </li>
+            </li>
                 <!-- <li class="">
                   <a href="shop-account-settings.html">Account Settings</a>
                 </li>
@@ -182,10 +184,10 @@
               ><span>Facebook</span></a
             >
           </li>
+        </li> -->
+        {% for entry in site.data.nav_data %}
           <li>
-            <a href="https://twitter.com/danfisher_dev"><span>Twitter</span></a>
-          </li> -->
-          {% for entry in site.data.nav_data %}
+            <a href="{{ entry.twitterLink }}"><span>Twitter</span></a>
           <li>
             <a href="{{ entry.twitchLink }}"><span>Twitch</span></a>
           </li>
@@ -281,27 +283,20 @@
           <li class="">
             <a href="home.html">Home</a>
           </li>
-          <!-- <li class="">
-            <a href="team-selection-2.html">Teams</a>
-            <ul class="dl-submenu">
+           <li class="">
+            <a href="team-selection-2.html">Streamers</a>
+            <!-- <ul class="dl-submenu">
               <li class="">
-                <a href="#">Team Selections</a>
+                <a href="#">Team Selections</a> -->
                 <ul class="dl-submenu">
+                    {% for streamer in site.data.stream_team %}
                   <li class="">
-                    <a href="team-selection-1.html">Team Selection v1</a>
+                    <a href="{{ streamer.alias }}.html">{{ streamer.alias }}</a>
                   </li>
-                  <li class="">
-                    <a href="team-selection-2.html">Team Selection v2</a>
-                  </li>
-                  <li class="">
-                    <a href="team-selection-3.html">Team Selection v3</a>
-                  </li>
-                  <li class="">
-                    <a href="team-selection-4.html">Team Selection v4</a>
-                  </li>
+                  {% endfor %}
                 </ul>
               </li>
-              <li class="active">
+              <!-- <li class="active">
                 <a href="team-overview.html">Team Overview</a>
                 <ul class="dl-submenu">
                   <li class="">
@@ -314,8 +309,9 @@
               </li>
               <li class=""><a href="team-player-1.html">Player Page</a></li>
             </ul>
-          </li>
-          <li class="">
+          </li> -->
+          
+          <!-- <li class="">
             <a href="#">Matches</a>
             <ul class="dl-submenu">
               <li class=""><a href="matches-scores.html">Match Scores</a></li>
@@ -364,7 +360,7 @@
               </li>
               <li class=""><a href="matches-replay.html">Match Replay</a></li>
             </ul>
-          </li> -->
+          </li>  -->
           <li class="">
             <a href="blog-1.html">News</a>
           </li>
@@ -478,8 +474,9 @@
           <!-- Widget: Text / End -->
         </div>
         <div class="col-md-12 col-lg-6 col-xl-5 offset-xl-2 mt-5 mt-lg-0">
-          <!-- Widget: Contact Info -->
-          <!-- <section class="widget widget-contact-info">
+            <!-- <section class="widget widget-contact-info">
+                <!-- Widget: Contact Info -->
+                {% for entry in site.data.nav_data %}
             <h5 class="widget__title">Contact Info</h5>
             <div class="widget__content">
               <p>
@@ -489,20 +486,21 @@
                 <div class="info-box__label">General inquiries</div>
                 <div class="info-box__content">
                   <a href="mailto:#"
-                    >inquiries<span class="color-primary">@</span
-                    >necromancers.com</a
+                    >{{ entry.email }}<span class="color-primary">@</span
+                    >{{ entry.teamShortName }}.com</a
                   >
                 </div>
               </div>
               <ul class="social-menu social-menu--default">
-                <li><a href="https://www.facebook.com/danfisher.dev/"></a></li>
-                <li><a href="https://twitter.com/danfisher_dev"></a></li>
-                <li><a href="https://twitch.com"></a></li>
-                <li><a href="https://discord.gg/xxxx"></a></li>
+                <!-- <li><a href="https://www.facebook.com/danfisher.dev/"></a></li> -->
+                <li><a href="{{ entry.twitterLink}}"></a></li> 
+                <li><a href="{{ entry.twitchLink}}"></a></li>
+                <li><a href="{{ entry.discordLink}}"></a></li>
               </ul>
             </div>
-          </section> -->
-          <!-- Widget: Contact Info / End -->
+        </section>
+        {% endfor %}
+        <!-- Widget: Contact Info / End -->
         </div>
       </div>
       <div class="row">

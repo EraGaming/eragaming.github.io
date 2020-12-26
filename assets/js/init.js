@@ -700,8 +700,8 @@
           slidesToShow: 3,
           slidesToScroll: 1,
           autoplay: true,
-          autoplaySpeed: 5000,
-          arrows: true,
+          autoplaySpeed: 2000,
+          arrows: false,
           dots: false,
           centerPadding: 0,
           prevArrow:
