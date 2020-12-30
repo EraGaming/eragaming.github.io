@@ -19,16 +19,14 @@
       <li class="">
         <a href="#">News</a>
         <ul class="main-nav__sub">
-          <li class=""><a href="blog-1.html">News v1</a></li>
-          <li class=""><a href="blog-2.html">News v2</a></li>
-          <li class=""><a href="blog-3.html">News v3</a></li>
-          <li class=""><a href="blog-4.html">News v4</a></li>
+          <li class=""><a href="blog.html">News</a></li>
           <li class="">
-            <a href="blog-classic.html"
-              >News Classic <span class="badge badge-danger">New</span></a
+            <a
+              href="
+            clickbait.html"
+              >Clickbait <span class="badge badge-danger">Hot</span></a
             >
           </li>
-          <li class=""><a href="blog-post.html">Post Page</a></li>
         </ul>
       </li>
     </ul>
@@ -55,14 +53,6 @@
         </svg>
       </a>
     </div>
-    <!-- <div class="header-top-bar-toggle d-md-none hide">
-      <svg role="img" class="df-icon df-icon--joystick">
-        <use xlink:href="assets/img/necromancers.svg#joystick" />
-      </svg>
-      <svg role="img" class="df-icon df-icon--close">
-        <use xlink:href="assets/img/necromancers.svg#close" />
-      </svg>
-    </div> -->
     <div class="header-social-toggle d-none d-md-block">
       <svg role="img" class="df-icon df-icon--thumb-up">
         <use xlink:href="assets/img/necromancers.svg#thumb-up" />
@@ -80,28 +70,14 @@
             ><span class="link-subtitle">Twitch</span>{{ entry.teamName }}</a
           >
         </li>
-        {% endfor %}
-        <!-- 					Who the hell uses facebook		
         <li>
-          <a href="https://www.facebook.com/danfisher.dev/"
-            ><span class="link-subtitle">Facebook</span>{{ entry.teamName }}</a
+          <a href="{{ entry.twitterLink }}"
+            ><span class="link-subtitle">Twitter</span>{{ entry.teamName }}</a
           >
-        </li> -->
+        </li>
+        {% endfor %}
       </ul>
     </div>
-    <!-- {% for entry in site.data.cart_data %}
-    <div class="header-cart-toggle">
-      <svg role="img" class="df-icon df-icon--bag">
-        <use xlink:href="assets/img/necromancers.svg#bag" />
-      </svg>
-      <svg role="img" class="df-icon df-icon--close">
-        <use xlink:href="assets/img/necromancers.svg#close" />
-      </svg>
-      <span class="header-cart-toggle__items-count"
-        >{{ entry.cartTotalItems }}</span
-      >
-    </div>
-    {% endfor %} -->
     <div class="header-search-toggle">
       <svg role="img" class="df-icon df-icon--search">
         <use xlink:href="assets/img/necromancers.svg#search" />
@@ -110,31 +86,6 @@
         <use xlink:href="assets/img/necromancers.svg#search-close" />
       </svg>
     </div>
-    <!-- <div class="header-account hide">
-      <div class="header-account__avatar">
-        <img
-          src="assets/img/samples/account-user-avatar.jpg"
-          srcset="assets/img/samples/account-user-avatar@2x.jpg 2x"
-          alt=""
-        />
-      </div>
-      <div class="header-account__body">
-        Hello!
-        <div class="header-account__name">James Spiegel</div>
-      </div>
-      <div class="header-account__icon">
-        <a href="shop-account-settings.html">
-          <svg role="img" class="df-icon df-icon--account">
-            <use xlink:href="assets/img/necromancers.svg#account" />
-          </svg>
-        </a>
-        <a href="login-register.html">
-          <svg role="img" class="df-icon df-icon--logout">
-            <use xlink:href="assets/img/necromancers.svg#logout" />
-          </svg>
-        </a>
-      </div>
-    </div> -->
     <div class="header-menu-toggle">
       <div class="header-menu-toggle__inner">
         <span>&nbsp;</span>

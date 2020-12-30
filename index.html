@@ -61,8 +61,8 @@ layout: default
       <div class="team-player__slide {{ member.style }}">
         <div class="team-player__slide-inner">
           <div class="team-player__slide-decor">
-            <div class="team-player__slide-line-1"></div>
-            <div class="team-player__slide-line-2"></div>
+            <!-- <div class="team-player__slide-line-1"></div>
+            <div class="team-player__slide-line-2"></div> -->
           </div>
           <img
             src="{{ member.image }}"
@@ -76,7 +76,7 @@ layout: default
               </h4>
               <h3 class="team-player__slide-title">{{ member.alias }}</h3>
               <a
-                href="team-player-1.html"
+                href="{{ member.alias }}.html"
                 class="team-player__slide-link link-plus"
               ></a>
             </div>
