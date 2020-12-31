@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include era_header.html %}
+  <body class="site-layout--horizontal preloader-is--active">
+    <div class="site-wrapper">
+      {% include era_navigation.html %} {{ content }}
+      <!-- Overlay -->
+      <div class="site-overlay"></div>
+      <!-- Overlay / End -->
+      {% include era_cart.html %} {% include era_search.html %} {% include
+      era_menu.html %}
+    </div>
+    {% include era_footer.html %}
+  </body>
+</html>

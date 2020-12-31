@@ -853,13 +853,16 @@
 
             // Trying to make this more elegant. Can also replace letters with twitch icons in our own svg
             // var players = ['G', 'V', 'F', 'T'];
-            // for (let i = 0; i < slick.length; i++) {
-            //   if (index === i) return players[i];
+            // for (let i = 0; i <img slick.length; i++) {
+            //   if (index === i) return `<img src="assets/img/icons/${players[index]}.svg" alt="${players[index]} icon">`;
             // }
-            if (index === 0) return `G`;
-            if (index === 1) return `V`;
+            if (index === 0)
+              return `<img src="assets/img/icons/growzy.svg" alt="Growzy icon">`;
+            if (index === 1)
+              return `<img src="assets/img/icons/valharl.svg" alt="Valharl icon">`;
             if (index === 2) return `F`;
-            if (index === 3) return `T`;
+            if (index === 3)
+              return `<img src="assets/img/icons/twillsie.svg" alt="twillsie icon">`;
 
             return (
               '<svg role="img" class="df-icon df-icon--match-' +
