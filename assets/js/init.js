@@ -848,9 +848,9 @@
           asNavFor: slick_player_slider,
 
           customPaging: function (slick, index) {
-            //
             var icon = slick.$slides.get(index).dataset.icon;
 
+<<<<<<< HEAD
             // Trying to make this more elegant. Can also replace letters with twitch icons in our own svg
             // var players = ['G', 'V', 'F', 'T'];
             // for (let i = 0; i <img slick.length; i++) {
@@ -864,6 +864,8 @@
             if (index === 3)
               return `<img src="assets/img/icons/twillsie.svg" alt="twillsie icon">`;
 
+=======
+>>>>>>> 3a6cdc74e9cd577851e291d751bd34e40aba3c96
             return (
               '<svg role="img" class="df-icon df-icon--match-' +
               icon +

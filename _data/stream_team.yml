@@ -47,10 +47,11 @@
 - firstname: Todd
   lastname: Willsie
   alias: twillsie
-  image: /assets/img/team/growzy.png
+  image: /assets/img/team/todd.png
   membersince: March 2020
   game: What's that?
-  twitch: https://twitch.com/twillsie
+  twitch: https://twitch.tv/twillsie
+  video: /assets/img/team/todd.mp4
   youtube:
   twitter: https://www.twitter.com/twill_c/
   instagram: https://www.instagram.com/twill_c/
@@ -59,4 +60,4 @@
     I am going to write a much better bio than this. But for now
     this is my bio, and you are simply just going to have to deal
     with it my guy.
-  style: team-player__slide--category-4
+  style: team-player__slide--category-5

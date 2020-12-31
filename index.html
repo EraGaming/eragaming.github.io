@@ -9,7 +9,7 @@ layout: default
         <div class="team-carousel">
           <div class="team-carousel__content">
             {% for entry in site.data.stream_team %}
-            <div class="team-carousel__item" data-icon="team-overview">
+            <div class="team-carousel__item" data-icon="player-{{entry.alias}}" {% if entry.video %}data-video="{{entry.video}}" {% endif %}>
               <div class="row">
                 <div class="col-lg-11">
                   <h3 class="player-info-subtitle h4 text-uppercase">
@@ -65,7 +65,8 @@ layout: default
                 </div>
               </div>
             </div>
-            {% endfor %}
+			{% endfor %}
+			
           </div>
         </div>
       </div>
@@ -100,14 +101,6 @@ layout: default
         </div>
       </div>
       {% endfor %}
-
-      <!-- Empty Slide  // Removed as it causes issues with infite scrolling
-      <!-- <div class="team-player__slide">
-						<div class="team-player__slide-inner">
-							<div class="team-player__slide-meta-holder"></div>
-						</div>
-					</div> -->
-      <!-- Empty Slide / End -->
     </div>
   </div>
 </main>
