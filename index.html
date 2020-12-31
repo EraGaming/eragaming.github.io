@@ -9,7 +9,7 @@ layout: default
         <div class="team-carousel">
           <div class="team-carousel__content">
             {% for entry in site.data.stream_team %}
-            <div class="team-carousel__item" data-icon="player-{{entry.alias}}">
+            <div class="team-carousel__item" data-icon="player-{{entry.alias}}" {% if entry.video %}data-video="{{entry.video}}" {% endif %}>
               <div class="row">
                 <div class="col-lg-11">
                   <h3 class="player-info-subtitle h4 text-uppercase">
