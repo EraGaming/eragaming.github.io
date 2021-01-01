@@ -1,12 +1,13 @@
     <head>
         <!-- Basic Page Needs
         ================================================== -->
-        <title>TITLE</title>
+        <title>{{site.title}}{% if page.title %} - {{page.title}}{% endif %}</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="eSports Team &amp; Gaming HTML Template">
-        <meta name="author" content="Dan Fisher">
-        <meta name="keywords" content="esports team news HTML template">
+        <meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
+        <meta name="keywords" content="{{site.keywords}}">
+        <meta property="og:image" content="assets/img/logo@2x.png" />
+
 
         <!-- Favicons
         ================================================== -->
