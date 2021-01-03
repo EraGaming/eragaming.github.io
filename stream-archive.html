@@ -5,55 +5,36 @@ layout: horizontal_default
 <main class="site-content" id="wrapper">
 			
 	<div class="page-heading page-heading--loop page-heading--streams-archive bg-image bg--ph-04">
-		<div class="page-heading__subtitle h5 color-warning">Necromancers</div>
-		<h1 class="page-heading__title h2">Streams </br>Archive</h1>
+		<div class="page-heading__subtitle h5 color-warning">Endless Era Gaming</div>
+		<h1 class="page-heading__title h2">Stream </br>Archives</h1>
 		<div class="page-heading__body">
 			<svg role="img" class="df-icon df-icon--twitch-word-logo">
 				<use xlink:href="assets/img/necromancers.svg#twitch-word-logo"/>
 			</svg>
 			<div class="h5">Relive your favourite </br>livestreams!</div>
-			<p>Select your <span class="color-warning font-bold">favourite streamer</span> to filter the videos, or click the Necromancers logo to checkout all of them!</p>
+			<p>Select your <span class="color-warning font-bold">favourite streamer</span> to filter the videos, or click the ERA logo to check them all out!</p>
 		</div>
 		<!-- Filter -->
 		<ul class="streams-filter filter js-filter list-unstyled">
-	
 			<li>
 				<button class="btn active" data-filter="*">
-					<img src="assets/img/samples/streams-filter-avatar-01.png" alt="">
+					<img src="assets/img/logo.png" alt="">
 				</button>
 			</li>
+			{% for streamer in site.data.stream_team %}
 			<li>
-				<button class="btn " data-filter=".stream-1">
-					<img src="assets/img/samples/streams-filter-avatar-02.png" alt="">
+				<button class="btn " data-filter=".stream-{{ streamer.archiveID }}">
+					<img src="{{ streamer.image}}" alt="">
 				</button>
 			</li>
-			<li>
-				<button class="btn " data-filter=".stream-2">
-					<img src="assets/img/samples/streams-filter-avatar-03.png" alt="">
-				</button>
-			</li>
-			<li>
-				<button class="btn " data-filter=".stream-3">
-					<img src="assets/img/samples/streams-filter-avatar-04.png" alt="">
-				</button>
-			</li>
-			<li>
-				<button class="btn " data-filter=".stream-4">
-					<img src="assets/img/samples/streams-filter-avatar-05.png" alt="">
-				</button>
-			</li>
-			<li>
-				<button class="btn " data-filter=".stream-5">
-					<img src="assets/img/samples/streams-filter-avatar-06.png" alt="">
-				</button>
-			</li>
+			{% endfor %}
 	
 		</ul>
 		<!-- Filter / End -->
 	</div>
 	<div class="content streams-archive">
 	
-		<article class="stream stream-1 has-post-thumbnail" data-id="playhearthstone" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-01.jpg" data-easy-embed>
+		<!-- <article class="stream stream-1 has-post-thumbnail" data-id="playhearthstone" data-controls="true" data-provider="twitch" data-thumbnail="assets/img/samples/stream-img-01.jpg" data-easy-embed>
 			<div class="stream__thumbnail">
 				<img src="assets/img/samples/stream-img-01.jpg" alt="">
 			</div>
@@ -212,7 +193,7 @@ layout: horizontal_default
 					<i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow Davikinger90</span>
 				</a>
 			</div>
-		</article>
+		</article> -->
 	
 	</div>
 	

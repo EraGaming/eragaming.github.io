@@ -12,10 +12,11 @@
   biography: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   style: team-player__slide--category-1
+  archiveID: 1
 - firstname: Joshua
   lastname: Parent
   alias: valharl
-  image: /assets/img/team/growzy.png
+  image: /assets/img/team/valharl.png
   membersince: Dawn of Time
   game: Apex Legends
   twitch: https://twitch.com/valharl
@@ -28,10 +29,11 @@
     this is valharl's bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-2
+  archiveID: 2
 - firstname: Tyler
   lastname: Foger
   alias: foger
-  image: /assets/img/team/growzy.png
+  image: /assets/img/team/foger.png
   membersince: Dawn of Time
   game: WoW Classic
   twitch: https://twitch.com/foger
@@ -44,13 +46,14 @@
     this is foger's bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-3
+  archiveID: 3
 - firstname: Todd
   lastname: Willsie
   alias: twillsie
   image: /assets/img/team/todd.png
   membersince: March 2020
   game: What's that?
-  twitch: https://twitch.tv/twillsie
+  twitch: https://twitch.com/twillsie
   video: /assets/img/team/todd.mp4
   youtube:
   twitter: https://www.twitter.com/twill_c/
@@ -61,3 +64,4 @@
     this is my bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-5
+  archiveID: 4
