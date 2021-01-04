@@ -11,15 +11,14 @@ const getVideosURL = `https://api.twitch.tv/helix/videos?user_id=`;
 
 const displayVideos = async function (state) {
   Object.entries(state)
-    .flatMap((entry, i) => {
-      console.log(entry);
-      entry[1].streamID = i;
+    .flatMap((entry) => {
+      // Only grab 5 videos
       if (entry[1].length > 5) return entry[1].slice(0, 5);
-
       return entry[1];
     })
-    .reverse()
+    .reverse() // Inserts oldest videos first so they show up left to right newest -> oldest
     .forEach((v) => {
+      // Setting some parameters to fill the HTML elements with
       let title = v.title;
       if (v.title.length > 71) title = v.title.slice(0, 71);
       const thumbnail = v.thumbnail_url.split('%{', 1)[0];
@@ -28,10 +27,8 @@ const displayVideos = async function (state) {
 
       const videoHTML = `
         <article class="stream stream-${
-          v.user_id
-        } has-post-thumbnail" data-controls="true" data-provider="twitch" data-id="${
-        v.user_name
-      }" data-thumbnail="" data-easy-embed>
+          v.streamID
+        } has-post-thumbnail" data-id="${v.user_name.toLowerCase()}" data-controls="true" data-provider="twitch" data-thumbnail="${thumbnail}${thumbNailSize}" data-easy-embed>
         <div class="stream__thumbnail">
           <img src="${thumbnail}${thumbNailSize}" alt="">
         </div>
@@ -65,7 +62,10 @@ const createVideoObjects = function (data) {
   state[videos[0]?.user_name] = [];
 
   videos.forEach((video) => {
+    const streamers = ['growzy', 'valharl', 'foger', 'twillsie'];
+
     state[video.user_name].push({
+      streamID: `${streamers.indexOf(video.user_name.toLowerCase()) + 1}`,
       user_name: video.user_name,
       id: video.id,
       user_id: video.user_id,
@@ -81,7 +81,7 @@ const loadVideos = async function (id) {
   try {
     const data = await GET(`${getVideosURL}${id}`);
 
-    // Add error handling incase the ID is invalid/returns undefined
+    // Add error handling incase the ID is invalid/returns undefined in the future
     createVideoObjects(data);
   } catch (err) {
     console.error(`Unable to load video${err}`);

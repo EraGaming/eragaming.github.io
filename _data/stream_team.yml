@@ -12,7 +12,7 @@
   biography: >-
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   style: team-player__slide--category-1
-  archiveID: 1
+  archiveID: .stream-1
 - firstname: Joshua
   lastname: Parent
   alias: valharl
@@ -29,7 +29,7 @@
     this is valharl's bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-2
-  archiveID: 2
+  archiveID: .stream-2
 - firstname: Tyler
   lastname: Foger
   alias: foger
@@ -46,7 +46,7 @@
     this is foger's bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-3
-  archiveID: 3
+  archiveID: .stream-3
 - firstname: Todd
   lastname: Willsie
   alias: twillsie
@@ -64,4 +64,4 @@
     this is my bio, and you are simply just going to have to deal
     with it my guy.
   style: team-player__slide--category-5
-  archiveID: 4
+  archiveID: .stream-4

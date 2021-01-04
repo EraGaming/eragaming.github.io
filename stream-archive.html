@@ -23,7 +23,7 @@ layout: horizontal_default
 			</li>
 			{% for streamer in site.data.stream_team %}
 			<li>
-				<button class="btn " data-filter=".stream-{{ streamer.archiveID }}">
+				<button class="btn " data-filter="{{ streamer.archiveID }}">
 					<img src="{{ streamer.image}}" alt="">
 				</button>
 			</li>

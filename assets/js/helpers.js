@@ -40,10 +40,17 @@ export const POST = async function (url, uploadData = undefined) {
   }
 };
 
+const getDayEnder = function (day) {
+  if (day === 1) return 'st';
+  if (day === 2) return 'nd';
+  if (day === 3) return 'rd';
+  return 'th';
+};
+
 export const formatDate = function (timeStamp) {
   const month = timeStamp.getMonth();
   const day = timeStamp.getUTCDate();
   const year = timeStamp.getFullYear();
 
-  return `${months[month]} ${day} ${year}`;
+  return `${months[month]} ${day}${getDayEnder(day)}, ${year}`;
 };
