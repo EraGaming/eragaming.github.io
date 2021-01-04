@@ -4,10 +4,73 @@
 import { FOGER_ID, VALHARL_ID, TWILLSIE_ID, GROWZY_ID } from './config.js';
 import { GET, formatDate } from './helpers.js';
 
-const state = {};
-
 const getTokenURL = `https://api.twitch.tv/helix/users?login=`;
 const getVideosURL = `https://api.twitch.tv/helix/videos?user_id=`;
+const state = {};
+
+const getStreamers = function () {
+  // get all the IDs from the filter buttons
+  const idList = $('.btn')
+    .map(function () {
+      const id = $(this).data('twitchid');
+      return id;
+    })
+    .filter((item) => {
+      return typeof (item !== undefined);
+    });
+
+  const [...id] = idList;
+
+  return id;
+
+  // separate them to get the streamers
+  // get the streamer id from the twitchID data tag and push it to a streamer array
+};
+
+const getStreamerID = async function (id) {
+  try {
+    const { data } = await GET(`${getTokenURL}${id}`);
+
+    // Add error handling incase the ID is invalid/returns undefined in the future
+    return data[0].id;
+  } catch (err) {
+    console.error(`Unable to get streamer information${err}`);
+    throw err;
+  }
+};
+
+const loadVideos = async function (id) {
+  try {
+    const data = await GET(`${getVideosURL}${id}`);
+
+    // Add error handling incase the ID is invalid/returns undefined in the future
+    createVideoObjects(data);
+  } catch (err) {
+    console.error(`Unable to load video${err}`);
+    throw err;
+  }
+};
+
+const createVideoObjects = function (data) {
+  const [...videos] = data.data;
+  state[videos[0]?.user_name] = [];
+
+  videos.forEach((video) => {
+    // Automate this
+    const streamers = ['growzy', 'valharl', 'foger', 'twillsie'];
+
+    state[video.user_name].push({
+      streamID: `${streamers.indexOf(video.user_name.toLowerCase()) + 1}`,
+      user_name: video.user_name,
+      id: video.id,
+      user_id: video.user_id,
+      title: video.title,
+      url: video.url,
+      created_at: video.created_at,
+      thumbnail_url: video.thumbnail_url,
+    });
+  });
+};
 
 const displayVideos = async function (state) {
   Object.entries(state)
@@ -57,44 +120,17 @@ const displayVideos = async function (state) {
     });
 };
 
-const createVideoObjects = function (data) {
-  const [...videos] = data.data;
-  state[videos[0]?.user_name] = [];
-
-  videos.forEach((video) => {
-    const streamers = ['growzy', 'valharl', 'foger', 'twillsie'];
-
-    state[video.user_name].push({
-      streamID: `${streamers.indexOf(video.user_name.toLowerCase()) + 1}`,
-      user_name: video.user_name,
-      id: video.id,
-      user_id: video.user_id,
-      title: video.title,
-      url: video.url,
-      created_at: video.created_at,
-      thumbnail_url: video.thumbnail_url,
-    });
-  });
-};
-
-const loadVideos = async function (id) {
-  try {
-    const data = await GET(`${getVideosURL}${id}`);
-
-    // Add error handling incase the ID is invalid/returns undefined in the future
-    createVideoObjects(data);
-  } catch (err) {
-    console.error(`Unable to load video${err}`);
-    throw err;
-  }
-};
-
 const init = async function () {
+  const streamers = getStreamers();
+  console.log(streamers);
+  const foger = await getStreamerID('foger');
+  streamers.forEach(async (streamer) => await loadVideos(streamer));
   await loadVideos(GROWZY_ID);
   await loadVideos(VALHARL_ID);
-  await loadVideos(FOGER_ID);
-  // await loadVideos(123456789);
+  await loadVideos(foger);
   await loadVideos(TWILLSIE_ID);
+
+  // await loadVideos(123456789);
   await displayVideos(state);
 };
 init();

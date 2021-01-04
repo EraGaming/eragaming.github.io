@@ -1,41 +1,53 @@
-    <div class="preloader-overlay">
-        <div id="js-preloader" class="preloader">
-            <div class="preloader-inner fadeInUp">
-                <div class="pong-loader"></div>
-                <svg role="img" class="df-icon df-icon--preloader-arcade">
-                    <use xlink:href="assets/img/necromancers.svg#preloader-arcade"/>
-                </svg>
-            </div>
-        </div>
+<div class="preloader-overlay">
+  <div id="js-preloader" class="preloader">
+    <div class="preloader-inner fadeInUp">
+      <div class="pong-loader"></div>
+      <svg role="img" class="df-icon df-icon--preloader-arcade">
+        <use xlink:href="assets/img/necromancers.svg#preloader-arcade" />
+      </svg>
     </div>
-    
-    <!-- Javascript Files
+  </div>
+</div>
+
+<!-- Javascript Files
 	================================================== -->
-	<!-- Core JS -->
-	<script src="assets/vendor/jquery/jquery.min.js"></script>
-	<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
-	<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-	<script src="assets/js/core.js"></script>
-	
-	<!-- Vendor JS -->
-	
-	<!-- Template JS -->
-	<script src="assets/js/init.js"></script>
-	
-	
-	<!-- Duotone SVG color filter -->
-	<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
-		<filter id="duotone_base">
-			<feColorMatrix type="matrix" result="grayscale"
-				values="1 0 0 0 0
+<!-- Core JS -->
+<script src="assets/vendor/jquery/jquery.min.js"></script>
+<script src="assets/vendor/jquery/jquery-migrate.min.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/core.js"></script>
+
+<!-- Vendor JS -->
+
+<!-- Template JS -->
+<script src="assets/js/init.js"></script>
+<script type="module" src="assets/js/custom.js"></script>
+
+<!-- Duotone SVG color filter -->
+<svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
+  <filter id="duotone_base">
+    <feColorMatrix
+      type="matrix"
+      result="grayscale"
+      values="1 0 0 0 0
 								1 0 0 0 0
 								1 0 0 0 0
-								0 0 0 1 0" />
-			<feComponentTransfer color-interpolation-filters="sRGB" result="duotone_base_filter">
-				<feFuncR type="table" tableValues="0.082352941176471 0.419607843137255"></feFuncR>
-				<feFuncG type="table" tableValues="0.090196078431373 0.443137254901961"></feFuncG>
-				<feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
-				<feFuncA type="table" tableValues="0 1"></feFuncA>
-			</feComponentTransfer>
-		</filter>
-	</svg>
+								0 0 0 1 0"
+    />
+    <feComponentTransfer
+      color-interpolation-filters="sRGB"
+      result="duotone_base_filter"
+    >
+      <feFuncR
+        type="table"
+        tableValues="0.082352941176471 0.419607843137255"
+      ></feFuncR>
+      <feFuncG
+        type="table"
+        tableValues="0.090196078431373 0.443137254901961"
+      ></feFuncG>
+      <feFuncB type="table" tableValues="0.125490196078431 0.6"></feFuncB>
+      <feFuncA type="table" tableValues="0 1"></feFuncA>
+    </feComponentTransfer>
+  </filter>
+</svg>

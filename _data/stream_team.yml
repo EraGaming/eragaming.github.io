@@ -13,6 +13,7 @@
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
   style: team-player__slide--category-1
   archiveID: .stream-1
+  twitchID: 29991984
 - firstname: Joshua
   lastname: Parent
   alias: valharl
@@ -30,6 +31,7 @@
     with it my guy.
   style: team-player__slide--category-2
   archiveID: .stream-2
+  twitchID: 53695458
 - firstname: Tyler
   lastname: Foger
   alias: foger
@@ -47,6 +49,7 @@
     with it my guy.
   style: team-player__slide--category-3
   archiveID: .stream-3
+  twitchID: 9296115
 - firstname: Todd
   lastname: Willsie
   alias: twillsie
@@ -65,3 +68,4 @@
     with it my guy.
   style: team-player__slide--category-5
   archiveID: .stream-4
+  twitchID: 58822606
