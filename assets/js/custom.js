@@ -42,7 +42,7 @@ const getStreamerID = async function (id) {
 const loadVideos = async function (id) {
   try {
     const data = await GET(`${getVideosURL}${id}`);
-
+    console.log(data);
     // Add error handling incase the ID is invalid/returns undefined in the future
     createVideoObjects(data);
   } catch (err) {
@@ -121,16 +121,21 @@ const displayVideos = async function (state) {
 };
 
 const init = async function () {
+  // Create too many videos because its rendering the entire state every time, but it works sorta
   const streamers = getStreamers();
   console.log(streamers);
-  const foger = await getStreamerID('foger');
-  streamers.forEach(async (streamer) => await loadVideos(streamer));
-  await loadVideos(GROWZY_ID);
-  await loadVideos(VALHARL_ID);
-  await loadVideos(foger);
-  await loadVideos(TWILLSIE_ID);
+  streamers.forEach(async (streamer) => {
+    await loadVideos(streamer);
+    await displayVideos(state);
+  });
 
-  // await loadVideos(123456789);
-  await displayVideos(state);
+  // Loads the videos individually based on a static ID
+  // await loadVideos(GROWZY_ID);
+  // await loadVideos(VALHARL_ID);
+  // await loadVideos(FOGER_ID);
+  // await loadVideos(TWILLSIE_ID);
+
+  // Render the videos
+  // await displayVideos(state);
 };
 init();
