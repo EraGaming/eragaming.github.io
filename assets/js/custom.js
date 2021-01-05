@@ -1,7 +1,6 @@
 // Add your custom JS code here
 'use strict';
 
-import { FOGER_ID, VALHARL_ID, TWILLSIE_ID, GROWZY_ID } from './config.js';
 import { GET, formatDate } from './helpers.js';
 
 const getTokenURL = `https://api.twitch.tv/helix/users?login=`;
@@ -22,9 +21,6 @@ const getStreamers = function () {
   const [...id] = idList;
 
   return id;
-
-  // separate them to get the streamers
-  // get the streamer id from the twitchID data tag and push it to a streamer array
 };
 
 const getStreamerID = async function (id) {
@@ -42,7 +38,6 @@ const getStreamerID = async function (id) {
 const loadVideos = async function (id) {
   try {
     const data = await GET(`${getVideosURL}${id}`);
-    console.log(data);
     // Add error handling incase the ID is invalid/returns undefined in the future
     createVideoObjects(data);
   } catch (err) {
@@ -75,6 +70,7 @@ const createVideoObjects = function (data) {
 const displayVideos = async function (state) {
   Object.entries(state)
     .flatMap((entry) => {
+      const { data } = entry;
       // Only grab 5 videos
       if (entry[1].length > 5) return entry[1].slice(0, 5);
       return entry[1];
@@ -120,22 +116,17 @@ const displayVideos = async function (state) {
     });
 };
 
-const init = async function () {
-  // Create too many videos because its rendering the entire state every time, but it works sorta
-  const streamers = getStreamers();
-  console.log(streamers);
-  streamers.forEach(async (streamer) => {
-    await loadVideos(streamer);
-    await displayVideos(state);
+function initializeVideos(streamerIDs) {
+  // return a promise
+  return new Promise(async (resolve, reject) => {
+    resolve(await loadVideos(streamerIDs));
   });
+}
 
-  // Loads the videos individually based on a static ID
-  // await loadVideos(GROWZY_ID);
-  // await loadVideos(VALHARL_ID);
-  // await loadVideos(FOGER_ID);
-  // await loadVideos(TWILLSIE_ID);
+// create array of promises
+let streamerIDs = getStreamers().map(initializeVideos);
 
-  // Render the videos
-  // await displayVideos(state);
-};
-init();
+// runs when all promises are resolved
+Promise.all(streamerIDs).then(() => {
+  displayVideos(state);
+});
