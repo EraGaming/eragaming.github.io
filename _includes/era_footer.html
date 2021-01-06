@@ -21,8 +21,9 @@
 
 <!-- Template JS -->
 <script src="assets/js/init.js"></script>
+{% if page.url == '/stream-archive.html' %}
 <script type="module" src="assets/js/custom.js"></script>
-
+{% endif %}
 <!-- Duotone SVG color filter -->
 <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
   <filter id="duotone_base">

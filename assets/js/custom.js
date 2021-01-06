@@ -77,31 +77,31 @@ const displayVideos = function (state) {
     .forEach((v) => {
       // Setting some parameters to fill the HTML elements with
       let title = v.title;
-      if (v.title.length > 71) title = v.title.slice(0, 71);
+      if (v.title.length > 50) title = `${v.title.slice(0, 51)}...`;
       const thumbnail = v.thumbnail_url.split('%{', 1)[0];
       const thumbNailSize = '1280x720.jpg';
       const date = formatDate(new Date(v.created_at.split('T', 1)[0]));
       const normalizedUserName = v.user_name.toLowerCase();
 
       const videoHTML = `
-        <article class="stream stream-${v.streamID} has-post-thumbnail grid" data-id="${normalizedUserName}" data-controls="true" data-provider="twitch" data-video__id="${v.id}" data-easy-embed>
-        <div class="stream__thumbnail grid-item">
+        <article class="stream stream-${v.streamID} has-post-thumbnail" data-id="${normalizedUserName}" data-controls="true" data-provider="twitch" data-video__id="${v.id}" data-easy-embed>
+        <div class="stream__thumbnail">
           <img src="${thumbnail}${thumbNailSize}" alt="${normalizedUserName}'s video">
         </div>
-        <div class="stream__icon grid-item"></div>
-        <div class="stream__header grid-item">
-          <div class="stream__info grid-item">
-            <div class="stream__avatar grid-item">
+        <div class="stream__icon"></div>
+        <div class="stream__header">
+          <div class="stream__info">
+            <div class="stream__avatar">
             <img src="assets/img/icons/${normalizedUserName}.png" alt ="" width="25" height="25">
             </div>
-            <h6 class="stream__title grid-item">
-              ${title}
+            <h6 class="stream__title">
+            ${title}
             </h6>
-            <div class="stream__date grid-item">${date}</div>
+            <div class="stream__date">${date}</div>
           </div>
-          <a href="https://twitch.tv/${normalizedUserName}" class="btn btn-twitch btn-twitch--advanced grid-item">
-            <i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow ${v.user_name}</span>
-          </a>
+          <a href="https://twitch.tv/${normalizedUserName}" class="btn btn-twitch btn-twitch--advanced">
+          <i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow ${normalizedUserName}</span>
+          </a> 
         </div>
         </article>`;
 
@@ -128,30 +128,9 @@ Promise.all(streamerIDs).then(() => {
   embedVideoPlayer(jQuery, window, document);
 });
 
-// Testing with isotope
-// $('.grid').isotope({
-//   // options
-//   itemSelector: '.grid-item',
-//   layoutMode: 'fitRows',
-// });
-
-// Probably doing this backwards - setting buttons all active and then turning them of, then settting the filter one as active from the beginning
-// $('.btn').toggleClass('active');
-// $('.filter').addClass('active');
-
-$('.btn').on('click', function (e) {
-  e.preventDefault();
-  console.log(e.target);
-});
-
 const embedVideoPlayer = function ($, window, document) {
   $.fn.easyEmbed = function (options) {
     var $that = this;
-    // detect if device requires user interaction for playback
-    // var mobile = /iPad|iPhone|iPod/.test(navigator.userAgent);
-
-    // // translate shorthand
-    // var shorthand = $that.data('easy-embed').split(':');
 
     var settings = $.extend(
       {
@@ -209,13 +188,6 @@ const embedVideoPlayer = function ($, window, document) {
         $(this).easyEmbed();
       });
     }
-  });
-};
-
-const setEventListeners = function () {
-  document.querySelector('.btn').addEventListener('click', function (e) {
-    e.preventDefault();
-    console.log('Clicked on');
   });
 };
 

@@ -16,26 +16,15 @@
   <nav class="main-nav">
     <ul class="main-nav__list">
       <li class=""><a href="home.html">Home</a></li>
-      <li class="">
-        <a href="#">News</a>
-        <ul class="main-nav__sub">
-          <li class=""><a href="blog.html">News</a></li>
-          <li class="">
-            <a
-              href="
-            clickbait.html"
-              >Clickbait <span class="badge badge-danger">Hot</span></a
-            >
-          </li>
-        </ul>
-      </li>
-      <li class""><a href="stream-archive.html">Stream Archives</a></li>
+      <li class=""><a href="stream-archive.html">Stream Archives</a></li>
     </ul>
   </nav>
   <!-- Main Navigation / End -->
 
   <!-- Header Actions -->
   <div class="header-actions">
+    <!-- only put pagination on streamer info page -->
+    {% if page.url == "/" %}
     <div class="header-pagination">
       <a
         href="#"
@@ -54,6 +43,7 @@
         </svg>
       </a>
     </div>
+    {% endif %}
     <div class="header-social-toggle d-none d-md-block">
       <svg role="img" class="df-icon df-icon--thumb-up">
         <use xlink:href="assets/img/necromancers.svg#thumb-up" />
@@ -78,14 +68,6 @@
         </li>
         {% endfor %}
       </ul>
-    </div>
-    <div class="header-search-toggle">
-      <svg role="img" class="df-icon df-icon--search">
-        <use xlink:href="assets/img/necromancers.svg#search" />
-      </svg>
-      <svg role="img" class="df-icon df-icon--search-close">
-        <use xlink:href="assets/img/necromancers.svg#search-close" />
-      </svg>
     </div>
     <div class="header-menu-toggle">
       <div class="header-menu-toggle__inner">
