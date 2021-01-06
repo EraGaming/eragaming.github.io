@@ -2,9 +2,16 @@
 File Name: 		custom.css
 Description:  You can add your custom CSS here and it will overwrite template styles
 */
-.team-carousel__content > .slick-dots li svg{
-    margin-top: -4px;
-    width:20px;
-    height:20px;
+.team-carousel__content > .slick-dots li svg {
+  margin-top: -4px;
+  width: 20px;
+  height: 20px;
 }
+
+/* .grid-item {
+  width: 25%;
+}
+.grid-item--width2 {
+  width: 50%;
+} */
 /*# sourceMappingURL=maps/custom.css.map */

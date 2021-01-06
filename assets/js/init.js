@@ -55,7 +55,7 @@
 
       this.countDown();
 
-      this.isotope();
+      // this.isotope();
 
       this.slickCarousel();
 
@@ -470,88 +470,6 @@
           );
         },
       });
-    },
-
-    isotope: function () {
-      var streams = $('.streams-archive'),
-        matches = $('.matches-scores'),
-        isotopeGrid;
-
-      if (streams.exists()) {
-        var $filter = $('.js-filter'),
-          windowWidth = $(window).width(),
-          layout;
-
-        if (windowWidth > 991) {
-          layout = 'fitColumns';
-        } else {
-          layout = 'fitRows';
-        }
-
-        isotopeGrid = streams.imagesLoaded(function () {
-          isotopeGrid.isotope({
-            layoutMode: layout,
-            itemSelector: '.stream',
-          });
-
-          isotopeGrid.isotope('layout');
-
-          // filter items on button click
-          $filter.on('click', 'button', function () {
-            var filterValue = $(this).attr('data-filter');
-            $filter.find('button').removeClass('active').addClass('');
-            $(this).removeClass('').addClass('active');
-            isotopeGrid.isotope({
-              filter: filterValue,
-            });
-          });
-        });
-
-        $(window).on('resize', function () {
-          windowWidth = $(window).width();
-
-          isotopeGrid.isotope('destroy');
-
-          if (windowWidth > 991) {
-            layout = 'fitColumns';
-          } else {
-            layout = 'fitRows';
-          }
-
-          isotopeGrid.isotope({
-            layoutMode: layout,
-            itemSelector: '.stream',
-          });
-
-          isotopeGrid.isotope('layout');
-        });
-      }
-
-      if (matches.exists()) {
-        isotopeGrid = matches.imagesLoaded(function () {
-          var $filter = $('.js-filter');
-
-          // init Isotope after all images have loaded
-          isotopeGrid.isotope({
-            // filter: '*',
-            layoutMode: 'fitRows',
-            itemSelector: '.col-md-12',
-            // masonry: {
-            // 	columnWidth: '.stream'
-            // }
-          });
-
-          // filter items on button click
-          $filter.on('click', 'li', function () {
-            var filterValue = $(this).attr('data-filter');
-            $filter.find('li').removeClass('active').addClass('');
-            $(this).removeClass('').addClass('active');
-            isotopeGrid.isotope({
-              filter: filterValue,
-            });
-          });
-        });
-      }
     },
 
     slickCarousel: function () {

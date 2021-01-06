@@ -17,13 +17,13 @@ layout: horizontal_default
 		<!-- Filter -->
 		<ul class="streams-filter filter js-filter list-unstyled">
 			<li>
-				<button class="btn active" data-filter="*">
+				<button class="active filter" data-filter="*">
 					<img src="assets/img/logo.png" alt="">
 				</button>
 			</li>
 			{% for streamer in site.data.stream_team %}	
 			<li>
-				<button class="btn " data-filter="{{ streamer.archiveID }}" data-twitchID="{{ streamer.twitchID }}">
+				<button class="btn" data-filter="{{ streamer.archiveID }}" data-twitchID="{{ streamer.twitchID }}">
 					<img src="{{ streamer.image}}" alt="">
 				</button>
 			</li>

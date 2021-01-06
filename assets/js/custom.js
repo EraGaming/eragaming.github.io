@@ -67,11 +67,9 @@ const createVideoObjects = function (data) {
   });
 };
 
-const displayVideos = async function (state) {
+const displayVideos = function (state) {
   Object.entries(state)
     .flatMap((entry) => {
-      const { data } = entry;
-      // Only grab 5 videos
       if (entry[1].length > 5) return entry[1].slice(0, 5);
       return entry[1];
     })
@@ -83,29 +81,26 @@ const displayVideos = async function (state) {
       const thumbnail = v.thumbnail_url.split('%{', 1)[0];
       const thumbNailSize = '1280x720.jpg';
       const date = formatDate(new Date(v.created_at.split('T', 1)[0]));
+      const normalizedUserName = v.user_name.toLowerCase();
 
       const videoHTML = `
-        <article class="stream stream-${
-          v.streamID
-        } has-post-thumbnail" data-id="${v.user_name.toLowerCase()}" data-controls="true" data-provider="twitch" data-thumbnail="${thumbnail}${thumbNailSize}" data-easy-embed>
-        <div class="stream__thumbnail">
-          <img src="${thumbnail}${thumbNailSize}" alt="">
+        <article class="stream stream-${v.streamID} has-post-thumbnail grid" data-id="${normalizedUserName}" data-controls="true" data-provider="twitch" data-video__id="${v.id}" data-easy-embed>
+        <div class="stream__thumbnail grid-item">
+          <img src="${thumbnail}${thumbNailSize}" alt="${normalizedUserName}'s video">
         </div>
-        <div class="stream__icon"></div>
-        <div class="stream__header">
-          <div class="stream__info">
-            <div class="stream__avatar">
-            <img src="assets/img/icons/${v.user_name.toLowerCase()}.png" alt ="" width="25" height="25">
+        <div class="stream__icon grid-item"></div>
+        <div class="stream__header grid-item">
+          <div class="stream__info grid-item">
+            <div class="stream__avatar grid-item">
+            <img src="assets/img/icons/${normalizedUserName}.png" alt ="" width="25" height="25">
             </div>
-            <h6 class="stream__title">
+            <h6 class="stream__title grid-item">
               ${title}
             </h6>
-            <div class="stream__date">${date}</div>
+            <div class="stream__date grid-item">${date}</div>
           </div>
-          <a href="#" class="btn btn-twitch btn-twitch--advanced">
-            <i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow ${
-              v.user_name
-            }</span>
+          <a href="https://twitch.tv/${normalizedUserName}" class="btn btn-twitch btn-twitch--advanced grid-item">
+            <i class="fab fa-twitch">&nbsp;</i><span class="d-none d-lg-inline-block btn__text-inner">Follow ${v.user_name}</span>
           </a>
         </div>
         </article>`;
@@ -128,5 +123,180 @@ let streamerIDs = getStreamers().map(initializeVideos);
 
 // runs when all promises are resolved
 Promise.all(streamerIDs).then(() => {
+  isotope();
   displayVideos(state);
+  embedVideoPlayer(jQuery, window, document);
 });
+
+// Testing with isotope
+// $('.grid').isotope({
+//   // options
+//   itemSelector: '.grid-item',
+//   layoutMode: 'fitRows',
+// });
+
+// Probably doing this backwards - setting buttons all active and then turning them of, then settting the filter one as active from the beginning
+// $('.btn').toggleClass('active');
+// $('.filter').addClass('active');
+
+$('.btn').on('click', function (e) {
+  e.preventDefault();
+  console.log(e.target);
+});
+
+const embedVideoPlayer = function ($, window, document) {
+  $.fn.easyEmbed = function (options) {
+    var $that = this;
+    // detect if device requires user interaction for playback
+    // var mobile = /iPad|iPhone|iPod/.test(navigator.userAgent);
+
+    // // translate shorthand
+    // var shorthand = $that.data('easy-embed').split(':');
+
+    var settings = $.extend(
+      {
+        // general settings
+        id: $that.data('id'),
+        videoID: $that.data('video__id'),
+        width: $that.data('width') || 16,
+        height: $that.data('height') || 9,
+      },
+      options
+    );
+
+    var getSource = function () {
+      // we are only pulling from twitch
+      return `//player.twitch.tv/?video=v${settings.videoID}&parent=${window.location.hostname}`;
+    };
+
+    var setSize = function () {
+      $that.css('height', ($that.width() / settings.width) * settings.height);
+    };
+
+    var setIframe = function () {
+      $that.html(
+        $('<iframe>')
+          .attr('src', getSource())
+          .attr('width', '100%')
+          .attr('height', '100%')
+          .attr('frameborder', 0)
+          .attr('allowfullscreen', 1)
+      );
+      $that.addClass('playing-video');
+    };
+
+    if (settings.setsize) {
+      setSize();
+
+      $(window).resize(function () {
+        setSize();
+      });
+    }
+
+    $that
+      .find('*')
+      .addBack()
+      .click(function () {
+        setIframe();
+      });
+
+    return this;
+  };
+
+  $(document).ready(function () {
+    if ($('[data-easy-embed]').length > 0) {
+      $('[data-easy-embed]').each(function () {
+        $(this).easyEmbed();
+      });
+    }
+  });
+};
+
+const setEventListeners = function () {
+  document.querySelector('.btn').addEventListener('click', function (e) {
+    e.preventDefault();
+    console.log('Clicked on');
+  });
+};
+
+const isotope = function () {
+  var streams = $('.streams-archive'),
+    matches = $('.matches-scores'),
+    isotopeGrid;
+
+  if (streams.exists()) {
+    var $filter = $('.js-filter'),
+      windowWidth = $(window).width(),
+      layout;
+
+    if (windowWidth > 991) {
+      layout = 'fitColumns';
+    } else {
+      layout = 'fitRows';
+    }
+
+    isotopeGrid = streams.imagesLoaded(function () {
+      isotopeGrid.isotope({
+        layoutMode: layout,
+        itemSelector: '.stream',
+      });
+
+      isotopeGrid.isotope('layout');
+
+      // filter items on button click
+      $filter.on('click', 'button', function () {
+        var filterValue = $(this).attr('data-filter');
+        $filter.find('button').removeClass('active').addClass('');
+        $(this).removeClass('').addClass('active');
+        isotopeGrid.isotope({
+          filter: filterValue,
+        });
+      });
+    });
+
+    $(window).on('resize', function () {
+      windowWidth = $(window).width();
+
+      isotopeGrid.isotope('destroy');
+
+      if (windowWidth > 991) {
+        layout = 'fitColumns';
+      } else {
+        layout = 'fitRows';
+      }
+
+      isotopeGrid.isotope({
+        layoutMode: layout,
+        itemSelector: '.stream',
+      });
+
+      isotopeGrid.isotope('layout');
+    });
+  }
+
+  if (matches.exists()) {
+    isotopeGrid = matches.imagesLoaded(function () {
+      var $filter = $('.js-filter');
+
+      // init Isotope after all images have loaded
+      isotopeGrid.isotope({
+        // filter: '*',
+        layoutMode: 'fitRows',
+        itemSelector: '.col-md-12',
+        // masonry: {
+        // 	columnWidth: '.stream'
+        // }
+      });
+
+      // filter items on button click
+      $filter.on('click', 'li', function () {
+        var filterValue = $(this).attr('data-filter');
+        $filter.find('li').removeClass('active').addClass('');
+        $(this).removeClass('').addClass('active');
+        isotopeGrid.isotope({
+          filter: filterValue,
+        });
+      });
+    });
+  }
+};
