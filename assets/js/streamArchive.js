@@ -23,6 +23,7 @@ const getStreamers = function () {
   return id;
 };
 
+// Use if you need to get the ID to put into the yaml file
 const getStreamerID = async function (id) {
   try {
     const { data } = await GET(`${getTokenURL}${id}`);
@@ -52,6 +53,7 @@ const createVideoObjects = function (data) {
 
   videos.forEach((video) => {
     // Automate this
+
     const streamers = ['growzy', 'valharl', 'foger', 'twillsie'];
 
     state[video.user_name].push({
@@ -117,16 +119,6 @@ function initializeVideos(streamerIDs) {
     resolve(await loadVideos(streamerIDs));
   });
 }
-
-// create array of promises
-let streamerIDs = getStreamers().map(initializeVideos);
-
-// runs when all promises are resolved
-Promise.all(streamerIDs).then(() => {
-  isotope();
-  displayVideos(state);
-  embedVideoPlayer(jQuery, window, document);
-});
 
 const embedVideoPlayer = function ($, window, document) {
   $.fn.easyEmbed = function (options) {
@@ -272,3 +264,13 @@ const isotope = function () {
     });
   }
 };
+
+// create array of promises
+let streamerIDs = getStreamers().map(initializeVideos);
+
+// runs when all promises are resolved
+Promise.all(streamerIDs).then(() => {
+  isotope();
+  displayVideos(state);
+  embedVideoPlayer(jQuery, window, document);
+});
