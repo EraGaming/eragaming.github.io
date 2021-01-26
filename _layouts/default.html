@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
     {% include era_header.html %}
+    {% if page.url == "/home.html" %}
+    <body class="site-layout--landing preloader-is--active bg-image bg-fixed bg--texture-03">
+        <div class="site-wrapper">
+    {% else %}
     <body class="preloader-is--active bg-image bg-fixed bg--texture-01 bg--dotted-3x3">
         <div class="site-wrapper site-layout--default">
-            {% include era_navigation.html %}
+    {% endif %}
+            {% if page.url != "/home.html" %}
+             {% include era_navigation.html %}
+            {% endif %}
             {{ content }}
             <!-- Overlay -->
             <div class="site-overlay"></div>
             <!-- Overlay / End -->
-            {% include era_cart.html %}
-            {% include era_search.html %}
             {% include era_menu.html %}
         </div>
     {% include era_footer.html %}

@@ -17,19 +17,9 @@
         <!-- Mobile Navigation -->
         <nav class="mobile-nav">
           <ul class="mobile-nav__list">
-            <li class="">
-              <a href="#">Streamers</a>
-              <ul class="mobile-nav__sub">
-                  {% for streamer in site.data.stream_team %}
-                <li class=""><a href="{{ streamer.alias }}.html">{{ streamer.alias}}</a></li>
-                {% endfor %}
-                </ul>
-            <li class=""><a href="index-2.html">Landing Video</a></li>
             <li class=""><a href="home.html">Home page</a></li>
-            <li class=""><a href="blog-classic.html"
-                    >News Classic <span class="badge badge-danger">New</span></a
-                  >
-            </li>
+            <li class=""><a href="index.html">Streamers</a></li>
+            <li class=""><a href="stream-archive.html">Stream Archive</a></li>   
           </ul>
         </nav>
         <!-- Mobile Navigation / End -->
@@ -99,7 +89,10 @@
           <li class="">
             <a href="home.html">Home</a>
           </li>
-           <li class="">
+          <li>
+            <a href="index.html">Streamers</a>
+          </li>
+          <!-- <li class="">
             <a href="team-selection-2.html">Streamers</a>
                 <ul class="dl-submenu">
                     {% for streamer in site.data.stream_team %}
@@ -108,10 +101,8 @@
                   </li>
                   {% endfor %}
                 </ul>
-              </li>
-          <li class="">
-            <a href="blog-1.html">News</a>
-          </li>
+          </li> -->
+          <li class=""><a href="stream-archive.html">Stream Archive</a></li>   
         </ul>
       </div>
     </div>
