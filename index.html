@@ -8,60 +8,67 @@ layout: default
       <div class="col-lg-7">
         <div class="team-carousel">
           <div class="team-carousel__content">
-            {% for entry in site.data.stream_team %}
-            <div class="team-carousel__item" data-icon="player-{{entry.alias}}" {% if entry.video %}data-video="{{entry.video}}" {% endif %}>
+            {% for member in site.team %}
+            <div class="team-carousel__item" data-icon="player-{{member.alias}}">
               <div class="row">
                 <div class="col-lg-11">
                   <h3 class="player-info-subtitle h4 text-uppercase">
-                    {% if entry.firstname %} {{entry.firstname}}
-                    {{entry.lastname}}{% else %} Team Era {% endif %}
+                    {% if member.firstname %} {{member.firstname}}
+                    {{member.lastname}}{% else %} Team Era {% endif %}
                   </h3>
                   <h2 class="player-info-title h1 text-uppercase">
-                    {{ entry.alias }}
+                    {{ member.alias }}
                   </h2>
                   <div class="row">
+                    {% if member.country %}
                     <div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Country</div>
                         <div class="player-info-detail__title">
-                          {{ entry.country }}
+                          {{ member.country }}
                         </div>
                       </div>
                     </div>
+                    {% endif %}
+                    {% if member.membersince %}
                     <div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Since</div>
                         <div class="player-info-detail__title">
-                          {{ entry.membersince }}
+                          {{ member.membersince }}
                         </div>
                       </div>
                     </div>
-                    <div class="col-6 col-md-6 col-xl-4">
+                    {% endif %}
+                    {% if member.role %}<div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
-                        <div class="player-info-detail__label">Game</div>
+                        <div class="player-info-detail__label">Role</div>
                         <div class="player-info-detail__title color-primary">
-                          {{ entry.game }}
+                          {{ member.role }}
                         </div>
                       </div>
                     </div>
+                    {% endif %}
+                    {% if member.twitter or member.twitch or member.instagram %}
                     <div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Social</div>
                         <ul class="social-menu social-menu--default">
                           <li>
-                            <a href="{{ entry.twitter }}" target="_blank"></a>
+                            <a href="{{ member.twitter }}" target="_blank"></a>
                           </li>
                           <li>
-                            <a href="{{ entry.twitch }}" target="_blank"></a>
+                            <a href="{{ member.twitch }}" target="_blank"></a>
                           </li>
                           <li>
-                            <a href="{{ entry.instagram }}" target="_blank"></a>
+                            <a href="{{ member.instagram }}" target="_blank"></a>
                           </li>
                         </ul>
                       </div>
                     </div>
+                    {% endif %}
                   </div>
-                  <p>{{ entry.biography }}</p>
+                  <p>{{ member.content }}</p>
                 </div>
               </div>
             </div>
@@ -74,7 +81,7 @@ layout: default
   </div>
   <div class="team-player team-player--slider-wrapper">
     <div class="team-player__slider js-team-player__slider">
-      {% for member in site.data.stream_team %}
+      {% for member in site.team %}
       <div class="team-player__slide {{ member.style }}">
         <div class="team-player__slide-inner">
           <div class="team-player__slide-decor">
