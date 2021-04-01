@@ -36666,13 +36666,13 @@ body:not(.cursor-is--active) .team-carousel__content > .slick-dots li {
 
 @media (min-width: 1200px) {
   .team-carousel__content > .slick-dots li + li {
-    margin-top: 38px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 1920px) {
   .team-carousel__content > .slick-dots li + li {
-    margin-top: 50px;
+    margin-top: 35px;
   }
 }
 
@@ -36692,7 +36692,7 @@ body:not(.cursor-is--active) .team-carousel__content > .slick-dots li {
     width: 26px;
     top: 14px;
     right: calc(100% + 6px);
-    border-top: 2px dotted #5e627e;
+    
   }
 }
 
@@ -36701,7 +36701,7 @@ body:not(.cursor-is--active) .team-carousel__content > .slick-dots li {
     bottom: calc(100% + 6px);
     left: 14px;
     height: 30px;
-    border-left: 2px dotted #5e627e;
+    
   }
 }
 
@@ -38398,6 +38398,32 @@ body:not(.cursor-is--active) .player-info-carousel .slick-arrow {
     to(#440009)
   );
   background-image: linear-gradient(#e9004d, #440009);
+}
+
+.team-player__slide.slick-current.team-player__slide--category-6
+  .team-player__slide-inner {
+  background-color: #141414;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#141414),
+    to(#000000)
+  );
+  background-image: linear-gradient(#141414, #000000);
+}
+
+.team-player__slide.slick-current.team-player__slide--category-7
+  .team-player__slide-inner {
+  background-color: #4b1414;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#740000),
+    to(#2a0000)
+  );
+  background-image: linear-gradient(#740000, #2a0000);
 }
 
 .team-player__slide-inner {

@@ -10,7 +10,7 @@ youtube:
 twitter:
 instagram:
 country:
-style: team-player__slide--category-5
+style: team-player__slide--category-4
 archiveID:
 twitchID:
 ---
