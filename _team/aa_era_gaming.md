@@ -2,7 +2,7 @@
 firstname: Welcome to
 lastname: 
 alias: ENDLESS ERA
-image:
+image: 
 membersince:
 game:
 twitch:

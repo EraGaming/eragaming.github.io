@@ -88,21 +88,18 @@ layout: default
             <!-- <div class="team-player__slide-line-1"></div>
             <div class="team-player__slide-line-2"></div> -->
           </div>
-          <img
+          {% if member.image %}<img
             src="{{ member.image }}"
             alt="{{ member.firstname }} {{ member.lastname }} aka {{ member.alias }}"
             class="team-player__slide-img"
           />
+          {% endif %}
           <div class="team-player__slide-meta-holder">
             <div class="team-player__slide-meta">
               <h4 class="team-player__slide-subtitle h6 color-primary">
                 {{ member.firstname }} {{ member.lastname }}
               </h4>
               <h3 class="team-player__slide-title">{{ member.alias }}</h3>
-              <a
-                href="{{ member.alias }}.html"
-                class="team-player__slide-link link-plus"
-              ></a>
             </div>
           </div>
         </div>
