@@ -36660,7 +36660,7 @@ body:not(.cursor-is--active) .team-carousel__content > .slick-dots li {
 
 @media (max-width: 1199px) {
   .team-carousel__content > .slick-dots li + li {
-    margin-left: 34px;
+    margin-left: 14px;
   }
 }
 
