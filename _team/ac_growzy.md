@@ -7,8 +7,8 @@ membersince: March 2020
 role:
 twitch: https://twitch.com/growzy
 youtube:
-twitter: https://www.twitter.com/twill_c/
-instagram: https://www.instagram.com/twill_c/
+twitter:
+instagram: https://www.instagram.com/growzygaming/
 country: Canada
 style: team-player__slide--category-6
 archiveID: .stream-4

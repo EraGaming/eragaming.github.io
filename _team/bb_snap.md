@@ -7,8 +7,8 @@ membersince: March 2021
 role:
 twitch: https://twitch.com/sugarsnapx
 youtube:
-twitter: https://www.twitter.com/twill_c/
-instagram: https://www.instagram.com/twill_c/
+twitter: https://twitter.com/itsSugarSnapx
+instagram: https://www.instagram.com/sugarsnapx/
 country: Canada
 style: team-player__slide--category-7
 archiveID: .stream-4

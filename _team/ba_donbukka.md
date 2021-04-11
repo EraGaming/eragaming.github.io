@@ -7,8 +7,8 @@ membersince: March 2020
 role:
 twitch: https://twitch.com/DonBukka
 youtube:
-twitter: https://www.twitter.com/twill_c/
-instagram: https://www.instagram.com/twill_c/
+twitter: 
+instagram: 
 country: Canada
 style: team-player__slide--category-1
 archiveID: .stream-4

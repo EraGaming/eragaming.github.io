@@ -5,10 +5,10 @@ alias: Luna
 image: /assets/img/team/luna.png
 membersince: March 2021
 role: 
-twitch: https://twitch.com/danglescharitytv
+twitch: https://www.twitch.tv/sadgurlluna
 youtube:
-twitter: https://www.twitter.com/twill_c/
-instagram: https://www.instagram.com/twill_c/
+twitter: https://twitter.com/sadgurlluna
+instagram: https://www.instagram.com/sadgurlluna/
 country: Canada
 style: team-player__slide--category-4
 archiveID: .stream-4
