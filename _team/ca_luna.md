@@ -5,7 +5,7 @@ alias: Luna
 image: /assets/img/team/luna.png
 membersince: March 2021
 role: 
-twitch: https://www.twitch.tv/sadgurlluna
+twitch: https://twitch.com/sadgurlluna
 youtube:
 twitter: https://twitter.com/sadgurlluna
 instagram: https://www.instagram.com/sadgurlluna/
