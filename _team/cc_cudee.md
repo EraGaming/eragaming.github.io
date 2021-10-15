@@ -3,7 +3,7 @@ firstname: Affiliate
 lastname:
 alias: Cudee
 image: /assets/img/team/cudee.png
-membersince: March 2021
+membersince: October 2021
 role: 
 twitch: https://www.twitch.tv/cu_dee
 youtube:
