@@ -1,5 +1,5 @@
 ---
-firstname: Affiliate
+firstname: Content Creator
 lastname:
 alias: Dangles
 image: /assets/img/team/dangles.png
