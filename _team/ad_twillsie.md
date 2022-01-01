@@ -1,5 +1,5 @@
 ---
-firstname: Digital Design
+firstname: Creative Director
 lastname: 
 alias: twillsie
 image: /assets/img/team/todd.png

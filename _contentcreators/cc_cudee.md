@@ -1,7 +1,7 @@
 ---
 firstname: Affiliate
 lastname:
-alias: Cudee
+alias: cudee
 image: /assets/img/team/cudee.png
 membersince: October 2021
 role: 
@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/Cu_DeeTTV
 instagram:
 country: Canada
-style: team-player__slide--category-4
+style: team-player__slide--category-2
 archiveID: .stream-4
 twitchID: 58822606 
 ---

@@ -8,7 +8,7 @@ layout: default
       <div class="col-lg-7">
         <div class="team-carousel">
           <div class="team-carousel__content">
-            {% for member in site.welcome %}
+            {% for member in site.team %}
             <div class="team-carousel__item" data-icon="player-{{member.alias}}">
               <div class="row">
                 <div class="col-lg-11">
@@ -81,7 +81,7 @@ layout: default
   </div>
   <div class="team-player team-player--slider-wrapper">
     <div class="team-player__slider js-team-player__slider">
-      {% for member in site.welcome %}
+      {% for member in site.team %}
       <div class="team-player__slide {{ member.style }}">
         <div class="team-player__slide-inner">
           <div class="team-player__slide-decor">
