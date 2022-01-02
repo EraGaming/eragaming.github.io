@@ -49,7 +49,7 @@ layout: default
                       </div>
                     </div>
                     {% endif %}
-                    {% if member.twitter or member.twitch or member.instagram %}
+                    {% if member.twitter or member.twitch or member.instagram or member.youtube %}
                     <div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Social</div>
@@ -62,6 +62,9 @@ layout: default
                           </li>
                           <li>
                             <a href="{{ member.instagram }}" target="_blank"></a>
+                          </li>
+                          <li>
+                            <a href="{{ member.youtube }}" target="_blank"></a>
                           </li>
                         </ul>
                       </div>

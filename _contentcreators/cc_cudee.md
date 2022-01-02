@@ -5,7 +5,7 @@ alias: cudee
 image: /assets/img/team/cudee.png
 membersince: October 2021
 role: 
-twitch: https://www.twitch.tv/cu_dee
+twitch: https://twitch.com/cu_dee
 youtube:
 twitter: https://twitter.com/Cu_DeeTTV
 instagram:

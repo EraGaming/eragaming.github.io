@@ -6,8 +6,8 @@ image: /assets/img/team/growzy.png
 membersince: March 2020
 role:
 twitch: https://twitch.com/growzy
-youtube:
-twitter:
+youtube: https://www.youtube.com/channel/UC_Tv-n_Y2fl3oHa0JUnzMnQ
+twitter: https://twitter.com/growzygaming
 instagram: https://www.instagram.com/growzygaming/
 country: Canada
 style: team-player__slide--category-6

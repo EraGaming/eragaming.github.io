@@ -6,9 +6,9 @@ image: /assets/img/team/valharl.png
 membersince: 2020
 role:
 twitch: https://twitch.com/valharl
-youtube:
+youtube: https://www.youtube.com/channel/UC0pZf6KtbAtiAmO085M3owA
 twitter:
-instagram:
+instagram: https://www.instagram.com/valharl/
 country: Canada
 style: team-player__slide--category-3
 archiveID: .stream-4

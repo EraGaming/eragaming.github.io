@@ -49,20 +49,23 @@ layout: default
                       </div>
                     </div>
                     {% endif %}
-                    {% if member.twitter or member.twitch or member.instagram %}
+                    {% if member.twitter or member.twitch or member.instagram or member.youtube %}
                     <div class="col-6 col-md-6 col-xl-4">
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Social</div>
                         <ul class="social-menu social-menu--default">
-                          <li>
+                          {% if member.twitter %}<li>
                             <a href="{{ member.twitter }}" target="_blank"></a>
-                          </li>
-                          <li>
+                          </li>{% endif %}
+                          {% if member.twitch %}<li>
                             <a href="{{ member.twitch }}" target="_blank"></a>
-                          </li>
-                          <li>
+                          </li>{% endif %}
+                          {% if member.youtube %}<li>
+                            <a href="{{ member.youtube }}" target="_blank"></a>
+                          </li>{% endif %}
+                          {% if member.instagram %}<li>
                             <a href="{{ member.instagram }}" target="_blank"></a>
-                          </li>
+                          </li>{% endif %}
                         </ul>
                       </div>
                     </div>
