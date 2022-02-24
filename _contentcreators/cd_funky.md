@@ -9,6 +9,7 @@ twitch:
 youtube: https://www.youtube.com/channel/UCbgXRjIt3Nk5kERLtwU-DnQ/about
 twitter: https://twitter.com/Funky_Willow
 instagram: https://www.instagram.com/funky_willow/?hl=en
+tiktok: 
 country: Canada
 style: team-player__slide--category-2
 archiveID: .stream-4

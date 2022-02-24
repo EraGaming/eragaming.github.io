@@ -23415,6 +23415,11 @@ html.touch .social-menu.social-menu--header {
   content: '\f1e8';
 }
 
+.social-menu a[href*='tiktok.com']::before,
+.post__sharing a[href*='tiktok.com']::before {
+  content: '\e07b';
+}
+
 .social-menu a[href*='vimeo.com']::before,
 .post__sharing a[href*='vimeo.com']::before {
   content: '\f40a';
