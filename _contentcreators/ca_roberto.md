@@ -11,7 +11,7 @@ twitter: https://twitter.com/robert_tvx
 instagram: 
 tiktok: https://www.tiktok.com/@roberto_tvx
 country: Canada
-style: team-player__slide--category-4
+style: team-player__slide--category-2
 archiveID: .stream-4
 twitchID: 58822606 
 ---
