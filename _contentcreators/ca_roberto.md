@@ -5,7 +5,7 @@ alias: Roberto
 image: /assets/img/team/roberto.png
 membersince: January 2022
 role: 
-twitch: https://www.twitch.tv/Roberto_Tvx
+twitch: https://twitch.com/Roberto_Tvx
 youtube: 
 twitter: https://twitter.com/robert_tvx
 instagram: 

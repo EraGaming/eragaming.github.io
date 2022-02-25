@@ -54,20 +54,20 @@ layout: default
                       <div class="player-info-detail">
                         <div class="player-info-detail__label">Social</div>
                         <ul class="social-menu social-menu--default">
-                          {% if member.twitter %}<li>
-                            <a href="{{ member.twitter }}" target="_blank"></a>
-                          </li>{% endif %}
                           {% if member.twitch %}<li>
                             <a href="{{ member.twitch }}" target="_blank"></a>
                           </li>{% endif %}
                           {% if member.youtube %}<li>
                             <a href="{{ member.youtube }}" target="_blank"></a>
                           </li>{% endif %}
+                          {% if member.tiktok %}<li>
+                            <a href="{{ member.tiktok }}" target="_blank"></a>
+                          </li>{% endif %}
                           {% if member.instagram %}<li>
                             <a href="{{ member.instagram }}" target="_blank"></a>
                           </li>{% endif %}
-                          {% if member.tiktok %}<li>
-                            <a href="{{ member.tiktok }}" target="_blank"></a>
+                          {% if member.twitter %}<li>
+                            <a href="{{ member.twitter }}" target="_blank"></a>
                           </li>{% endif %}
                         </ul>
                       </div>
