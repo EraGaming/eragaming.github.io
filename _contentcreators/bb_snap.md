@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/itsSugarSnapx
 instagram: https://www.instagram.com/sugarsnapx/
 country: Canada
-style: team-player__slide--category-7
+style: team-player__slide--category-1
 archiveID: .stream-4
 twitchID: 58822606 
 ---

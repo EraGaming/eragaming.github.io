@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/Cu_DeeTTV
 instagram:
 country: Canada
-style: team-player__slide--category-2
+style: team-player__slide--category-4
 archiveID: .stream-4
 twitchID: 58822606 
 ---

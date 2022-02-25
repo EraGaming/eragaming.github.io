@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/ydaveragenerd
 instagram: https://www.instagram.com/ydaveragenerd/
 country: USA
-style: team-player__slide--category-4
+style: team-player__slide--category-1
 archiveID: .stream-4
 twitchID: 421719643 
 ---
