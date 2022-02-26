@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/sadgurlluna
 instagram: https://www.instagram.com/sadgurlluna/
 country: Canada
-style: team-player__slide--category-4
+style: team-player__slide--category-6
 archiveID: .stream-4
 twitchID: 58822606 
 ---

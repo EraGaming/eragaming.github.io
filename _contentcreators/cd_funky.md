@@ -11,7 +11,7 @@ twitter: https://twitter.com/Funky_Willow
 instagram: https://www.instagram.com/funky_willow/?hl=en
 tiktok: 
 country: Canada
-style: team-player__slide--category-1
+style: team-player__slide--category-6
 archiveID: .stream-4
 twitchID: 58822606 
 ---

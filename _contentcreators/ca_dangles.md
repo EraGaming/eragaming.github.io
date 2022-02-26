@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/Dangles_86
 instagram: https://www.instagram.com/dangles86/
 country: Canada
-style: team-player__slide--category-5
+style: team-player__slide--category-3
 archiveID: .stream-4
 twitchID: 58822606 
 ---

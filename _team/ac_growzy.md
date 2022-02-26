@@ -10,7 +10,7 @@ youtube:
 twitter: https://twitter.com/growzygaming
 instagram: https://www.instagram.com/growzygaming/
 country: Canada
-style: team-player__slide--category-6
+style: team-player__slide--category-4
 archiveID: .stream-4
 twitchID: 58822606 
 ---
