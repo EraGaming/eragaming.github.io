@@ -7,7 +7,7 @@ membersince: March 2020
 role:
 twitch: https://twitch.com/DonBukka
 youtube:
-twitter: 
+twitter: https://twitter.com/Halfkenny_J
 instagram: 
 country: Canada
 style: team-player__slide--category-1
