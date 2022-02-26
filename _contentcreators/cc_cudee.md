@@ -11,7 +11,7 @@ twitter: https://twitter.com/Cu_DeeTTV
 instagram:
 tiktok: https://www.tiktok.com/@cu_deettv
 country: Canada
-style: team-player__slide--category-4
+style: team-player__slide--category-5
 archiveID: .stream-4
 twitchID: 58822606 
 ---
