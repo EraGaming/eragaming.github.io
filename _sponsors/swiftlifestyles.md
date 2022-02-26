@@ -1,5 +1,5 @@
 ---
 name: Swift Lifestyles
 logo: /assets/img/sponsors/swift.png
-url: https://swiftlifestyle.ca
+website: https://www.swiftlifestyles.com/
 ---

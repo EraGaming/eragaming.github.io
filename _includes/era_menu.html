@@ -71,10 +71,10 @@
       <div id="mobile_collapse_4" class="collapse mobile-bar-item__body">
         <div class="mobile-bar-item__inner">
           <ul class="widget-partners-mobile-carousel">
-            {% for partner in site.data.partners %}
+            {% for sponsor in site.sponsors %}
             <li>
               <img
-                src="{{ partner.logo }}"
+                src="{{ sponsor.logo }}"
                 alt=""
               />
             </li>
@@ -179,12 +179,12 @@
             <h5 class="widget__title">Our Partners</h5>
             <div class="widget__content">
               <ul>
-                {% for partner in site.data.partners %}
+                {% for sponsor in site.sponsors %}
                 <li>
-                  <img
-                    src="{{ partner.logo }}"
-                    alt="{{ partner.name }}"
-                  />
+                  <a href="{{ sponsor.website }}" target="_blank"><img
+                    src="{{ sponsor.logo }}"
+                    alt="{{ sponsor.name }}"
+                  /></a>
                 </li>
                 {% endfor %}
               </ul>
