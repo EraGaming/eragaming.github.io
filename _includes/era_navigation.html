@@ -18,7 +18,7 @@
       <li class="{% if page.url == "/" %}active{% endif %}"><a href="/">Home</a></li>
       <li class="{% if page.url == "/team.html" %}active{% endif %}"><a href="/team">Team</a></li>
       <li class="{% if page.url == "/content-creators.html" %}active{% endif %}"><a href="/content-creators">Content Creators</a></li>
-      <li class=""><a href="https://discord.gg/endlessera">Discord</a></li>
+      <li class=""><a href="https://discord.gg/endlessera" target="_blank">Discord</a></li>
       <li class=""><a href="https://www.etsy.com/ca/shop/EndlessEraGaming?ref=seller-platform-mcnav" target="_blank">Merch</a></li>
       <li class=""><a href="javascript:void( window.open( 'https://form.jotform.com/212728802943055', 'blank', 'scrollbars=yes, toolbar=no, width=900, height=700' ) ) ">Join Us</a></li> 
     </ul>
@@ -27,8 +27,8 @@
 
   <!-- Header Actions -->
   <div class="header-actions">
-    <!-- only put pagination on streamer info page -->
-    {% if page.url == "/" %}
+    {% if page.url == "content-creators" %}
+    <!-- only put pagination on streamer info page NOTE: this is not currently working -->
     <div class="header-pagination">
       <a
         href="#"
@@ -56,17 +56,17 @@
       <ul class="social-menu social-menu--header">
         {% for entry in site.data.nav_data %}
         <li>
-          <a href="{{ entry.discordLink }}">
+          <a href="{{ entry.discordLink }}" target="_blank">
             <span class="link-subtitle">Discord</span>{{ entry.teamName }}</a
           >
         </li>
         <li>
-          <a href="{{ entry.twitchLink }}"
+          <a href="{{ entry.twitchLink }}" target="_blank"
             ><span class="link-subtitle">Twitch</span>{{ entry.teamName }}</a
           >
         </li>
         <li>
-          <a href="{{ entry.twitterLink }}"
+          <a href="{{ entry.twitterLink }}" target="_blank"
             ><span class="link-subtitle">Twitter</span>{{ entry.teamName }}</a
           >
         </li>
