@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% include era_header.html %}
+  <body class="scroll-is--active">
+    <div class="site-wrapper site-layout--default">
+      {% include era_navigation.html %}
+      <main class="site-content checkout-page" id="wrapper">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Post -->
+              {{ page.content }}
+            <!-- Post / End -->
+          </div>
+        </div>
+      </main>
+      <!-- Overlay -->
+      <div class="site-overlay"></div>
+      <!-- Overlay / End -->
+      {% include era_menu.html %}
+    </div>
+    {% include era_footer.html %}
+  </body>
+</html>

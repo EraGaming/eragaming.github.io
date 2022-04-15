@@ -1,0 +1,54 @@
+---
+layout: horizontal_default
+---
+<main class="site-content" id="wrapper">
+	{% for product in site.merch %}	
+    {% if product.featured == true %}	
+    <div class="widget-area widger-area--before-loop">
+        <div class="widget widget-featured-product bg-image bg--ph-03">
+            <div class="widget__subtitle">Limited Edition {{product.category}}</div>
+            <h1 class="widget__title h2"><span class="color-primary">{{ product.title}}</span></h1>
+            <div class="widget__thumbnail">
+                <img class="" src="{{ product.image }}" alt="">
+                <div class="widget__price">
+                    <a class="add-icon" href=" {{product.url}}"></a>
+                    <div class="widget__price-label">Get it for</div>
+                    <div class="widget__price-count">
+                        $<span class="color-primary">{{ product.price }}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+    {% endfor %}
+    <div class="content shop-layout--style-1">
+    
+        {% for product in site.merch %}
+        <article class="product">
+            <div class="product__thumbnail">
+                <a href="{{ product.url }}"><img src="{{ product.image }}" alt=""></a>
+            </div>
+            <div class="product__body">
+                <div class="product__header">
+                    <ul class="product__cats list-unstyled">
+                        <li class="product__cats-item color-warning">
+                            <a href="#">{{ product.category }}</a>
+                        </li>
+                    </ul>
+                    <h2 class="product__title h4"><a href="{{ product.url }}">{{ product.title }}</a></h2>
+                    <ul class="product__meta list-unstyled">
+                        <li class="product__meta-item product__price">${{ product.price }}</li>
+                    </ul>
+                </div>
+                <div class="product__excerpt">
+                    {{ product.description }}
+                </div>
+                <a href="{{ product.url }}" class="btn btn-secondary">View item +</a>
+            </div>
+        </article>
+        {% endfor %}
+    
+    </div>
+    
+</main>
