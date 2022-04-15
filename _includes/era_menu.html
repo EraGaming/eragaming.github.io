@@ -21,7 +21,7 @@
             <li class="{% if page.url == "/team.html" %}active{% endif %}"><a href="/team">Team</a></li>
             <li class="{% if page.url == "/content-creators.html" %}active{% endif %}"><a href="/content-creators">Content Creators</a></li>
             <li class=""><a href="https://discord.gg/endlessera" target="_blank">Discord</a></li>
-            <li class=""><a href="https://www.etsy.com/ca/shop/EndlessEraGaming?ref=seller-platform-mcnav" target="_blank">Merch</a></li>
+            <li class="{% if page.url == "/merch.html" %}active{% endif %}"><a href="/merch">Merch</a></li>
             <li class=""><a href="javascript:void( window.open( 'https://form.jotform.com/212728802943055', 'blank', 'scrollbars=yes, toolbar=no, width=900, height=700' ) ) ">Join Us</a></li> 
           </ul>
         </nav>
@@ -103,7 +103,7 @@
                   {% endfor %}
                 </ul>
           </li> -->
-          <li class=""><a href="https://www.etsy.com/ca/shop/EndlessEraGaming?ref=seller-platform-mcnav">Merch</a></li>
+          <li class=""><a href="/merch">Merch</a></li>
           <li class=""><a href="javascript:void( window.open( 'https://form.jotform.com/212728802943055', 'blank', 'scrollbars=yes, toolbar=no, width=900, height=700' ) ) ">Join Us</a></li>     
         </ul>
       </div>
