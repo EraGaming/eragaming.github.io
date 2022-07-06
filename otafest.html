@@ -1,6 +1,6 @@
 ---
 layout: horizontal_default
-title: Otafest Merch
+title: Otafest 2022 Merch
 description: Help our content creators grow by purchasing limited edition Otafest x ERA 2022 merchandise until June 29, 2022.
 ---
 <script type="text/javascript">
@@ -277,7 +277,24 @@ description: Help our content creators grow by purchasing limited edition Otafes
     </div>
     <div class="content shop-layout--style-1">
     
-        {% for product in site.otafest %}
+      <article class="product">
+        <div class="product__thumbnail">
+        </div>
+        <div class="product__body">
+            <div class="product__header">
+                <ul class="product__cats list-unstyled">
+                    <li class="product__cats-item color-warning">
+                        <a href="#">Check Back Next Year</a>
+                    </li>
+                </ul>
+                <h2 class="product__title h4">OTAFEST x ERA MERCH SHOP CLOSED</h2>
+            </div>
+            <div class="product__excerpt">
+                Thanks for buying our limited edition merch created for Otafest. We're looking forward to bringing back new designs and merch in 2023
+            </div>
+        </div>
+      </article>
+        {% for product in site.notafest %}
         <article class="product">
             <div class="product__thumbnail">
                 <a href="{{ product.url }}"><img src="{{ product.image }}" alt=""></a>
