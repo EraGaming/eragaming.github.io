@@ -26,7 +26,9 @@ platforms :mingw, :x64_mingw, :mswin, :jruby do
 end
 
 # Performance-booster for watching directories on Windows
-gem "wdm", "~> 0.1.1", :platforms => [:mingw, :x64_mingw, :mswin]
+gem 'wdm', '>= 0.1.0'
+
+gem "webrick", "~> 1.7"
 
 gem 'jekyll-sitemap'
 
