@@ -1,0 +1,131 @@
+{% include head.html %}
+{% include navigation.html %}
+{% include creator-title.html %}
+<!-- Player Section -->
+<section class="player-info-section">
+    <div class="auto-container">
+        <div class="row clearfix">
+            <!--Text Column-->
+            <div class="text-column col-lg-6 col-md-6 col-sm-12">
+                <div class="inner wow fadeInRight">
+                    <div class="title-box">
+                        <div class="user-title">About {{ page.displayname }}</div>
+                        <div class="user-info">Member Since {{ page.membersince | date: "%B %Y" }}  .  {{ page.country }}</div>
+                    </div>
+                    <div class="text">{{ page.description }}</div>
+                    <ul class="social-icons">
+                        {% if page.twitch %} <li><a href="{{ page.twitch }}"><span class="fab fa-twitch"></span></a></li>{% endif %}
+                        {% if page.tiktok %}<li><a href="{{ page.tiktok }}"><span class="fab fa-instagram"></span></a></li>{% endif %}
+                        {% if page.instagram %}<li><a href="{{ page.instagram }}"><span class="fab fa-instagram"></span></a></li> {% endif %}
+                        {% if page.twitter %}<li><a href="{{ page.twitter }}"><span class="fab fa-twitter"></span></a></li>{% endif %}
+                    </ul>
+                </div>
+            </div>
+            <!--Image Column-->
+            <div class="image-column col-lg-6 col-md-6 col-sm-12">
+                <div class="inner wow fadeInLeft">
+                    <figure class="image"><img src="{%for image in page.image%}{{image.url}}{% endfor %}" alt=""></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End About Section -->
+
+{% if page.showtwitchonpage %}
+{% assign twitchuser = page.twitch | split: '.com/' %}
+{% assign channelid = twitchuser[1] %}
+<section class="awards-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="title">{{ page.displayname }}'s</div>
+            <h2>twitch</h2>
+        </div>
+        <div class="row">
+        <div class=" col-lg-12 col-md-12 col-sm-12">
+            <!-- Add a placeholder for the Twitch embed -->
+        <div id="twitch-embed"></div>
+
+        <!-- Load the Twitch embed script -->
+        <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+        <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+        <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+            width: "100%",
+            height: 500,
+            layout: "video-and-chat",
+            channel: "{{ channelid }}",
+            parent: ["eragaming.ca","127.0.0.1","localhost"]
+        });
+        </script>
+        </div>
+        </div>
+    </div>
+</section>
+<!--End merch Section-->
+{% endif %}
+
+{% if page.merch %}
+<!--MERCH Section-->
+
+
+<section class="awards-section">
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="title">Check Out My</div>
+            <h2>merch</h2>
+        </div>
+        <div class="awards-outer">
+            <!--Awards Carousel-->
+            <ul class="awards-carousel owl-carousel owl-theme">
+            {% for merch in site.store %}
+                {% if merch.tags contains page.displayname %}
+                <li class="slide-item"><figure class="image-box"><a href="{{ merch.url }}"><img src="{{ merch.image }}" alt=""></a></figure></li>
+                {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<!--End merch Section-->
+{% endif %}
+
+{% if page.showgallery %}
+<section class="gallery-section-three" style="border-top: 1px solid rgba(255,255,255,0.20);">
+    
+    <div class="auto-container">
+        <div class="sec-title centered">
+            <div class="title">Check Out My</div>
+            <h2>Artwork</h2>
+        </div>
+        
+        <div class="row clearfix">
+        
+            <!--Gallery Item-->
+            {% for galleryitem in page.gallery %}
+            <div class="gallery-item col-lg-4 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0ms">
+                <div class="inner-box">
+                    <figure class="image-box">
+                        <img src="{{ galleryitem.url }}" alt="">
+                        <!--Overlay Box-->
+                        <div class="overlay-box">
+                            <div class="overlay-inner">
+                                <div class="content">
+                                    <a href="{{ galleryitem.url }}" data-fancybox="gallery-2" data-caption="" class="link"><span class="icon flaticon-add"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+    
+</section>
+{% endif %}
+{% include footer.html %}

@@ -1,0 +1,34 @@
+---
+title: Job Opportunities
+layout: default
+headerimg: "/assets/images/background/news-about.webp"
+---
+
+{% include title.html %}
+
+<!-- Welcome Section -->
+<section class="welcome-section">
+    <div class="auto-container">
+        <!-- Lower Box -->
+        <div class="lower-box">
+            <div class="text">
+                <h3 style="color: #fff; margin-bottom: 1.5rem; text-transform: uppercase;">Discover Your Next Adventure with Endless ERA Gaming</h3>
+                <p style="font-size: 16px; color: #999;">At Endless ERA Gaming, we're always on the lookout for passionate, talented individuals to join our dynamic team. Whether we're in the midst of our busiest event season or planning for the next big thing, the opportunity to contribute to the world of gaming is never far away. Our team thrives on creativity, innovation, and a shared love for gaming that brings our visions to life. Even when specific positions aren't listed, we are eager to connect with potential color commentators, hosts, and professionals who can elevate our events and broadcasts to new heights. If you possess a unique blend of talent, enthusiasm for gaming, and a knack for engaging audiences, we want to hear from you. Submit your application today and tell us how you can make an impact at Endless ERA Gaming. Let's create unforgettable gaming experiences together.</p>
+            </div>
+        </div>
+        <div class="lower-box">
+            <div class="text legal">
+                <h3 style="color: #fff; margin-bottom: 1.5rem; text-transform: uppercase;">Current Opportunities</h3>
+                <hr />
+                {% for job in site.jobs %}
+                <a href="{{ job.url }}"><h3 style="text-transform: uppercase;">{{ job.title }}</h3></a>
+                <p style="text-transform: uppercase;">{{ job.positionType }}</p>
+                <p>{{ job.summary }}</p>
+                <a href="{{ job.url }}" class="theme-btn btn-style-one"><span class="btn-title">View Opportunity</span></a>
+                <hr />
+                {% endfor %}
+            </div>
+        </div>
+        
+    </div>
+</section>

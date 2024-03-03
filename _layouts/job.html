@@ -1,0 +1,17 @@
+{% include head.html %}
+{% include navigation.html %}
+{% include title.html %}
+
+<!-- Welcome Section -->
+<section class="welcome-section">
+    <div class="auto-container">
+        <div class="lower-box">
+            <div class="text legal">
+            {{content}}
+            </div>
+        </div>
+    </div>
+{% if page.form %}<script type="text/javascript" src="{{page.form}}"></script>{% endif %}
+</section>
+
+{% include footer.html %}

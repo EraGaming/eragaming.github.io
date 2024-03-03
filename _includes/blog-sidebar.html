@@ -1,0 +1,66 @@
+<!--Sidebar Side-->
+<div class="sidebar-side col-lg-4 col-md-12 col-sm-12">
+    <aside class="sidebar">
+        <!-- Search -->
+        <div class="sidebar-widget search-box">
+            <form method="post" action="contact.html">
+                <div class="form-group">
+                    <input type="search" name="search-field" value="" placeholder="Search" required>
+                    <button type="submit"><span class="icon fa fa-search"></span></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- Post Widget -->
+        <div class="sidebar-widget popular-posts">
+            <div class="widget-content">
+                <h4 class="sidebar-title">Recent Posts</h4>
+                {% for post in site.posts limit:3 %}
+                <article class="post">
+                    <div class="post-inner">
+                        <figure class="post-thumb"><a href="{{ post.url }}"><img src="{{ post.image }}" alt=""></a></figure>
+                        <div class="post-info">{{ post.date | date: "%-d %B %Y" }}</div>
+                        <div class="text"><a href="{{ post.url }}">{{ post.title }}</a></div>
+                    </div>
+                </article>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Tags Widget -->
+        <div class="sidebar-widget popular-tags">
+            <div class="widget-content">
+                <h4 class="sidebar-title">popular tags</h4>
+                {% assign all_tags = '' | split: ',' %}
+                {% for post in site.posts %}
+                    {% for tags in post.tags %}
+                        {% for tag in tags %}
+                            {% assign all_tags = all_tags | push: tag %}
+                        {% endfor %}
+                    {% endfor %}
+                {% endfor %}
+
+                {% assign all_tags = all_tags | sort %}
+                {% assign all_tags = all_tags | uniq %}
+
+                    {% for tag in all_tags %}
+                        <a href="{{ site.tag_dir | prepend: '/' }}/{{ tag | uri_escape }}">{{ tag }}</a>
+                    {% endfor %}
+
+            </div>
+        </div>
+
+        <!-- Category Widget -->
+        <div class="sidebar-widget categories">
+            <div class="widget-content">
+                <h4 class="sidebar-title">Categories</h4>
+                <!-- Blog Category -->
+                <ul class="blog-categories">
+                    {% for category in site.categories %}
+                    <li><a href="{{site.baseurl}}/news/{{category|first}}">{{category|first}}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>           
+    </aside>
+</div>

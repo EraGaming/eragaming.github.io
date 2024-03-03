@@ -1,0 +1,14 @@
+    <!--Page Title-->
+    <section class="page-banner" style="background-image:url({% for headerimage in page.headerimage %}{{ headerimage.url }}{% endfor %});">
+        <div class="auto-container">
+            <div class="inner-container clearfix">
+                <ul class="bread-crumb clearfix">
+                    <li><a href="/">Home</a></li>
+                    <li>Creators</li>
+                    <li>{{ page.displayname }}</li>
+                </ul>
+                <h1>{{ page.displayname }}</h1>
+            </div>
+        </div>
+    </section>
+    <!--End Page Title-->

@@ -1,0 +1,44 @@
+- title: HOME
+  link: /
+
+- title: ABOUT
+  link: /about
+
+- title: SERVICES
+  link: 
+
+  submenu:
+    - title: Event Services
+      link: /event-services
+
+    - title: Broadcast Production
+      link: /broadcast-production
+
+    - title: Consulting
+      link: /consulting
+
+
+- title: CONTENT CREATORS
+  link: /creators
+
+  submenu:
+    - title: YD Average Nerd
+      link: /creators/yd-average-nerd
+
+    - title: SugarSnap
+      link: /creators/sugarsnapx
+
+    - title: Dangles
+      link: /creators/dangles
+
+    - title: DonBukka
+      link: /creators/donbukka
+
+    - title: Affiliates
+      link: /creators#affiliates
+
+- title: STORE
+  link: /store
+
+- title: CONTACT
+  link: /contact-us

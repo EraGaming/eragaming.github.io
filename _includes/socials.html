@@ -1,0 +1,3 @@
+{% for service in site.data.socials %}
+<li><a href="{{ service.url }}" target="_blank"><span class="fab {% if service.name == 'twitter' %}fa-twitter{% elsif service.name == 'instagram'%}fa-instagram{% elsif service.name == 'twitch'%}fa-twitch{% elsif service.name == 'tiktok'%}fa-tiktok{% elsif service.name == 'facebook'%}fa-facebook-square{% endif %}"></span></a></li>
+{% endfor %}

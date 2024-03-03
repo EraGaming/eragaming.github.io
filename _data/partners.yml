@@ -1,6 +1,15 @@
-- name: Placeholder3
-  logo: assets/img/sponsors/sponsor1.png
-- name: Placeholder4
-  logo: assets/img/sponsors/sponsor2.png
-- name: Placeholder5
-  logo: assets/img/sponsors/sponsor3.png
+- name: Otafest
+  image: /assets/partners/otafest.webp
+  website: https://otafest.com
+- name: Animethon
+  image: /assets/partners/animethon.webp
+  website: https://animethon.org
+- name: Extra Life YYC
+  image: /assets/partners/extralifeyyc.webp
+  website: https://extralifeyyc.com
+- name: Willsie Digital
+  image: /assets/partners/willsie.webp
+  website: https://willsie.net
+- name: Alberta Esports Association
+  image: /assets/partners/aesa.webp
+  website: https://esportsalberta.ca

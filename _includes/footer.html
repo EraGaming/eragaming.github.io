@@ -1,0 +1,105 @@
+<!-- Main Footer -->
+<footer class="main-footer">
+    <div class="auto-container">
+        <!--Widgets Section-->
+        <div class="widgets-section">
+            <div class="row clearfix">
+                
+                <!--Column-->
+                <div class="column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget logo-widget">
+                        <div class="logo">
+                            <a href="index.html"><img src="/assets/images/logo.webp" alt="" style="max-height:80px;"/></a>
+                        </div>
+                        <div class="text">We live, work and play on the traditional territories of the people of the Treaty 7 region in Southern Alberta, along with the Métis Nation of Alberta (Districts 5 & 6) in the City of Calgary.</div>
+                    </div>
+                </div>
+                
+                <!--Column-->
+                <div class="column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget links-widget">
+                        <div class="widget-content">
+                            <div class="footer-title">
+                                <h2>Links</h2>
+                            </div>
+                            <div class="row clearfix">
+                                <div class="column col-lg-6 col-md-6 col-sm-12">
+                                    <ul class="list">
+                                        {% for item in site.data.footermenu limit:4 %}
+                                        <li><a href="{{item.link}}">{{item.title}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                                <div class="column col-lg-6 col-md-6 col-sm-12">
+                                    <ul class="list">
+                                        {% for item in site.data.footermenu limit:4 offset:4 %}
+                                        <li><a href="{{item.link}}">{{item.title}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>	
+                    </div>
+                </div>
+                
+                <!--Column-->
+                <div class="column col-lg-4 col-md-6 col-sm-12">
+                    <div class="footer-widget newsletter-widget">
+                        <div class="footer-title">
+                            <h2>Newsletter</h2>
+                        </div>
+                        <div class="text">Subsrcibe us now to get the latest news and updates</div>
+                        <div class="newsletter-form">
+                            <form method="post" action="contact.html">
+                                <div class="form-group clearfix">
+                                    <input type="email" name="email" value="" placeholder="Email address" required>
+                                    <button type="submit" class="theme-btn newsletter-btn"><span class="fas fa-envelope"></span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="auto-container">
+            <!--Scroll to top-->
+            <div class="scroll-to-top scroll-to-target" data-target="html"><span class="flaticon-up-arrow"></span></div>
+            <!--Scroll to top-->
+            <div class="row clearfix">
+                <!-- Column -->
+                <div class="column col-lg-6 col-md-12 col-sm-12">
+                    <div class="copyright">&copy; Copyright, 2024 Endless ERA Gaming. All Rights Reserved</div>
+                </div>
+                <!-- Column -->
+                <div class="column col-lg-6 col-md-12 col-sm-12">
+                    <ul class="social-icons">
+                        {% include socials.html %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+	
+</div>
+<!--End pagewrapper-->
+
+<script src="/assets/js/jquery.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery-ui.js"></script>
+<script src="/assets/js/jquery.fancybox.js"></script>
+<script src="/assets/js/owl.js"></script>
+<script src="/assets/js/appear.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/scrollbar.js"></script>
+<script src="/assets/js/script.js"></script>
+
+</body>
+</html>

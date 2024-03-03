@@ -1,2 +1,1 @@
-# eragaming.github.io
-Era Gaming Website
+# era-website-v2

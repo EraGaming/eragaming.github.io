@@ -1,0 +1,17 @@
+- name: Joshua Parent
+  role: President & Founder
+  displayname: valharl
+  image: /assets/leaders/josh.webp
+  twitch: https://twitch.com/valharl
+- name: Kyle Houston
+  role: Community Director & Co-Founder
+  displayname: Growzy
+  image: /assets/leaders/kyle.webp
+  twitch: https://twitch.com/growzy
+- name: Todd Willsie
+  role: Creative Director & Co-Founder
+  displayname: itstwillz
+  image: /assets/leaders/todd.webp
+  twitch: https://twitch.com/twillsie
+  twitter: https://twitter.com/itstwillz
+

@@ -1,113 +1,252 @@
 ---
-layout: default
+title: Home
+layout: home
+pagination:
+    enabled: true
 ---
 
-<main class="site-content team-info-page" id="wrapper">
-  <div class="container container--large">
-    <div class="row">
-      <div class="col-lg-7">
-        <div class="team-carousel">
-          <div class="team-carousel__content">
-            {% for member in site.welcome %}
-            <div class="team-carousel__item" data-icon="player-{{member.alias}}">
-              <div class="row">
-                <div class="col-lg-11">
-                  <h3 class="player-info-subtitle h4 text-uppercase">
-                    {% if member.firstname %} {{member.firstname}}
-                    {{member.lastname}}{% else %} Team Era {% endif %}
-                  </h3>
-                  <h2 class="player-info-title h1 text-uppercase">
-                    {{ member.alias }}
-                  </h2>
-                  <div class="row">
-                    {% if member.country %}
-                    <div class="col-6 col-md-6 col-xl-4">
-                      <div class="player-info-detail">
-                        <div class="player-info-detail__label">Country</div>
-                        <div class="player-info-detail__title">
-                          {{ member.country }}
+<!-- Banner Section -->
+<section class="banner-section">
+    <div class="banner-carousel owl-theme owl-carousel">
+        {% for slide in site.data.home-banner %}
+        <!-- Slide Item -->
+        <div class="slide-item">
+            <div class="image-layer" style="background-image:url({{slide.image}})"></div>
+
+            <div class="auto-container">
+                <div class="content-box">
+                    <h2>{{slide.title}}</h2>
+                    <div class="btn-box"><a href="{{slide.link}}" class="theme-btn btn-style-one"><span class="btn-title">{{slide.button}}</span></a></div>
+                </div>  
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+<!--End Banner Section -->
+
+<!-- Welcome Section -->
+<section class="welcome-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <div class="title">Endless ERA is more than just gaming</div>
+            <h2>Power Up Your Events</h2>
+        </div>
+        
+        <div class="row clearfix">
+            {% capture service_count %}{{ site.data.services | size }}{% endcapture %}
+            {% for service in site.data.services %}
+            <!--Default Portfolio Item-->
+            <div class="default-portfolio-item {% if service_count == '4' %}col-lg-3 col-md-3{% elsif service_count == '3' %}col-lg-4 col-md-4{% endif %} col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="inner-box hvr-float">
+                    <figure class="image-box"><img src="{{service.image}}" alt="{{service.alt}}"></figure>
+                    <!--Overlay Box-->
+                    <div class="overlay-box">
+                        <div class="overlay-inner">
+                            <div class="content">
+                                <h3><a href="{{service.link}}">{{service.title}}</a></h3>
+                            </div>
                         </div>
-                      </div>
                     </div>
-                    {% endif %}
-                    {% if member.membersince %}
-                    <div class="col-6 col-md-6 col-xl-4">
-                      <div class="player-info-detail">
-                        <div class="player-info-detail__label">Since</div>
-                        <div class="player-info-detail__title">
-                          {{ member.membersince }}
-                        </div>
-                      </div>
-                    </div>
-                    {% endif %}
-                    {% if member.role %}<div class="col-6 col-md-6 col-xl-4">
-                      <div class="player-info-detail">
-                        <div class="player-info-detail__label">Role</div>
-                        <div class="player-info-detail__title color-primary">
-                          {{ member.role }}
-                        </div>
-                      </div>
-                    </div>
-                    {% endif %}
-                    {% if member.twitter or member.twitch or member.instagram or member.youtube %}
-                    <div class="col-6 col-md-6 col-xl-4">
-                      <div class="player-info-detail">
-                        <div class="player-info-detail__label">Social</div>
-                        <ul class="social-menu social-menu--default">
-                          <li>
-                            <a href="{{ member.twitter }}" target="_blank"></a>
-                          </li>
-                          <li>
-                            <a href="{{ member.twitch }}" target="_blank"></a>
-                          </li>
-                          <li>
-                            <a href="{{ member.instagram }}" target="_blank"></a>
-                          </li>
-                          <li>
-                            <a href="{{ member.youtube }}" target="_blank"></a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                    {% endif %}
-                  </div>
-                  <p>{{ member.content }}</p>
                 </div>
-              </div>
             </div>
-			{% endfor %}
-			
-          </div>
+            {% endfor %}  
+            
         </div>
-      </div>
+        
+        <!-- Lower Box -->
+        <div class="lower-box">
+            <div class="text">Step into the vibrant world of Endless ERA Gaming, where technology meets passion and innovation. Based in the heart of Western Canada, we're not just a business; we're a thriving community of gamers, creators, and enthusiasts who live and breathe esports. At Endless ERA, we believe in fostering a space where everyone is welcomed, where creativity knows no bounds, and where every event is a step into the future of gaming. Join us as we embark on a journey to redefine the gaming landscape, one exhilarating experience at a time.</div>
+            <a href="/about" class="theme-btn btn-style-one"><span class="btn-title">About us</span></a>
+        </div>
+        
     </div>
-  </div>
-  <div class="team-player team-player--slider-wrapper">
-    <div class="team-player__slider js-team-player__slider">
-      {% for member in site.welcome %}
-      <div class="team-player__slide {{ member.style }}">
-        <div class="team-player__slide-inner">
-          <div class="team-player__slide-decor">
-            <!-- <div class="team-player__slide-line-1"></div>
-            <div class="team-player__slide-line-2"></div> -->
-          </div>
-          {% if member.image %}<img
-            src="{{ member.image }}"
-            alt="{{ member.firstname }} {{ member.lastname }} aka {{ member.alias }}"
-            class="team-player__slide-img"
-          />
-          {% endif %}
-          <div class="team-player__slide-meta-holder">
-            <div class="team-player__slide-meta">
-              <h4 class="team-player__slide-subtitle h6 color-primary">
-                {{ member.firstname }} {{ member.lastname }}
-              </h4>
-              <h3 class="team-player__slide-title">{{ member.alias }}</h3>
+</section>
+<!-- End Welcome Section -->
+
+<!-- Gallery Section -->
+<section class="gallery-section" style="background-image:url(/assets/images/background/2.jpg)">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <div class="title">Images from our</div>
+            <h2>Latest Events</h2>
+        </div>
+        
+        <div class="row clearfix">
+        
+            <!-- Column -->
+            <div class="column col-lg-6 col-md-12 col-sm-12">
+                {% assign galleries = site.gallery | sort: 'date' | reverse %}
+                {% for gallery in galleries limit:1 %}
+                <!-- Gallery Block -->
+                <div class="gallery-block">
+                    <div class="inner-box wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="image">
+                            <img src="{{ gallery.homeimg}}" alt="" />
+                            <div class="overlay-box">
+                                <div class="overlay-inner">
+                                    <a href="{{ gallery.url }}" class="play-box"><span class="flaticon-play-button"><i class="ripple"></i></span></a>
+                                    <div class="content">
+                                        <div class="title">Image Gallery</div>
+                                        <h2><a href="{{ gallery.url }}" class="">{{ gallery.title }}</a></h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
             </div>
-          </div>
+            
+            <!-- Column -->
+            <div class="column col-lg-6 col-md-12 col-sm-12">
+                {% for gallery in galleries limit:2 offset:1 %}
+                <!-- Gallery Block Two -->
+                <div class="gallery-block-two">
+                    <div class="inner-box wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="image hvr-bob">
+                            <img src="{{ gallery.homeimg }}" alt="" />
+                            <div class="overlay-box">
+                                <a href="{{ gallery.url }}" class="overlay-link"></a>
+                                <h3><span class="icon flaticon-play-button"></span> {{ gallery.title }}</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+                
+            </div>
+        
         </div>
-      </div>
-      {% endfor %}
     </div>
-  </div>
-</main>
+</section>
+<!-- End Gallery Section -->
+
+<!-- Call To Action Section -->
+<section class="facts-section">
+    <!-- Title Boxed -->
+    <div class="title-boxed" style="background-image:url(assets/images/background/5.webp)">
+        <div class="auto-container">
+            <div class="content wow fadeInLeft" data-wow-delay="0ms">
+                <h2>Join the Gaming Revolution with Endless ERA Gaming</h2>
+                <a href="/contact-us" class="theme-btn btn-style-one"><span class="btn-title">DIVE IN NOW</span></a>
+            </div>
+        </div>
+    </div>
+    <!-- End Title Boxed -->
+    
+    <!-- Lower Boxed -->
+    <div class="lower-boxed">
+        <div class="auto-container">
+            <div class="row clearfix">
+                
+                <!-- Counter Column -->
+                <div class="counter-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column">
+                        
+                        <!-- Featured Block -->
+                        <div class="featured-block">
+                            <div class="inner-box">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-joystick"></span>
+                                </div>
+                                <h3>10</h3>
+                                <div class="text">Epic Gaming Events Hosted in 3 Years</div>
+                            </div>
+                        </div>
+                        
+                        <!-- Featured Block -->
+                        <div class="featured-block">
+                            <div class="inner-box">
+                                <div class="icon-box">
+                                    <span class="icon flaticon-man"></span>
+                                </div>
+                                <h3>41,000</h3>
+                                <div class="text">Western Canadian Gamers Connected</div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Testimonial Column -->
+                <div class="testimonial-column col-lg-6 col-md-12 col-sm-12">
+                    <div class="inner-column wow fadeInRight" data-wow-delay="0ms">
+                        
+                        <div class="single-item-carousel owl-carousel owl-theme">
+                            
+
+                            <!-- Testimonial Block -->
+                            {% for quote in site.data.quotes %}
+                            <div class="testimonial-block">
+                                <div class="inner-box">
+                                    <div class="quote-icon flaticon-quote-1"></div>
+                                    <div class="text">{{quote.quote}}</div>
+                                    <div class="author">- {{quote.name}}</div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</section>
+<!-- End Call To Action Section -->
+
+<!-- News Section -->
+<section class="news-section">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <div class="title">Recent Articles</div>
+            <h2>Latest News</h2>
+        </div>
+        
+        <div class="row clearfix">
+            
+            {% for post in paginator.posts limit:3 %}
+            <!-- News Block -->
+            <div class="news-block col-lg-4 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0ms" data-wow-duration="1500ms">
+                <div class="inner-box hvr-bob">
+                    <div class="image">
+                        <a href="{{ post.url }}"><img src="{{ post.image }}" alt="" /></a>
+                    </div>
+                    <div class="lower-content">
+                        <div class="post-date">{{ post.date | date: "%-d %B %Y"}}</div>
+                        <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+</section>
+<!-- End News Section -->
+
+<!--Sponsors Section-->
+<section class="sponsors-section">
+    <div class="auto-container">
+        
+        <div class="sponsors-outer">
+            <!--Sponsors Carousel-->
+            <ul class="sponsors-carousel owl-carousel owl-theme">
+                {% for partner in site.data.partners %}
+                <li class="slide-item"><figure class="image-box"><a href="{{ partner.website }}"><img src="{{ partner.image }}" alt="{{ partner.name }}"></a></figure></li>
+                {% endfor %}
+            </ul>
+        </div>
+        
+    </div>
+</section>
+<!--End Sponsors Section-->

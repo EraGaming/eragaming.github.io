@@ -1,0 +1,91 @@
+---
+title: Content Creators
+layout: default
+headerimg: "/assets/images/background/news-bg.webp"
+---
+
+{% include title.html %}
+<!-- Players Section -->
+<section class="players-section style-two">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <h2>Meet Our Creators</h2>
+            <div class="title">They are amazing people that we are proud to support.</div>
+            <p>Endless ERA Content Creators have amazing and safe communities. They stream often and are fun to interact with!<br />
+            Click to view their page.</p>
+        </div>
+        
+        <div class="row clearfix">
+            
+            {% assign creators = site.data.ContentCreators | where: 'affiliate', nil %}        
+            {% for creator in creators %}
+            <!-- Player Block -->
+            <div class="player-block col-lg-6 col-md-6 col-sm-12 wow fadeInLeft" data-wow-delay="0mss">
+                <div class="inner-box hvr-bob">
+                    <div class="image">
+                        <a href="/creators/{{ creator.name | slugify }}"><img src="{{ creator.image[0].url }}" alt="" style="height:500px; object-fit: cover; object-position: center top;"/></a>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="/creators/{{ creator.name | slugify }}">{{creator.displayname}}</a></h3>
+                        <div class="level">Member since {{creator.membersince | date: "%B %Y"}}</div>
+                        <ul class="social-icons">
+                            {% if creator.twitter %}<li><a href="{{creator.twitter}}" target="_blank"><span class="fab fa-twitter"></span></a></li>{% endif %}
+                            {% if creator.facebook %} <li><a href="{{creator.facebook}}"><span class="fab fa-facebook-square"></span></a></li>{% endif %}
+                            {% if creator.instagram %}<li><a href="{{creator.instagram}}"><span class="fab fa-instagram"></span></a></li>{% endif %}
+                            {% if creator.tiktok %}<li><a href="{{creator.tiktok}}"><span class="fab fa-tiktok"></span></a></li>{% endif %}
+                            {% if creator.youtube %}<li><a href="{{creator.youtube}}"><span class="fab fa-youtube"></span></a></li>{% endif %}
+                            {% if creator.twitch %}<li><a href="{{creator.twitch}}"><span class="fab fa-twitch"></span></a></li>{% endif %}
+                            <li><a href="/creators/{{ creator.name | slugify }}"><span class="fas fa-globe"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+</section>
+<!-- End Players Section -->
+
+<!-- Players Section -->
+<section class="players-section style-two" id="affiliates">
+    <div class="auto-container">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+            <h2>Meet Our Affiliates</h2>
+            <div class="title">They make our community amazing!</div>
+            <p>Endless ERA Affiliates are up and coming content creators who are actively making Endless ERA an amazing and safe community.</p>
+        </div>
+        
+        <div class="row clearfix">
+            
+            {% assign creators = site.data.ContentCreators | where: 'affiliate', 'true' %}        
+            {% for creator in creators %}
+            <!-- Player Block -->
+            <div class="player-block col-lg-3 col-md-3 col-sm-6 wow fadeInLeft" data-wow-delay="0mss">
+                <div class="inner-box hvr-bob">
+                    <div class="image">
+                        <a href="/creators/{{ creator.name | slugify }}"><img src="{{ creator.image[0].url }}" alt="" style="height:300px; object-fit: cover; object-position: center top;"/></a>
+                    </div>
+                    <div class="lower-content">
+                        <h3><a href="/creators/{{ creator.name | slugify }}">{{creator.displayname}}</a></h3>
+                        <ul class="social-icons">
+                            {% if creator.twitter %}<li><a href="{{creator.twitter}}" target="_blank"><span class="fab fa-twitter"></span></a></li>{% endif %}
+                            {% if creator.facebook %} <li><a href="{{creator.facebook}}"><span class="fab fa-facebook-square"></span></a></li>{% endif %}
+                            {% if creator.instagram %}<li><a href="{{creator.instagram}}"><span class="fab fa-instagram"></span></a></li>{% endif %}
+                            {% if creator.tiktok %}<li><a href="{{creator.tiktok}}"><span class="fab fa-tiktok"></span></a></li>{% endif %}
+                            {% if creator.twitch %}<li><a href="{{creator.twitch}}"><span class="fab fa-twitch"></span></a></li>{% endif %}
+                            <li><a href="/creators/{{ creator.name | slugify }}"><span class="fas fa-globe"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            
+        </div>
+        
+    </div>
+</section>
+<!-- End Players Section -->

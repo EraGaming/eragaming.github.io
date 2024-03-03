@@ -1,0 +1,104 @@
+<!-- Main Header -->
+<header class="main-header">
+    <!-- Header Top -->
+    <div class="header-top">
+        <div class="auto-container clearfix">
+
+            <div class="top-left clearfix">
+                <ul class="info-list">
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="top-right">
+                <ul class="social-icons">
+                    {% include socials.html %}
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Upper -->
+    <div class="header-upper">
+        <div class="inner-container">
+            <div class="auto-container clearfix">
+                <!--Logo-->
+                <div class="logo-outer">
+                    <div class="logo"><a href="/"><img src="/assets/images/logo.webp" alt="" title="Gamon - Digital Gaming and Esports HTML Template"></a></div>
+                </div>
+
+                <!--Nav Box-->
+                <div class="nav-outer clearfix">
+                    <!--Mobile Navigation Toggler-->
+                    <div class="mobile-nav-toggler"><span class="icon flaticon-menu-1"></span></div>
+
+                    <!-- Main Menu -->
+                    <nav class="main-menu navbar-expand-md navbar-light">
+                        <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
+                            <ul class="navigation clearfix pull-left">
+                                {% for item in site.data.menu limit:3 %}
+                                <li class="{% if item.link == page.url %}current{% endif %} {% if item.submenu %}dropdown {% endif %}"><a {% if item.link %} href="{{item.link}}"{% endif %}>{{item.title}}</a>
+                                    <ul>
+                                        {% for entry in item.submenu %}
+                                        <li><a href="{{entry.link}}">{{entry.title}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                {% endfor %}
+                            </ul>
+
+                            <ul class="navigation pull-right clearfix">
+                                {% for item in site.data.menu limit:3 offset:3 %}
+                                <li class="{% if item.link == page.url %}current{% endif %} {% if item.submenu %}dropdown {% endif %}"><a href="{{item.link}}">{{item.title}}</a>
+                                    <ul>
+                                        {% for entry in item.submenu %}
+                                        <li><a href="{{entry.link}}">{{entry.title}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Main Menu End-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Header Upper-->
+
+    <!-- Sticky Header  -->
+    <div class="sticky-header">
+        <div class="auto-container clearfix">
+            <!--Logo-->
+            <div class="logo pull-left">
+                <a href="index.html" title=""><img src="/assets/images/logo.webp" alt="" title=""></a>
+            </div>
+            <!--Right Col-->
+            <div class="pull-right">
+                <!-- Main Menu -->
+                <nav class="main-menu clearfix">
+                    <!--Keep This Empty / Menu will come through Javascript-->
+                </nav><!-- Main Menu End-->
+            </div>
+        </div>
+    </div><!-- End Sticky Menu -->
+
+    <!-- Mobile Menu  -->
+    <div class="mobile-menu">
+        <div class="menu-backdrop"></div>
+        <div class="close-btn"><span class="icon flaticon-close"></span></div>
+        
+        <nav class="menu-box">
+            <div class="nav-logo"><a href="index.html"><img src="/assets/images/logo.webp" alt="" title=""></a></div>
+            <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
+            <!--Social Links-->
+            <div class="social-links">
+                <ul class="clearfix">
+                    {% include socials.html %}
+                </ul>
+            </div>
+        </nav>
+    </div><!-- End Mobile Menu -->
+</header>
+<!-- End Main Header -->

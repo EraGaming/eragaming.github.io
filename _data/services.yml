@@ -1,0 +1,15 @@
+- title: Event Services
+  description: Crafting immersive gaming environments that blend state-of-the-art technology with a sprinkle of creativity. Experience the future of gaming with Endless ERA.
+  image: assets/images/services/event-setup.webp
+  alt: A vibrant shot of a gaming den with colorful lighting, showcasing enthusiastic gamers engrossed in a heated match.
+  link: /event-services
+- title: Broadcast Production
+  description: Join the hustle and bustle of our content haven, where creators and gamers unite to craft tales of victory, strategy, and thrilling adventures.
+  image: assets/images/services/content-creation.webp
+  alt: A spirited image of content creators, possibly in a room adorned with gaming memorabilia, animatedly discussing or streaming content.
+  link: /broadcast-production
+- title: Consulting
+  description: Providing expert consultancy to help you carve out unforgettable gaming experiences. Let's shape the future of esports together.
+  image: assets/images/services/consulting.webp
+  alt: A casual setting where a group of people are in a lively discussion, surrounded by a relaxed yet creative vibe with gaming art and props around.
+  link: /consulting
