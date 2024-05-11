@@ -4,3 +4,5 @@ _site
 .jekyll-metadata
 .env
 vendor
+
+assets/img/.DS_Store
