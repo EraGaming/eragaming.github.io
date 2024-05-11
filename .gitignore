@@ -6,3 +6,5 @@ _site
 vendor
 
 assets/img/.DS_Store
+
+.DS_Store
