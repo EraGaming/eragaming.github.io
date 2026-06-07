@@ -10,9 +10,6 @@ on:
   # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
-  schedule:
-    - cron: '0 * * * *'  # Run every hour.
-
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -48,9 +45,6 @@ jobs:
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
-          AIRTABLE_API_KEY: ${{secrets.AIRTABLE_API_KEY}}
-          AIRTABLE_BASE: ${{secrets.AIRTABLE_BASE}}
-          AIRTABLE_TABLE: ${{secrets.AIRTABLE_TABLE}}
           JEKYLL_ENV: production
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
