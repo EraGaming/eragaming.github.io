@@ -1,36 +1,43 @@
-- displayname: DonBukka
-  name: DonBukka
-  membersince: '2020-03-01'
-  country: Canada
-  discordusername: donbukka
-  twitch: https://twitch.com/DonBukka
-  twitter: https://twitter.com/Halfkenny_J
-  description: 'I''ve been gaming pretty much my entire life as my mom used to own
-    an arcade when I was younger. Fast forward some 100 odd years later and I''m still
-    here playing them. I also like some long boarding, food, and a few pints with
-    my people. I''ve been around twitch since 2012, streaming a wide range of games
-    (some competitive, but most PVE), and have seen a lot of things come and go. While
-    it''s not perfect I have met some amazing people around the platform. Here''s
-    to the people I''ve met and the people who I may meet in the future! '
-  image:
-  - url: /assets/images/creators/donbukka/donbukka.png
-
-- displayname: Dangles
-  name: Dangles
+- displayname: YD Average Nerd
+  name: YD Average Nerd
   membersince: '2021-03-01'
-  country: Canada
-  discordusername: daaangles
-  twitch: https://twitch.com/danglescharitytv
-  twitter: https://twitter.com/Dangles_86
-  instagram: https://www.instagram.com/dangles86/
-  description: I'm a gamer dad who streams for the Jumpstart charity. My parents were
-    boat people from Vietnam who got sponsored to Canada. They provided everything
-    for us but couldn't afford the cost of organized sports — something I enjoy as
-    an adult now. I stream and play Apex, COD and other games so that kids from low-income
-    families can get to experience the same amount of joy I feel when I play sports.
-    Let's play!
+  country: USA
+  discordusername: ydaveragenerd
+  twitch: https://twitch.com/ydaveragenerd
+  twitter: https://twitter.com/ydaveragenerd
+  instagram: https://www.instagram.com/ydaveragenerd/
+  description: I have donned many names be it Your Daily Average Nerd...Hokage...Hype
+    Man...or just plain ol Caprnum (CJ for short). One thing has stayed consistent
+    throughout the times however...I love gaming!! I love anime! I love being a nerd!
+    More importantly...I love creating a safe place that any person far and wide can
+    come and be who they are. They can enjoy a domain that is safe to expose that
+    little nerd that resides in everyone. If anything piques your interests and you
+    want to know, just ask!
   image:
-  - url: /assets/images/creators/dangles/dangles.png
+  - url: /assets/images/creators/yd-average-nerd/yd.png
+
+- displayname: ArtShinobi
+  name: Shinobi
+  membersince: '2022-11-04'
+  country: United States
+  discordusername: artshinobi
+  showtwitchonpage: true
+  twitch: https://twitch.com/ArtShinobi
+  twitter: https://twitter.com/ArtShinobiBTW
+  tiktok: https://www.tiktok.com/@artshinobibtw
+  youtube: https://www.youtube.com/channel/UC7SqOqgkLW8rVRFuS6PESyQ
+  description: I am a gamer through and through, I have been for as long as I can
+    remember. Going back to the old super Nintendo with my brother now to having my
+    PC and building them myself. I've come to play almost every kind of game from
+    Retro to MMO to FPS I love them all. Come to more present day and I've been creating
+    and watching content since early 2015 and plan to keep doing so. It is my goal
+    to make a place where people feel safe and be themselves. I've found a community
+    that embodies that goal and allows me to do the same no matter where life takes
+    me.
+  headerimage:
+  - url: /assets/images/creators/shinobi/header.jpg
+  image:
+  - url: /assets/images/creators/shinobi/art.png
 
 - displayname: SugarSnapX
   name: SugarSnapX
@@ -51,6 +58,24 @@
     the most significant rewards anyone can achieve. And I love making that happen! '
   image:
   - url: /assets/images/creators/sugarsnapx/sugarsnapx.png
+
+- displayname: Dangles
+  name: Dangles
+  membersince: '2021-03-01'
+  country: Canada
+  affiliate: true
+  discordusername: daaangles
+  twitch: https://twitch.com/danglescharitytv
+  twitter: https://twitter.com/Dangles_86
+  instagram: https://www.instagram.com/dangles86/
+  description: I'm a gamer dad who streams for the Jumpstart charity. My parents were
+    boat people from Vietnam who got sponsored to Canada. They provided everything
+    for us but couldn't afford the cost of organized sports — something I enjoy as
+    an adult now. I stream and play Apex, COD and other games so that kids from low-income
+    families can get to experience the same amount of joy I feel when I play sports.
+    Let's play!
+  image:
+  - url: /assets/images/creators/dangles/dangles.png
 
 - displayname: FunkyWillow
   name: Funky
@@ -110,45 +135,3 @@
   - url: /assets/images/creators/luna/gallery-david-dobrik.png
   - url: /assets/images/creators/luna/gallery-timothydelaghetto.png
   - url: /assets/images/creators/luna/gallery-feralcreature.jpg
-
-- displayname: ArtShinobi
-  name: Shinobi
-  membersince: '2022-11-04'
-  country: United States
-  discordusername: artshinobi
-  affiliate: true
-  showtwitchonpage: true
-  twitch: https://twitch.com/ArtShinobi
-  twitter: https://twitter.com/ArtShinobiBTW
-  tiktok: https://www.tiktok.com/@artshinobibtw
-  youtube: https://www.youtube.com/channel/UC7SqOqgkLW8rVRFuS6PESyQ
-  description: I am a gamer through and through, I have been for as long as I can
-    remember. Going back to the old super Nintendo with my brother now to having my
-    PC and building them myself. I've come to play almost every kind of game from
-    Retro to MMO to FPS I love them all. Come to more present day and I've been creating
-    and watching content since early 2015 and plan to keep doing so. It is my goal
-    to make a place where people feel safe and be themselves. I've found a community
-    that embodies that goal and allows me to do the same no matter where life takes
-    me.
-  headerimage:
-  - url: /assets/images/creators/shinobi/header.jpg
-  image:
-  - url: /assets/images/creators/shinobi/art.png
-
-- displayname: YD Average Nerd
-  name: YD Average Nerd
-  membersince: '2021-03-01'
-  country: USA
-  discordusername: ydaveragenerd
-  twitch: https://twitch.com/ydaveragenerd
-  twitter: https://twitter.com/ydaveragenerd
-  instagram: https://www.instagram.com/ydaveragenerd/
-  description: I have donned many names be it Your Daily Average Nerd...Hokage...Hype
-    Man...or just plain ol Caprnum (CJ for short). One thing has stayed consistent
-    throughout the times however...I love gaming!! I love anime! I love being a nerd!
-    More importantly...I love creating a safe place that any person far and wide can
-    come and be who they are. They can enjoy a domain that is safe to expose that
-    little nerd that resides in everyone. If anything piques your interests and you
-    want to know, just ask!
-  image:
-  - url: /assets/images/creators/yd-average-nerd/yd.png
