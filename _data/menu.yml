@@ -18,7 +18,7 @@
       link: /consulting
 
 
-- title: CONTENT CREATORS
+- title: COLLABORATORS
   link: /creators
 
   submenu:
@@ -31,8 +31,8 @@
     - title: ArtShinobi
       link: /creators/shinobi
 
-    - title: Affiliates
-      link: /creators#affiliates
+    - title: Community Leaders
+      link: /creators#community-leaders
 
 - title: STORE
   link: /store

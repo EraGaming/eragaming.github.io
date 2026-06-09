@@ -25,7 +25,7 @@ Our website has been redesigned from the ground up to provide you with an intuit
 
 - **New Merchandise:** Get ready to gear up with Endless ERA Gaming! We're launching an exclusive line of merchandise that's as unique as our community. From apparel to accessories, our upcoming merchandise is designed with gamers in mind, offering something special for everyone who's been part of our journey.
 - **Expanding Our Events:** With the launch of our new website, we're also expanding our roster of gaming events. Stay tuned for announcements on upcoming tournaments and collaborations that will bring new levels of excitement and competition.
-- **Community-Centric Features:** We believe in the power of community. That's why our new site includes newly revamped content creator and affiliate pages. So that you can see their latest streams, artwork and their exclusive merchandise.
+- **Community-Centric Features:** We believe in the power of community. That's why our new site includes newly revamped collaborator and community leader pages. So that you can see their latest streams, artwork and their exclusive merchandise.
 
 ### Join Us on This Adventure
 

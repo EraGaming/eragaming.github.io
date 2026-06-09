@@ -63,7 +63,7 @@
   name: Dangles
   membersince: '2021-03-01'
   country: Canada
-  affiliate: true
+  community_leader: true
   discordusername: daaangles
   twitch: https://twitch.com/danglescharitytv
   twitter: https://twitter.com/Dangles_86
@@ -82,7 +82,7 @@
   membersince: '2022-01-01'
   country: Canada
   discordusername: funkywillow
-  affiliate: true
+  community_leader: true
   showtwitchonpage: true
   twitch: https://www.twitch.com/funkywillow
   twitter: https://twitter.com/FunkyWillowTTV
@@ -107,7 +107,7 @@
   membersince: '2021-03-01'
   country: Canada
   discordusername: sadgurlluna
-  affiliate: true
+  community_leader: true
   showtwitchonpage: true
   showgallery: true
   twitch: https://twitch.com/sadgurlluna

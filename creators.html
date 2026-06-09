@@ -1,5 +1,5 @@
 ---
-title: Content Creators
+title: Collaborators
 layout: default
 headerimg: "/assets/images/background/news-bg.webp"
 ---
@@ -10,15 +10,15 @@ headerimg: "/assets/images/background/news-bg.webp"
     <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">
-            <h2>Meet Our Creators</h2>
+            <h2>Meet Our Collaborators</h2>
             <div class="title">They are amazing people that we are proud to support.</div>
-            <p>Endless ERA Content Creators have amazing and safe communities. They stream often and are fun to interact with!<br />
+            <p>Endless ERA Collaborators have amazing and safe communities. They stream often and are fun to interact with!<br />
             Click to view their page.</p>
         </div>
-        
+
         <div class="row clearfix">
-            
-            {% assign creators = site.data.ContentCreators | where: 'affiliate', nil %}        
+
+            {% assign creators = site.data.ContentCreators | where: 'community_leader', nil %}        
             {% for creator in creators %}
             <!-- Player Block -->
             <div class="player-block col-lg-4 col-md-4 col-sm-12 wow fadeInLeft" data-wow-delay="0mss">
@@ -50,18 +50,18 @@ headerimg: "/assets/images/background/news-bg.webp"
 <!-- End Players Section -->
 
 <!-- Players Section -->
-<section class="players-section style-two" id="affiliates">
+<section class="players-section style-two" id="community-leaders">
     <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">
-            <h2>Meet Our Affiliates</h2>
+            <h2>Meet Our Community Leaders</h2>
             <div class="title">They make our community amazing!</div>
-            <p>Endless ERA Affiliates are up and coming content creators who are actively making Endless ERA an amazing and safe community.</p>
+            <p>Endless ERA Community Leaders are important members of our community who are actively making Endless ERA an amazing and safe place.</p>
         </div>
-        
+
         <div class="row clearfix">
-            
-            {% assign creators = site.data.ContentCreators | where: 'affiliate', 'true' %}        
+
+            {% assign creators = site.data.ContentCreators | where: 'community_leader', 'true' %}        
             {% for creator in creators %}
             <!-- Player Block -->
             <div class="player-block col-lg-3 col-md-3 col-sm-6 wow fadeInLeft" data-wow-delay="0mss">
