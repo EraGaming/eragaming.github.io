@@ -50,3 +50,5 @@ plugins:
 - jekyll-paginate-v2
 
 
+
+show_sponsors: false

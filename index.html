@@ -234,10 +234,11 @@ pagination:
 </section>
 <!-- End News Section -->
 
+{% if site.show_sponsors %}
 <!--Sponsors Section-->
 <section class="sponsors-section">
     <div class="auto-container">
-        
+
         <div class="sponsors-outer">
             <!--Sponsors Carousel-->
             <ul class="sponsors-carousel owl-carousel owl-theme">
@@ -246,7 +247,8 @@ pagination:
                 {% endfor %}
             </ul>
         </div>
-        
+
     </div>
 </section>
 <!--End Sponsors Section-->
+{% endif %}
